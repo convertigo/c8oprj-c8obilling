@@ -1,8 +1,12 @@
-↑convertigo: 8.1.0.m006
+↑convertigo: 8.2.0.m006
 ↓C8OBilling [core.Project]: 
   comment: Convertigo NGX builder Project
   corsOrigin: =Origin
+  version: 1.0
+  ↓c8ocloudsignup_fullsync [connectors.FullSyncConnector]: 🗏 connectors/c8ocloudsignup_fullsync.yaml
+  ↓lib_usermanager_fullsync [connectors.FullSyncConnector]: 🗏 connectors/lib_usermanager_fullsync.yaml
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
+  ↓GetAccountCreationsByDay [sequences.GenericSequence]: 🗏 sequences/GetAccountCreationsByDay.yaml
   ↓Project_reference [references.ProjectSchemaReference]: 
     comment: ngx builder template
     projectName: mobilebuilder_tpl_8_1_0_ngx=https://github.com/convertigo/c8oprj-mobilebuilder-tpl/archive/mobilebuilder_tpl_8_1_0_ngx.zip

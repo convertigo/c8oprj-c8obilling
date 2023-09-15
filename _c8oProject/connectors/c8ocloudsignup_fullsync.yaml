@@ -1,0 +1,41 @@
+databaseName: c8ocloudsignup_fullsync
+↓GetAccountByDateView [transactions.couchdb.GetViewTransaction]: 
+  p_ddoc: Statistics
+  p_view: AccountsByDate
+  q_group_level: 1
+  q_reduce: true
+↓GetServerInfo [transactions.couchdb.GetServerInfoTransaction]: 
+  ↑default: true
+↓Statistics [couchdb.DesignDocument]: 
+  docdata: 
+    →: |
+      '{
+        "_id": "_design\/Statistics",
+        "filters": {},
+        "updates": {},
+        "views": {
+          "AccountsByDate": {
+            "map": "function (doc) {\r\n
+          try {\r\n
+              if (doc.account && doc.account.status == \"confirmed\") {\r\n
+                  if (doc.account.created)\r\n
+                      time = new Date(doc.account.created).toDateString();\r\n
+                  else\r\n
+                      time = 0;\r\n
+                      \r\n
+                  emit( new Date(doc.account.created).toISOString().slice(0, 10),  {\r\n
+                    ''created'': doc.account.created,\r\n
+                    ''name'': doc.account.email,\r\n
+                    ''time'':time \r\n
+                  });\r\n
+              }\r\n
+          } catch (err) {\r\n
+              log(err.message);\r\n
+          }\r\n
+      }\r\n
+      ",
+            "reduce": "_count\r\n
+      "
+          }
+        }
+      }'

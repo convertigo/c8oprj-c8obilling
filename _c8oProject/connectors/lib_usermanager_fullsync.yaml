@@ -1,0 +1,10 @@
+databaseName: lib_usermanager_fullsync
+↓GetServerInfo [transactions.couchdb.GetServerInfoTransaction]: 
+  ↑default: true
+  accessibility: Public
+↓StatsDocument [couchdb.DesignDocument]: 
+  docdata: 
+    →: |
+      '{
+        "_id": "_design\/StatsDocument"
+      }'

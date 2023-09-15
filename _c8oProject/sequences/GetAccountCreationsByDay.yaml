@@ -1,0 +1,138 @@
+↓Call_Transaction [steps.TransactionStep-1694770016662]: 
+  sourceTransaction: C8OBilling.c8ocloudsignup_fullsync.GetAccountByDateView
+  ↓_use_ddoc [variables.StepVariable-1694770016664]: 
+    description: Design document name
+    value: Statistics
+  ↓_use_view [variables.StepVariable-1694770016666]: 
+    description: View function name
+    value: AccountsByDate
+↓complex [steps.XMLComplexStep-1694793419651]: 
+  nodeName: backend-data
+  ↓Copy [steps.XMLCopyStep-1694770043860]: 
+    output: false
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1694770016662
+          - java.lang.String: 
+            - ↑value: ./document/couchdb_output
+  ↓key [steps.ReadJSONStep-1694779329378]: 
+    dataFile: '''.//data/AccountsByDate.json'''
+    isEnabled: false
+    jsonSample: |
+      '{"rows":[
+      	{"key":"2019-10-18","value":1},
+      	{"key":"2019-10-30","value":1},
+      	{"key":"2019-11-04","value":1}
+      ]}
+      '
+    key: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+        - SmartType: 
+          - ↑mode: PLAIN
+          - →→: couchdb_output
+↓object [steps.JsonObjectStep-1694779961021]: 
+  key: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: PLAIN
+        - →→: data
+  ↓array [steps.JsonArrayStep-1694779976927]: 
+    key: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+        - SmartType: 
+          - ↑mode: PLAIN
+          - →→: labels
+    ↓Iterator [steps.IteratorStep-1694780313571]: 
+      sourceDefinition: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+          - com.twinsoft.convertigo.beans.common.XMLVector: 
+            - java.lang.String: 
+              - ↑value: 1694793419651
+            - java.lang.String: 
+              - ↑value: ./couchdb_output/rows/item
+      ↓field [steps.JsonFieldStep-1694780471746]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: SOURCE
+              - com.twinsoft.convertigo.beans.common.XMLVector: 
+                - java.lang.String: 
+                  - ↑value: 1694780313571
+                - java.lang.String: 
+                  - ↑value: ./key/text()
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: SOURCE
+              - com.twinsoft.convertigo.beans.common.XMLVector: 
+                - java.lang.String: 
+                  - ↑value: 1694780313571
+                - java.lang.String: 
+                  - ↑value: ./key/text()
+  ↓array1 [steps.JsonArrayStep-1694780057496]: 
+    key: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+        - SmartType: 
+          - ↑mode: PLAIN
+          - →→: dataset
+    ↓object [steps.JsonObjectStep-1694780070908]: 
+      ↓field [steps.JsonFieldStep-1694780095445]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: label
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: Accounts created
+      ↓array [steps.JsonArrayStep-1694780172109]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: data
+        ↓Iterator [steps.IteratorStep-1694780608261]: 
+          sourceDefinition: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+              - com.twinsoft.convertigo.beans.common.XMLVector: 
+                - java.lang.String: 
+                  - ↑value: 1694793419651
+                - java.lang.String: 
+                  - ↑value: ./couchdb_output/rows/item
+          ↓field [steps.JsonFieldStep-1694780617917]: 
+            key: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+                - SmartType: 
+                  - ↑mode: SOURCE
+                  - com.twinsoft.convertigo.beans.common.XMLVector: 
+                    - java.lang.String: 
+                      - ↑value: 1694780608261
+                    - java.lang.String: 
+                      - ↑value: ./value/text()
+            value: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+                - SmartType: 
+                  - ↑mode: SOURCE
+                  - com.twinsoft.convertigo.beans.common.XMLVector: 
+                    - java.lang.String: 
+                      - ↑value: 1694780608261
+                    - java.lang.String: 
+                      - ↑value: ./value/text()
