@@ -24,6 +24,21 @@
             	height: 100%
             '
 ↓SharedComponent_Event [ngx.components.UISharedComponentEvent-1694779824196]: 
+  componentEvent: onChanges
   ↓CallSequence [ngx.components.UIDynamicAction-1694779840192]: 
     beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:C8OBilling.GetAccountCreationsByDay"}'
     tagName: CallSequence
+    ↓startDate [ngx.components.UIControlVariable-1694796990742]: 
+      comment: new variable
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1694779619306,"regular":true}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+    ↓endDate [ngx.components.UIControlVariable-1694796990744]: 
+      comment: new variable
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1694779619306,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+↓dateStart [ngx.components.UICompVariable-1694796800940]: 
+↓dateEnd [ngx.components.UICompVariable-1694796812393]: 

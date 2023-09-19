@@ -60,6 +60,70 @@ title: First page
   beanData: '{"ionBean":"Content"}'
   comment: Page content
   tagName: ion-content
+  ↓CardContainer [ngx.components.UIDynamicElement-1694794761189]: 
+    beanData: '{"ionBean":"Card"}'
+    tagName: ion-card
+    ↓CardHeader [ngx.components.UIDynamicElement-1694794761170]: 
+      beanData: '{"ionBean":"CardHeader"}'
+      tagName: ion-card-header
+      ↓CardTitle [ngx.components.UIDynamicElement-1694794761172]: 
+        beanData: '{"ionBean":"CardTitle"}'
+        tagName: ion-card-title
+        ↓TextItem [ngx.components.UIDynamicElement-1694794761174]: 
+          beanData: '{"ionBean":"TextItem"}'
+          tagName: ion-text
+          ↓some_text [ngx.components.UIText-1694794761176]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:Select Range of dates
+    ↓CardContent [ngx.components.UIDynamicElement-1694794761184]: 
+      beanData: '{"ionBean":"CardContent"}'
+      tagName: ion-card-content
+      ↓Grid [ngx.components.UIDynamicElement-1694794825390]: 
+        beanData: '{"ionBean":"Grid"}'
+        tagName: ion-grid
+        ↓GridRow [ngx.components.UIDynamicElement-1694794825377]: 
+          beanData: '{"ionBean":"GridRow"}'
+          tagName: ion-row
+          ↓GridCol [ngx.components.UIDynamicElement-1694794825379]: 
+            beanData: '{"ionBean":"GridCol"}'
+            tagName: ion-col
+            ↓TextInput [ngx.components.UIDynamicElement-1694796104795]: 
+              beanData: |
+                '{
+                 "ionBean": "Input",
+                 "ControlName": "plain:DateStart",
+                 "DoubleBinding": "source:{\"filter\":\"Local\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"localObject\":\"local\"}],\"path\":\"?.dateStart\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+                 "Debounce": "plain:0",
+                 "Type": "plain:date"
+                }'
+              tagName: ion-input
+            ↓some_text [ngx.components.UIText-1694796329924]: 
+              isEnabled: false
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+          ↓GridCol1 [ngx.components.UIDynamicElement-1694794825385]: 
+            beanData: '{"ionBean":"GridCol"}'
+            tagName: ion-col
+            ↓TextInput [ngx.components.UIDynamicElement-1694796542241]: 
+              beanData: |
+                '{
+                 "ionBean": "Input",
+                 "ControlName": "plain:DateEnd",
+                 "DoubleBinding": "source:{\"filter\":\"Local\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"localObject\":\"local\"}],\"path\":\"?.dateEnd\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+                 "Debounce": "plain:0",
+                 "Type": "plain:date"
+                }'
+              tagName: ion-input
+            ↓some_text [ngx.components.UIText-1694796735029]: 
+              isEnabled: false
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
   ↓Grid [ngx.components.UIDynamicElement-1694791330839]: 
     beanData: '{"ionBean":"Grid"}'
     tagName: ion-grid
@@ -71,6 +135,16 @@ title: First page
         tagName: ion-col
         ↓tag [ngx.components.UIUseShared-1694779653965]: 
           sharedcomponent: C8OBilling.Application.NgxApp.AccountCreationChart
+          ↓dateStart [ngx.components.UIUseVariable-1694796831946]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+          ↓dateEnd [ngx.components.UIUseVariable-1694796831948]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
 ↓Footer [ngx.components.UIDynamicElement-1491634242460]: 
   beanData: '{"ionBean":"Footer"}'
   comment: Page footer
@@ -100,3 +174,20 @@ title: First page
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:Action 2
+↓PageEvent [ngx.components.UIPageEvent-1694796197073]: 
+  ↓SetLocal [ngx.components.UIDynamicAction-1694796207926]: 
+    beanData: |
+      '{
+       "ionBean": "SetLocalAction",
+       "Property": "plain:dateStart",
+       "Value": "script:new Date(new Date().getTime() - 365*24*3600*1000).toISOString().split(''T'')[0]"
+      }'
+    tagName: SetLocal
+  ↓SetLocal1 [ngx.components.UIDynamicAction-1694796521150]: 
+    beanData: |
+      '{
+       "ionBean": "SetLocalAction",
+       "Property": "plain:dateEnd",
+       "Value": "script:new Date().toISOString().split(''T'')[0]"
+      }'
+    tagName: SetLocal

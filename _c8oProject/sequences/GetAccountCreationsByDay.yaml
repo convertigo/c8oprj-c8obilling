@@ -1,11 +1,26 @@
+↓inputVars [steps.InputVariablesStep-1694797201934]: 
 ↓Call_Transaction [steps.TransactionStep-1694770016662]: 
   sourceTransaction: C8OBilling.c8ocloudsignup_fullsync.GetAccountByDateView
-  ↓_use_ddoc [variables.StepVariable-1694770016664]: 
-    description: Design document name
-    value: Statistics
-  ↓_use_view [variables.StepVariable-1694770016666]: 
-    description: View function name
-    value: AccountsByDate
+  ↓_use_startkey [variables.StepVariable-1694797185538]: 
+    description: (string) – Return records starting with the specified key. Optional
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1694797201934
+          - java.lang.String: 
+            - ↑value: ./startDate/text()
+  ↓_use_endkey [variables.StepVariable-1694797185540]: 
+    description: (string) – Stop returning records when the specified key is reached. Optional
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1694797201934
+          - java.lang.String: 
+            - ↑value: ./endDate/text()
 ↓complex [steps.XMLComplexStep-1694793419651]: 
   nodeName: backend-data
   ↓Copy [steps.XMLCopyStep-1694770043860]: 
@@ -19,6 +34,7 @@
           - java.lang.String: 
             - ↑value: ./document/couchdb_output
   ↓key [steps.ReadJSONStep-1694779329378]: 
+    comment: For testing only
     dataFile: '''.//data/AccountsByDate.json'''
     isEnabled: false
     jsonSample: |
@@ -136,3 +152,5 @@
                       - ↑value: 1694780608261
                     - java.lang.String: 
                       - ↑value: ./value/text()
+↓startDate [variables.RequestableVariable-1694796964912]: 
+↓endDate [variables.RequestableVariable-1694796972916]: 

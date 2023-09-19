@@ -29,13 +29,13 @@ For more technical informations : [documentation](./project.md)
      <tr><td>To contribute</td><td>
 
      ```
-     C8OBilling=/Users/olivierpicciotto/ConvertigoWorkspace/C8OBilling/.git:branch=master
+     C8OBilling=https://github.com/convertigo/c8oprj-c8obilling.git:branch=master
      ```
      </td></tr>
      <tr><td>To simply use</td><td>
 
      ```
-     C8OBilling=/Users/olivierpicciotto/ConvertigoWorkspace/C8OBilling//archive/master.zip
+     C8OBilling=https://github.com/convertigo/c8oprj-c8obilling/archive/master.zip
      ```
      </td></tr>
     </table>
@@ -55,6 +55,20 @@ My First Page as root page
 ### Shared Components
 
 #### AccountCreationChart
+
+**variables**
+
+<table>
+<tr>
+<th>name</th><th>comment</th>
+</tr>
+<tr>
+<td>dateEnd</td><td></td>
+</tr>
+<tr>
+<td>dateStart</td><td></td>
+</tr>
+</table>
 
 
 
