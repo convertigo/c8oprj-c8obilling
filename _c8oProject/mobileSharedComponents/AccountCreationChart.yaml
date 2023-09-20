@@ -9,7 +9,7 @@
        "labels": "source:{\"filter\":\"Sequence\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"sequence\":\"C8OBilling.GetAccountCreationsByDay\",\"marker\":\"\"}],\"path\":\"?.data?.labels\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
        "Width": "plain:",
        "Height": "plain:",
-       "Options": "script:{''plugins'':{''title'':{''display'': true,''text'': ''Account creations by day''}, ''responsive'': true, ''maintainAspectRatio'': false}}",
+       "Options": "script:{\n    plugins: {title: {''display'': true,text: ''Account creations by day''\n        }, ''responsive'': true, ''maintainAspectRatio'': true\n    },\n    scales: {\n        yAxes: [{\n            id: ''ByDay'',\n            type: ''linear'',\n            position: ''right'',\n            ticks: {\n                beginAtZero: true\n            }\n        }, {\n            id: ''cumulated'',\n            type: ''linear'',\n            position: ''left'',\n            ticks: {\n                beginAtZero: true\n            }\n        }]\n    }\n}",
        "ChartType": "plain:line"
       }'
     tagName: canvas
