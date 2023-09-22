@@ -125,6 +125,7 @@
                       - ↑value: 1695310481191
                     - java.lang.String: 
                       - ↑value: ./value/text()
+            type: number
             value: 
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType

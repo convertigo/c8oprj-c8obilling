@@ -7,6 +7,19 @@ databaseName: lib_usermanager_fullsync
   p_view: UsersByDate
   q_group: true
   q_group_level: 1
+  ↓_use_startkey [variables.RequestableVariable-1695377236469]: 
+    description: (string) – Return records starting with the specified key. Optional
+  ↓_use_endkey [variables.RequestableVariable-1695377236471]: 
+    description: (string) – Stop returning records when the specified key is reached. Optional
+↓GetUserTable [transactions.couchdb.GetViewTransaction]: 
+  p_ddoc: StatsDocument
+  p_view: UserTable
+  q_descending: true
+  viewname: StatsDocument/UserTable
+  ↓_use_startkey [variables.RequestableVariable-1695386897100]: 
+    description: (string) – Return records starting with the specified key. Optional
+  ↓_use_endkey [variables.RequestableVariable-1695386897103]: 
+    description: (string) – Stop returning records when the specified key is reached. Optional
 ↓StatsDocument [couchdb.DesignDocument]: 
   docdata: 
     →: |
@@ -33,6 +46,24 @@ databaseName: lib_usermanager_fullsync
       }",
             "reduce": "_count  \n
       "
+          },
+          "UserTable": {
+            "map": "function (doc) {\r\n
+          try {\r\n
+              if (doc.account) {\r\n
+                  if (doc.account.attributes.lastConnected) {\r\n
+                      date = new Date(doc.account.attributes.lastConnected)\r\n
+                      emit(date.toISOString().slice(0, 10),  {\r\n
+                        ''lastConnected'': date.toISOString(),\r\n
+                        ''provider'': doc.account.email.split('':'')[0],\r\n
+                        ''email'': doc.account.email.split('':'')[2]\r\n
+                      });\r\n
+                  }\r\n
+              }\r\n
+          } catch (err) {\r\n
+              log(err.message);\r\n
+          }\r\n
+      }"
           }
         }
       }'

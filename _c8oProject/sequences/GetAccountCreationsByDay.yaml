@@ -50,6 +50,7 @@
         - SmartType: 
           - ↑mode: PLAIN
           - →→: couchdb_output
+    output: true
 ↓object [steps.JsonObjectStep-1694779961021]: 
   key: 
     - xmlizable: 

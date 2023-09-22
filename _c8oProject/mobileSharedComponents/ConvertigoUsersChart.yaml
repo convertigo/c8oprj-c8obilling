@@ -5,11 +5,11 @@
     beanData: |
       '{
        "ionBean": "Charts",
-       "datasets": "source:{\"filter\":\"Sequence\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"sequence\":\"C8OBilling.GetAccountCreationsByDay\",\"marker\":\"\"}],\"path\":\"?.data?.dataset\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
-       "labels": "source:{\"filter\":\"Sequence\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"sequence\":\"C8OBilling.GetAccountCreationsByDay\",\"marker\":\"\"}],\"path\":\"?.data?.labels\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+       "datasets": "source:{\"filter\":\"Sequence\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"sequence\":\"C8OBilling.GetUsersByDay\",\"marker\":\"\"}],\"path\":\"?.data?.dataset\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+       "labels": "source:{\"filter\":\"Sequence\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"sequence\":\"C8OBilling.GetUsersByDay\",\"marker\":\"\"}],\"path\":\"?.data?.labels\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
        "Width": "plain:",
        "Height": "plain:",
-       "Options": "script:{\n    plugins: {title: {''display'': true,text: ''Active Users per day ''\n        }, ''responsive'': true, ''maintainAspectRatio'': true\n    },\n    scales: {\n        yAxes: [{\n            id: ''ByDay'',\n            type: ''linear'',\n            position: ''right'',\n            ticks: {\n                beginAtZero: true\n            }\n        }, {\n            id: ''cumulated'',\n            type: ''linear'',\n            position: ''left'',\n            ticks: {\n                beginAtZero: true\n            }\n        }]\n    }\n}",
+       "Options": "script:{\n        plugins: {\n            title: {\n                display: true,\n                text: ''Active Users per day''\n            }\n        },\n        responsive: true,\n        maintainAspectRatio: true,\n        scales: {\n            ByDay: {\n                axis: ''y'',\n                id: ''ByDay'',\n                type: ''linear'',\n                position: ''right'',\n                beginAtZero: true\n            },\n            cumulated: {\n                axis: ''y'',\n                id: ''cumulated'',\n                type: ''linear'',\n                position: ''left'',\n                beginAtZero: true\n            }\n        }\n}\n",
        "ChartType": "plain:line"
       }'
     tagName: canvas
@@ -33,12 +33,12 @@
       varValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1694779619306,"regular":true}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+          - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695310419875,"regular":true}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
     ↓endDate [ngx.components.UIControlVariable-1695310419896]: 
       comment: new variable
       varValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1694779619306,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+          - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695310419875,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
 ↓dateStart [ngx.components.UICompVariable-1695310419899]: 
 ↓dateEnd [ngx.components.UICompVariable-1695310419902]: 

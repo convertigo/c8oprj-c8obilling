@@ -15,6 +15,7 @@ For more technical informations : [documentation](./project.md)
     - [Shared Components](#shared-components)
         - [AccountCreationChart](#accountcreationchart)
         - [ConvertigoUsersChart](#convertigouserschart)
+        - [UserTable](#usertable)
 
 
 ## Installation
@@ -86,6 +87,8 @@ My First Page as root page
 <td>dateStart</td><td></td>
 </tr>
 </table>
+
+#### UserTable
 
 
 
