@@ -14,6 +14,7 @@ For more technical informations : [documentation](./project.md)
         - [Page](#page)
     - [Shared Components](#shared-components)
         - [AccountCreationChart](#accountcreationchart)
+        - [ConvertigoUsersChart](#convertigouserschart)
 
 
 ## Installation
@@ -55,6 +56,22 @@ My First Page as root page
 ### Shared Components
 
 #### AccountCreationChart
+
+**variables**
+
+<table>
+<tr>
+<th>name</th><th>comment</th>
+</tr>
+<tr>
+<td>dateEnd</td><td></td>
+</tr>
+<tr>
+<td>dateStart</td><td></td>
+</tr>
+</table>
+
+#### ConvertigoUsersChart
 
 **variables**
 

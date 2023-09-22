@@ -2,6 +2,11 @@ databaseName: lib_usermanager_fullsync
 ↓GetServerInfo [transactions.couchdb.GetServerInfoTransaction]: 
   ↑default: true
   accessibility: Public
+↓GetUsersByDate [transactions.couchdb.GetViewTransaction]: 
+  p_ddoc: StatsDocument
+  p_view: UsersByDate
+  q_group: true
+  q_group_level: 1
 ↓StatsDocument [couchdb.DesignDocument]: 
   docdata: 
     →: |
@@ -25,7 +30,9 @@ databaseName: lib_usermanager_fullsync
           } catch (err) {\r\n
               log(err.message);\r\n
           }\r\n
-      }"
+      }",
+            "reduce": "_count  \n
+      "
           }
         }
       }'

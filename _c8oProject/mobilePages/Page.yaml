@@ -76,7 +76,7 @@ title: First page
             textValue: 
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                - MobileSmartSourceType: plain:Select Range of dates
+                - MobileSmartSourceType: plain:Select range of dates
     ↓CardContent [ngx.components.UIDynamicElement-1694794761184]: 
       beanData: '{"ionBean":"CardContent"}'
       tagName: ion-card-content
@@ -304,6 +304,21 @@ title: First page
                 - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
                 - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
           ↓dateEnd [ngx.components.UIUseVariable-1694796831948]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓GridCol1 [ngx.components.UIDynamicElement-1695310814513]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓tag [ngx.components.UIUseShared-1695310814516]: 
+          sharedcomponent: C8OBilling.Application.NgxApp.ConvertigoUsersChart
+          ↓dateStart [ngx.components.UIUseVariable-1695310814519]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+          ↓dateEnd [ngx.components.UIUseVariable-1695310814522]: 
             varValue: 
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType

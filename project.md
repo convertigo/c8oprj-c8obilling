@@ -74,9 +74,21 @@ comment
 <details><summary><span style="color:DarkGoldenRod"><i>Transactions</i></span></summary><blockquote><p>
 
 
+<details><summary><b>GetServerInfo</b></summary><blockquote><p>
+
+
 ### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/getserverinfo_color_16x16.png?raw=true "GetServerInfoTransaction") GetServerInfo
 
 
+</p></blockquote></details>
+
+<details><summary><b>GetUsersByDate</b></summary><blockquote><p>
+
+
+### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/getview_color_16x16.png?raw=true "GetViewTransaction") GetUsersByDate
+
+
+</p></blockquote></details>
 </p></blockquote></details>
 </p></blockquote></details>
 
@@ -98,6 +110,9 @@ does nothing
 </p></blockquote></details>
 
 <details><summary><span style="color:DarkGoldenRod"><i>Sequences</i></span></summary><blockquote><p>
+
+
+<details><summary><b>GetAccountCreationsByDay</b></summary><blockquote><p>
 
 
 ## ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/sequences/images/genericsequence_color_16x16.png?raw=true "GenericSequence") GetAccountCreationsByDay
@@ -135,6 +150,45 @@ comment
 
 </p></blockquote></details>
 
+<details><summary><b>GetUsersByDay</b></summary><blockquote><p>
+
+
+## ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/sequences/images/genericsequence_color_16x16.png?raw=true "GenericSequence") GetUsersByDay
+
+
+
+<span style="color:DarkGoldenRod">Variables</span>
+
+<table>
+<tr>
+<th>
+name
+</th>
+<th>
+comment
+</th>
+</tr>
+<tr>
+<td>
+<img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;endDate
+</td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;startDate
+</td>
+<td>
+
+</td>
+</tr>
+</table>
+
+</p></blockquote></details>
+</p></blockquote></details>
+
 <details><summary><span style="color:DarkGoldenRod"><i>Mobile Application</i></span></summary><blockquote><p>
 
 
@@ -151,6 +205,9 @@ My First Page as root page
 </p></blockquote></details>
 
 <details><summary><span style="color:DarkGoldenRod"><i>Shared Components</i></span></summary><blockquote><p>
+
+
+<details><summary><b>AccountCreationChart</b></summary><blockquote><p>
 
 
 ### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uisharedcomponent_16x16.png?raw=true "UISharedRegularComponent") AccountCreationChart
@@ -186,5 +243,44 @@ comment
 </tr>
 </table>
 
+</p></blockquote></details>
+
+<details><summary><b>ConvertigoUsersChart</b></summary><blockquote><p>
+
+
+### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uisharedcomponent_16x16.png?raw=true "UISharedRegularComponent") ConvertigoUsersChart
+
+
+
+<span style="color:DarkGoldenRod">Variables</span>
+
+<table>
+<tr>
+<th>
+name
+</th>
+<th>
+comment
+</th>
+</tr>
+<tr>
+<td>
+<img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;dateEnd
+</td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;dateStart
+</td>
+<td>
+
+</td>
+</tr>
+</table>
+
+</p></blockquote></details>
 </p></blockquote></details>
 </p></blockquote></details>
