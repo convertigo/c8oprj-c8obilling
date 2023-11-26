@@ -78,6 +78,12 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
     ↓customerName [variables.TestCaseVariable-1701019320205]: 
       description: customerName
       value: trial-nocode
+    ↓startDate [variables.TestCaseVariable-1701022685399]: 
+      description: startDate
+      value: 2023-10-26
+    ↓endDate [variables.TestCaseVariable-1701022685402]: 
+      description: endDate
+      value: 2023-11-30
   ↓customerName [variables.RequestableVariable-1701019320208]: 
     description: customerName
   ↓startDate [variables.RequestableVariable-1701019901608]: 
@@ -86,15 +92,21 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
     description: endDate
 ↓Default_transaction [transactions.SqlTransaction]: 
   ↑default: true
+↓ListCustomers [transactions.SqlTransaction]: 
+  sqlQuery: |
+    SELECT DISTINCT
+    	customerName
+    FROM
+    	Ticket
+    
 ↓ListStartsAndStops [transactions.SqlTransaction-1701018823748]: 
   sqlQuery: |
     SELECT 
     	id,
     	customerName,
     	creationDate,
-    	from_unixtime(creationDate / 1000),
+    	from_unixtime(creationDate / 1000) AS DateTime,
     	connectorName,
-    	projectName,
     	userName,
     	userAgent,
     	sessionID
@@ -117,4 +129,35 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
       description: customerName
       value: trial-nocode
   ↓customerName [variables.RequestableVariable-1701019136332]: 
+    description: customerName
+↓ListUserAgents [transactions.SqlTransaction]: 
+  sqlQuery: |
+    SELECT 
+        Platform,
+        Total,
+        (Total * 100.0 / (SELECT COUNT(*) FROM Ticket)) AS Percentage
+    FROM 
+        (SELECT 
+            CASE
+                WHEN userAgent LIKE '%Android%' THEN 'Android'
+                WHEN userAgent LIKE '%iPhone%' THEN 'iOS'
+                WHEN userAgent LIKE '%Linux%' THEN 'Linux'
+                WHEN userAgent LIKE '%Windows%' THEN 'Windows'
+                ELSE 'Other'
+            END AS Platform,
+            COUNT(*) AS Total
+        FROM 
+            Ticket
+    	WHERE
+    		customerName = '{customerName}'
+            AND
+            (connectorName = 'start' OR connectorName = 'stop')
+        GROUP BY 
+            Platform) AS SubQuery;
+    
+  ↓Bookplanet [core.TestCase]: 
+    ↓customerName [variables.TestCaseVariable-1701022466248]: 
+      description: customerName
+      value: bookplanet
+  ↓customerName [variables.RequestableVariable-1701022451995]: 
     description: customerName
