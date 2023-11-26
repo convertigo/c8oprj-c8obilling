@@ -1,0 +1,120 @@
+jdbcDriverClassName: org.mariadb.jdbc.Driver
+jdbcURL: jdbc:mysql://${C8OBilling.database=127.0.0.1:3306}/c8oAnalytics
+jdbcUserName: ${C8OBilling.user=analytics}
+jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241aba9495bf5fca68da3740b983cd60777693a1309eb501ed5432d1c3d35431c9617e434ca36d3710bbf04f1aba413fc3de7ae
+↓ComputeSessions [transactions.SqlTransaction-1701018823748]: 
+  sqlQuery: |
+    WITH SessionEvents AS (
+        SELECT 
+            creationDate, 
+            sessionID,
+            userName,
+            1 as sessionChange
+        FROM 
+            Ticket
+        WHERE 
+            	connectorName = 'start'
+    	AND
+    		customerName = '{customerName}'
+    	AND
+                	creationDate
+    		BETWEEN
+    			UNIX_TIMESTAMP('{startDate}') * 1000
+                	AND
+                		UNIX_TIMESTAMP('{endDate}') * 1000
+    
+        UNION ALL
+    
+        SELECT 
+            creationDate, 
+            sessionID,
+            userName,
+            -1 as sessionChange
+        FROM 
+            Ticket
+        WHERE 
+            connectorName = 'stop'
+    	AND
+    		customerName = {customerName}
+    	AND
+                	creationDate
+    		BETWEEN
+    			UNIX_TIMESTAMP('{startDate}') * 1000
+                	AND
+                		UNIX_TIMESTAMP('{endDate}') * 1000
+    ),
+    CumulativeSessions AS (
+        SELECT 
+            creationDate, 
+            sessionID,
+            userName,
+            SUM(sessionChange) OVER (ORDER BY creationDate) as concurrentSessions
+        FROM 
+            SessionEvents
+    )
+    SELECT 
+        FROM_UNIXTIME(creationDate / 1000) as DateTime, 
+        sessionID,
+        userName,
+        concurrentSessions
+    FROM 
+        CumulativeSessions
+    WHERE
+    	userName <> ''
+    ORDER BY 
+        creationDate;
+        
+  ↓Bookplanet [core.TestCase]: 
+    ↓customerName [variables.TestCaseVariable-1701019320201]: 
+      description: customerName
+      value: bookplanet
+    ↓startDate [variables.TestCaseVariable-1701019910112]: 
+      description: startDate
+      value: 2023-10-26
+    ↓endDate [variables.TestCaseVariable-1701019910114]: 
+      description: endDate
+      value: 2023-11-30
+  ↓Trialnocode [core.TestCase]: 
+    ↓customerName [variables.TestCaseVariable-1701019320205]: 
+      description: customerName
+      value: trial-nocode
+  ↓customerName [variables.RequestableVariable-1701019320208]: 
+    description: customerName
+  ↓startDate [variables.RequestableVariable-1701019901608]: 
+    description: startDate
+  ↓endDate [variables.RequestableVariable-1701019901610]: 
+    description: endDate
+↓Default_transaction [transactions.SqlTransaction]: 
+  ↑default: true
+↓ListStartsAndStops [transactions.SqlTransaction-1701018823748]: 
+  sqlQuery: |
+    SELECT 
+    	id,
+    	customerName,
+    	creationDate,
+    	from_unixtime(creationDate / 1000),
+    	connectorName,
+    	projectName,
+    	userName,
+    	userAgent,
+    	sessionID
+    FROM
+    	c8oAnalytics.Ticket
+    WHERE
+    	customerName ='{customerName}'
+    AND
+    	userAgent <> ''
+    AND
+    	(connectorName = 'start' OR connectorName = 'stop')
+    
+    
+  ↓Bookplanet [core.TestCase]: 
+    ↓customerName [variables.TestCaseVariable-1701019187116]: 
+      description: customerName
+      value: bookplanet
+  ↓Trialnocode [core.TestCase]: 
+    ↓customerName [variables.TestCaseVariable-1701019158592]: 
+      description: customerName
+      value: trial-nocode
+  ↓customerName [variables.RequestableVariable-1701019136332]: 
+    description: customerName
