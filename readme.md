@@ -15,6 +15,7 @@ For more technical informations : [documentation](./project.md)
     - [Shared Components](#shared-components)
         - [AccountCreationChart](#accountcreationchart)
         - [ConvertigoUsersChart](#convertigouserschart)
+        - [DateselectionPanel](#dateselectionpanel)
         - [UserTable](#usertable)
 
 
@@ -73,6 +74,22 @@ My First Page as root page
 </table>
 
 #### ConvertigoUsersChart
+
+**variables**
+
+<table>
+<tr>
+<th>name</th><th>comment</th>
+</tr>
+<tr>
+<td>dateEnd</td><td></td>
+</tr>
+<tr>
+<td>dateStart</td><td></td>
+</tr>
+</table>
+
+#### DateselectionPanel
 
 **variables**
 

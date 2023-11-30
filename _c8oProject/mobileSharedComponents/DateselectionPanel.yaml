@@ -1,0 +1,229 @@
+↓CardContainer [ngx.components.UIDynamicElement-1701369309100]: 
+  beanData: '{"ionBean":"Card"}'
+  tagName: ion-card
+  ↓CardHeader [ngx.components.UIDynamicElement-1701369309103]: 
+    beanData: '{"ionBean":"CardHeader"}'
+    tagName: ion-card-header
+    ↓CardTitle [ngx.components.UIDynamicElement-1701369309106]: 
+      beanData: '{"ionBean":"CardTitle"}'
+      tagName: ion-card-title
+      ↓TextItem [ngx.components.UIDynamicElement-1701369309109]: 
+        beanData: '{"ionBean":"TextItem"}'
+        tagName: ion-text
+        ↓some_text [ngx.components.UIText-1701369309112]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Select range of dates
+  ↓CardContent [ngx.components.UIDynamicElement-1701369309115]: 
+    beanData: '{"ionBean":"CardContent"}'
+    tagName: ion-card-content
+    ↓Grid [ngx.components.UIDynamicElement-1701369309118]: 
+      beanData: '{"ionBean":"Grid"}'
+      tagName: ion-grid
+      ↓GridRow [ngx.components.UIDynamicElement-1701369309121]: 
+        beanData: '{"ionBean":"GridRow"}'
+        tagName: ion-row
+        ↓GridCol [ngx.components.UIDynamicElement-1701369309124]: 
+          beanData: '{"ionBean":"GridCol"}'
+          tagName: ion-col
+          ↓some_text [ngx.components.UIText-1701369309127]: 
+            isEnabled: false
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+          ↓Modal [ngx.components.UIDynamicElement-1701369309130]: 
+            beanData: '{"ionBean":"InlineModal","Trigger":"plain:start"}'
+            tagName: ion-modal
+            ↓Grid [ngx.components.UIDynamicElement-1701369309133]: 
+              beanData: '{"ionBean":"Grid"}'
+              tagName: ion-grid
+              ↓GridRow2 [ngx.components.UIDynamicElement-1701369309136]: 
+                beanData: '{"ionBean":"GridRow","Height":"plain:10%"}'
+                tagName: ion-row
+              ↓GridRow [ngx.components.UIDynamicElement-1701369309139]: 
+                beanData: '{"ionBean":"GridRow","Height":"plain:80%"}'
+                tagName: ion-row
+                ↓GridCol [ngx.components.UIDynamicElement-1701369309142]: 
+                  beanData: '{"ionBean":"GridCol"}'
+                  tagName: ion-col
+                ↓GridCol1 [ngx.components.UIDynamicElement-1701369309145]: 
+                  beanData: '{"ionBean":"GridCol"}'
+                  tagName: ion-col
+                  ↓DateTime [ngx.components.UIDynamicElement-1701369309148]: 
+                    beanData: |
+                      '{
+                       "ionBean": "DateTime",
+                       "ControlName": "plain:name1695137115833",
+                       "DoubleBinding": "source:{\"filter\":\"Local\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"localObject\":\"local\"}],\"path\":\"?.dateStart\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+                       "Locale": "plain:fr-FR",
+                       "Presentation": "plain:date"
+                      }'
+                    tagName: ion-datetime
+                ↓GridCol2 [ngx.components.UIDynamicElement-1701369309151]: 
+                  beanData: '{"ionBean":"GridCol"}'
+                  tagName: ion-col
+              ↓GridRow1 [ngx.components.UIDynamicElement-1701369309154]: 
+                beanData: '{"ionBean":"GridRow","Height":"plain:10%"}'
+                tagName: ion-row
+            ↓Style [ngx.components.UIStyle-1701369309157]: 
+              styleContent: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                  - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                    →: |
+                      '/**
+                       * Custom properties (sometimes referred to as CSS variables or cascading variables)
+                       * are entities defined by CSS authors that contain specific values to be reused throughout a document.
+                       * They are set using custom property notation, e.g.: --main-color: black;
+                       * and are accessed using the var() function, e.g.: color: var(--main-color);
+                       * You can find below your component''s properties you can customize within the page.
+                       * If you''d like to make some customizations for whole app, please see your app Style & Theme components.
+                       * For more informations see https://ionicframework.com/docs/theming.
+                      **/
+                      //--backdrop-opacity	//Opacity of the backdrop
+                      //--background	//Background of the modal content
+                      //--border-color	//Border color of the modal content
+                      //--border-radius	//Border radius of the modal content
+                      //--border-style	//Border style of the modal content
+                      //--border-width	//Border width of the modal content
+                      //--height	//Height of the modal
+                      //--max-height	//Maximum height of the modal
+                      //--max-width	//Maximum width of the modal
+                      //--min-height	//Minimum height of the modal
+                      //--min-width	//Minimum width of the modal
+                      //--width	//Width of the modal
+                      	color: grey
+                      '
+          ↓GenericItem [ngx.components.UIDynamicElement-1701369309160]: 
+            beanData: '{"ionBean":"GenericItem"}'
+            tagName: ion-item
+            ↓TextInput [ngx.components.UIDynamicElement-1701369309163]: 
+              beanData: |
+                '{
+                 "ionBean": "Input",
+                 "ControlName": "plain:DateStart",
+                 "DoubleBinding": "source:{\"filter\":\"Shared\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"priority\":1701369309078,\"regular\":true}],\"path\":\"?.dateStart\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+                 "Debounce": "plain:0",
+                 "Type": "plain:date"
+                }'
+              tagName: ion-input
+            ↓Icon [ngx.components.UIDynamicElement-1701369309166]: 
+              beanData: |
+                '{
+                 "ionBean": "Icon",
+                 "IconName": "source:{\"filter\":\"Icon\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"icon\":\"''calendar-outline''\"}],\"path\":\"\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+                 "IconSlot": "plain:end"
+                }'
+              tagName: ion-icon
+              ↓id [ngx.components.UIAttribute-1701369309169]: 
+                attrName: id
+                attrValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                    - MobileSmartSourceType: plain:start
+        ↓GridCol1 [ngx.components.UIDynamicElement-1701369309172]: 
+          beanData: '{"ionBean":"GridCol"}'
+          tagName: ion-col
+          ↓some_text [ngx.components.UIText-1701369309175]: 
+            isEnabled: false
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+          ↓Modal [ngx.components.UIDynamicElement-1701369309178]: 
+            beanData: '{"ionBean":"InlineModal","Trigger":"plain:end"}'
+            tagName: ion-modal
+            ↓Grid [ngx.components.UIDynamicElement-1701369309181]: 
+              beanData: '{"ionBean":"Grid"}'
+              tagName: ion-grid
+              ↓GridRow2 [ngx.components.UIDynamicElement-1701369309184]: 
+                beanData: '{"ionBean":"GridRow","Height":"plain:10%"}'
+                tagName: ion-row
+              ↓GridRow [ngx.components.UIDynamicElement-1701369309187]: 
+                beanData: '{"ionBean":"GridRow","Height":"plain:80%"}'
+                tagName: ion-row
+                ↓GridCol [ngx.components.UIDynamicElement-1701369309190]: 
+                  beanData: '{"ionBean":"GridCol"}'
+                  tagName: ion-col
+                ↓GridCol1 [ngx.components.UIDynamicElement-1701369309193]: 
+                  beanData: '{"ionBean":"GridCol"}'
+                  tagName: ion-col
+                  ↓DateTime [ngx.components.UIDynamicElement-1701369309196]: 
+                    beanData: |
+                      '{
+                       "ionBean": "DateTime",
+                       "ControlName": "plain:name1695137115833",
+                       "DoubleBinding": "source:{\"filter\":\"Local\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"localObject\":\"local\"}],\"path\":\"?.dateEnd\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+                       "DoneText": "plain:Done",
+                       "Locale": "plain:fr-FR",
+                       "Presentation": "plain:date",
+                       "ShowDefaultButtons": "plain:true",
+                       "Size": "plain:cover"
+                      }'
+                    tagName: ion-datetime
+                ↓GridCol2 [ngx.components.UIDynamicElement-1701369309199]: 
+                  beanData: '{"ionBean":"GridCol"}'
+                  tagName: ion-col
+              ↓GridRow1 [ngx.components.UIDynamicElement-1701369309202]: 
+                beanData: '{"ionBean":"GridRow","Height":"plain:10%"}'
+                tagName: ion-row
+            ↓Style [ngx.components.UIStyle-1701369309205]: 
+              styleContent: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                  - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                    →: |
+                      '/**
+                       * Custom properties (sometimes referred to as CSS variables or cascading variables)
+                       * are entities defined by CSS authors that contain specific values to be reused throughout a document.
+                       * They are set using custom property notation, e.g.: --main-color: black;
+                       * and are accessed using the var() function, e.g.: color: var(--main-color);
+                       * You can find below your component''s properties you can customize within the page.
+                       * If you''d like to make some customizations for whole app, please see your app Style & Theme components.
+                       * For more informations see https://ionicframework.com/docs/theming.
+                      **/
+                      //--backdrop-opacity	//Opacity of the backdrop
+                      //--background	//Background of the modal content
+                      //--border-color	//Border color of the modal content
+                      //--border-radius	//Border radius of the modal content
+                      //--border-style	//Border style of the modal content
+                      //--border-width	//Border width of the modal content
+                      //--height	//Height of the modal
+                      //--max-height	//Maximum height of the modal
+                      //--max-width	//Maximum width of the modal
+                      //--min-height	//Minimum height of the modal
+                      //--min-width	//Minimum width of the modal
+                      //--width	//Width of the modal
+                      	color: grey
+                      '
+          ↓GenericItem [ngx.components.UIDynamicElement-1701369309208]: 
+            beanData: '{"ionBean":"GenericItem"}'
+            tagName: ion-item
+            ↓TextInput [ngx.components.UIDynamicElement-1701369309211]: 
+              beanData: |
+                '{
+                 "ionBean": "Input",
+                 "ControlName": "plain:DateStart",
+                 "DoubleBinding": "source:{\"filter\":\"Shared\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"priority\":1701369309078,\"regular\":true}],\"path\":\"?.dateEnd\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+                 "Debounce": "plain:0",
+                 "Type": "plain:date"
+                }'
+              tagName: ion-input
+            ↓Icon [ngx.components.UIDynamicElement-1701369309214]: 
+              beanData: |
+                '{
+                 "ionBean": "Icon",
+                 "IconName": "source:{\"filter\":\"Icon\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"icon\":\"''calendar-outline''\"}],\"path\":\"\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+                 "IconSlot": "plain:end"
+                }'
+              tagName: ion-icon
+              ↓id [ngx.components.UIAttribute-1701369309217]: 
+                attrName: id
+                attrValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                    - MobileSmartSourceType: plain:end
+↓dateStart [ngx.components.UICompVariable-1701369372611]: 
+↓dateEnd [ngx.components.UICompVariable-1701369391678]: 

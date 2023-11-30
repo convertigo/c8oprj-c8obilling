@@ -8,6 +8,7 @@
   ↓lib_usermanager_fullsync [connectors.FullSyncConnector]: 🗏 connectors/lib_usermanager_fullsync.yaml
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
   ↓GetAccountCreationsByDay [sequences.GenericSequence]: 🗏 sequences/GetAccountCreationsByDay.yaml
+  ↓GetBillingUsersPerDay [sequences.GenericSequence]: 🗏 sequences/GetBillingUsersPerDay.yaml
   ↓GetUsersByDay [sequences.GenericSequence]: 🗏 sequences/GetUsersByDay.yaml
   ↓GetUserTable [sequences.GenericSequence]: 🗏 sequences/GetUserTable.yaml
   ↓project [references.ProjectSchemaReference]: 
