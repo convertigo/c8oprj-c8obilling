@@ -25,12 +25,12 @@ see [readme](https://github.com/convertigo/c8oprj-lib-extended-components-ui-ngx
 <details><summary><span style="color:DarkGoldenRod"><i>Transactions</i></span></summary><blockquote><p>
 
 
-<details><summary><b>ComputeSessions</b></summary><blockquote><p>
+<details><summary><b>ComputeSessions</b> : Compute concurent sessions for each day given a time range</summary><blockquote><p>
 
 
 ### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/transactions/images/sqltransaction_color_16x16.png?raw=true "SqlTransaction") ComputeSessions
 
-
+Compute concurent sessions for each day given a time range
 
 <span style="color:DarkGoldenRod">Variables</span>
 
@@ -48,7 +48,7 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;customerName
 </td>
 <td>
-
+a Tenant customer name
 </td>
 </tr>
 <tr>
@@ -56,7 +56,7 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;endDate
 </td>
 <td>
-
+An End date in the YYYY-MM-DD format
 </td>
 </tr>
 <tr>
@@ -64,19 +64,19 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;startDate
 </td>
 <td>
-
+a Start date in the YYYY-MM-DD format
 </td>
 </tr>
 </table>
 
 </p></blockquote></details>
 
-<details><summary><b>CountUsers</b></summary><blockquote><p>
+<details><summary><b>CountUsers</b> : Count users on a day by day basis with new added users and cumulated users</summary><blockquote><p>
 
 
 ### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/transactions/images/sqltransaction_color_16x16.png?raw=true "SqlTransaction") CountUsers
 
-
+Count users on a day by day basis with new added users and cumulated users
 
 <span style="color:DarkGoldenRod">Variables</span>
 
@@ -94,7 +94,7 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;customerName
 </td>
 <td>
-
+a Tenant customer name
 </td>
 </tr>
 <tr>
@@ -102,7 +102,7 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;endDate
 </td>
 <td>
-
+An End date in the YYYY-MM-DD format
 </td>
 </tr>
 <tr>
@@ -110,35 +110,27 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;startDate
 </td>
 <td>
-
+a Start date in the YYYY-MM-DD format
 </td>
 </tr>
 </table>
 
 </p></blockquote></details>
 
-<details><summary><b>Default_transaction</b></summary><blockquote><p>
-
-
-### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/transactions/images/sqltransaction_color_16x16.png?raw=true "SqlTransaction") Default_transaction
-
-
-</p></blockquote></details>
-
-<details><summary><b>ListCustomers</b></summary><blockquote><p>
+<details><summary><b>ListCustomers</b> : List all the customers in the billing database</summary><blockquote><p>
 
 
 ### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/transactions/images/sqltransaction_color_16x16.png?raw=true "SqlTransaction") ListCustomers
 
-
+List all the customers in the billing database
 </p></blockquote></details>
 
-<details><summary><b>ListStartsAndStops</b></summary><blockquote><p>
+<details><summary><b>ListStartsAndStops</b> : Give a table of all session starts and stops and the date/time they occured</summary><blockquote><p>
 
 
 ### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/transactions/images/sqltransaction_color_16x16.png?raw=true "SqlTransaction") ListStartsAndStops
 
-
+Give a table of all session starts and stops and the date/time they occured
 
 <span style="color:DarkGoldenRod">Variables</span>
 
@@ -163,12 +155,12 @@ comment
 
 </p></blockquote></details>
 
-<details><summary><b>ListUserAgents</b></summary><blockquote><p>
+<details><summary><b>ListUserAgents</b> : Lis all the different user agents in the database </summary><blockquote><p>
 
 
 ### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/transactions/images/sqltransaction_color_16x16.png?raw=true "SqlTransaction") ListUserAgents
 
-
+Lis all the different user agents in the database 
 
 <span style="color:DarkGoldenRod">Variables</span>
 
@@ -193,12 +185,12 @@ comment
 
 </p></blockquote></details>
 
-<details><summary><b>ListUsersPerDay</b></summary><blockquote><p>
+<details><summary><b>ListUsersPerDay</b> : List all users by day they first appear</summary><blockquote><p>
 
 
 ### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/transactions/images/sqltransaction_color_16x16.png?raw=true "SqlTransaction") ListUsersPerDay
 
-
+List all users by day they first appear
 
 <span style="color:DarkGoldenRod">Variables</span>
 
@@ -216,7 +208,7 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;customerName
 </td>
 <td>
-
+a Tenant customer name
 </td>
 </tr>
 <tr>
@@ -224,7 +216,7 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;endDate
 </td>
 <td>
-
+An End date in the YYYY-MM-DD format
 </td>
 </tr>
 <tr>
@@ -232,7 +224,7 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;startDate
 </td>
 <td>
-
+a Start date in the YYYY-MM-DD format
 </td>
 </tr>
 </table>

@@ -3,6 +3,8 @@ jdbcURL: jdbc:mysql://${C8OBilling.database=127.0.0.1:3306}/c8oAnalytics
 jdbcUserName: ${C8OBilling.user=analytics}
 jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241aba9495bf5fca68da3740b983cd60777693a1309eb501ed5432d1c3d35431c9617e434ca36d3710bbf04f1aba413fc3de7ae
 ↓ComputeSessions [transactions.SqlTransaction-1701018823748]: 
+  ↑default: true
+  comment: Compute concurent sessions for each day given a time range
   sqlQuery: |
     WITH SessionEvents AS (
         SELECT 
@@ -85,12 +87,16 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
       description: endDate
       value: 2023-11-30
   ↓customerName [variables.RequestableVariable-1701019320208]: 
+    comment: a Tenant customer name
     description: customerName
   ↓startDate [variables.RequestableVariable-1701019901608]: 
+    comment: a Start date in the YYYY-MM-DD format
     description: startDate
   ↓endDate [variables.RequestableVariable-1701019901610]: 
+    comment: An End date in the YYYY-MM-DD format
     description: endDate
 ↓CountUsers [transactions.SqlTransaction-1701018823748]: 
+  comment: Count users on a day by day basis with new added users and cumulated users
   sqlQuery: |
     SELECT 
         DATE(FROM_UNIXTIME(creationDate / 1000)) AS Day,
@@ -131,15 +137,17 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
     ↓endDate [variables.TestCaseVariable-1701345259319]: 
       description: endDate
       value: 2023-12-30
-  ↓customerName [variables.RequestableVariable-1701345259322]: 
+  ↓customerName [variables.RequestableVariable-1701368843701]: 
+    comment: a Tenant customer name
     description: customerName
-  ↓startDate [variables.RequestableVariable-1701345259325]: 
+  ↓startDate [variables.RequestableVariable-1701368843704]: 
+    comment: a Start date in the YYYY-MM-DD format
     description: startDate
-  ↓endDate [variables.RequestableVariable-1701345259328]: 
+  ↓endDate [variables.RequestableVariable-1701368843707]: 
+    comment: An End date in the YYYY-MM-DD format
     description: endDate
-↓Default_transaction [transactions.SqlTransaction]: 
-  ↑default: true
 ↓ListCustomers [transactions.SqlTransaction]: 
+  comment: List all the customers in the billing database
   sqlQuery: |
     SELECT DISTINCT
     	customerName
@@ -147,6 +155,7 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
     	Ticket
     
 ↓ListStartsAndStops [transactions.SqlTransaction-1701018823748]: 
+  comment: Give a table of all session starts and stops and the date/time they occured
   sqlQuery: |
     SELECT 
     	id,
@@ -178,6 +187,7 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
   ↓customerName [variables.RequestableVariable-1701019136332]: 
     description: customerName
 ↓ListUserAgents [transactions.SqlTransaction]: 
+  comment: Lis all the different user agents in the database 
   sqlQuery: |
     SELECT 
         Platform,
@@ -209,6 +219,7 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
   ↓customerName [variables.RequestableVariable-1701022451995]: 
     description: customerName
 ↓ListUsersPerDay [transactions.SqlTransaction-1701018823748]: 
+  comment: List all users by day they first appear
   sqlQuery: |
     SELECT
         DISTINCT userName,
@@ -249,9 +260,12 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
     ↓endDate [variables.TestCaseVariable-1701368118056]: 
       description: endDate
       value: 2023-12-30
-  ↓customerName [variables.RequestableVariable-1701368118059]: 
+  ↓customerName [variables.RequestableVariable-1701368807566]: 
+    comment: a Tenant customer name
     description: customerName
-  ↓startDate [variables.RequestableVariable-1701368118062]: 
+  ↓startDate [variables.RequestableVariable-1701368807569]: 
+    comment: a Start date in the YYYY-MM-DD format
     description: startDate
-  ↓endDate [variables.RequestableVariable-1701368118065]: 
+  ↓endDate [variables.RequestableVariable-1701368807572]: 
+    comment: An End date in the YYYY-MM-DD format
     description: endDate
