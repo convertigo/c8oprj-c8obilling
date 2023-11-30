@@ -77,10 +77,10 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
   ↓Trialnocode [core.TestCase]: 
     ↓customerName [variables.TestCaseVariable-1701019320205]: 
       description: customerName
-      value: trial-nocode
+      value: harmonie-mutuelle
     ↓startDate [variables.TestCaseVariable-1701022685399]: 
       description: startDate
-      value: 2023-11-26
+      value: 2023-01-01
     ↓endDate [variables.TestCaseVariable-1701022685402]: 
       description: endDate
       value: 2023-11-30
@@ -104,6 +104,8 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
         creationDate BETWEEN (UNIX_TIMESTAMP('{startDate}') * 1000) AND (UNIX_TIMESTAMP('{endDate}')* 1000)
     AND
     	connectorName = 'stop'
+    AND
+    	username <> ''
     GROUP BY 
         Day
     ORDER BY 
@@ -122,13 +124,13 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
   ↓Trialnocode [core.TestCase]: 
     ↓customerName [variables.TestCaseVariable-1701345259313]: 
       description: customerName
-      value: trial-nocode
+      value: harmonie-mutuelle
     ↓startDate [variables.TestCaseVariable-1701345259316]: 
       description: startDate
-      value: 2023-11-26
+      value: 2023-01-01
     ↓endDate [variables.TestCaseVariable-1701345259319]: 
       description: endDate
-      value: 2023-11-30
+      value: 2023-12-30
   ↓customerName [variables.RequestableVariable-1701345259322]: 
     description: customerName
   ↓startDate [variables.RequestableVariable-1701345259325]: 
@@ -206,3 +208,50 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
       value: bookplanet
   ↓customerName [variables.RequestableVariable-1701022451995]: 
     description: customerName
+↓ListUsersPerDay [transactions.SqlTransaction-1701018823748]: 
+  sqlQuery: |
+    SELECT
+        DISTINCT userName,
+        Date
+        FROM (
+    SELECT
+        userName,
+        DATE(FROM_UNIXTIME(creationDate / 1000)) as Date
+    FROM
+       Ticket
+    WHERE
+        creationDate BETWEEN (UNIX_TIMESTAMP('{startDate}') * 1000) AND (UNIX_TIMESTAMP('{endDate}') * 1000)
+    AND
+        customerName = '{customerName}'
+    AND 
+        userName <> ''
+    AND
+    	connectorName = 'stop'
+    ) as NameDate
+    
+  ↓Bookplanet [core.TestCase]: 
+    ↓customerName [variables.TestCaseVariable-1701368118040]: 
+      description: customerName
+      value: bookplanet
+    ↓startDate [variables.TestCaseVariable-1701368118043]: 
+      description: startDate
+      value: 2023-11-01
+    ↓endDate [variables.TestCaseVariable-1701368118046]: 
+      description: endDate
+      value: 2023-12-30
+  ↓Trialnocode [core.TestCase]: 
+    ↓customerName [variables.TestCaseVariable-1701368118050]: 
+      description: customerName
+      value: harmonie-mutuelle
+    ↓startDate [variables.TestCaseVariable-1701368118053]: 
+      description: startDate
+      value: 2023-01-01
+    ↓endDate [variables.TestCaseVariable-1701368118056]: 
+      description: endDate
+      value: 2023-12-30
+  ↓customerName [variables.RequestableVariable-1701368118059]: 
+    description: customerName
+  ↓startDate [variables.RequestableVariable-1701368118062]: 
+    description: startDate
+  ↓endDate [variables.RequestableVariable-1701368118065]: 
+    description: endDate
