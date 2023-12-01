@@ -14,8 +14,8 @@ For more technical informations : [documentation](./project.md)
         - [Page](#page)
     - [Shared Components](#shared-components)
         - [AccountCreationChart](#accountcreationchart)
+        - [ConvertigoBillingConcurrentSessions](#convertigobillingconcurrentsessions)
         - [ConvertigoBillingUserChart](#convertigobillinguserchart)
-        - [ConvertigoBillingUserChart1](#convertigobillinguserchart1)
         - [ConvertigoUsersChart](#convertigouserschart)
         - [DateselectionPanel](#dateselectionpanel)
         - [UserTable](#usertable)
@@ -75,7 +75,7 @@ My First Page as root page
 </tr>
 </table>
 
-#### ConvertigoBillingUserChart
+#### ConvertigoBillingConcurrentSessions
 
 **variables**
 
@@ -94,7 +94,7 @@ My First Page as root page
 </tr>
 </table>
 
-#### ConvertigoBillingUserChart1
+#### ConvertigoBillingUserChart
 
 **variables**
 

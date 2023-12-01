@@ -219,11 +219,6 @@
           ↓GenericItem [ngx.components.UIDynamicElement-1701427547998]: 
             beanData: '{"ionBean":"GenericItem"}'
             tagName: ion-item
-            ↓some_text [ngx.components.UIText-1701428586946]: 
-              textValue: 
-                - xmlizable: 
-                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                  - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701369309078,"regular":true}],"path":"?.customer","prefix":"","suffix":"","custom":"","useCustom":false}}
             ↓SelectContainer [ngx.components.UIDynamicElement-1701427576330]: 
               beanData: |
                 '{

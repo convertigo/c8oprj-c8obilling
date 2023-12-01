@@ -678,10 +678,10 @@ comment
 
 </p></blockquote></details>
 
-<details><summary><b>ConvertigoBillingUserChart</b></summary><blockquote><p>
+<details><summary><b>ConvertigoBillingConcurrentSessions</b></summary><blockquote><p>
 
 
-### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uisharedcomponent_16x16.png?raw=true "UISharedRegularComponent") ConvertigoBillingUserChart
+### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uisharedcomponent_16x16.png?raw=true "UISharedRegularComponent") ConvertigoBillingConcurrentSessions
 
 
 
@@ -724,10 +724,10 @@ comment
 
 </p></blockquote></details>
 
-<details><summary><b>ConvertigoBillingUserChart1</b></summary><blockquote><p>
+<details><summary><b>ConvertigoBillingUserChart</b></summary><blockquote><p>
 
 
-### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uisharedcomponent_16x16.png?raw=true "UISharedRegularComponent") ConvertigoBillingUserChart1
+### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uisharedcomponent_16x16.png?raw=true "UISharedRegularComponent") ConvertigoBillingUserChart
 
 
 
