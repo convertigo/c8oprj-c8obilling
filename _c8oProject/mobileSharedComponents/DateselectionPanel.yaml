@@ -14,7 +14,7 @@
           textValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:Select range of dates
+              - MobileSmartSourceType: plain:Select range of dates and customer
   ↓CardContent [ngx.components.UIDynamicElement-1701369309115]: 
     beanData: '{"ionBean":"CardContent"}'
     tagName: ion-card-content
@@ -213,7 +213,61 @@
                   - xmlizable: 
                     - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
                     - MobileSmartSourceType: plain:end
+        ↓GridCol2 [ngx.components.UIDynamicElement-1701427547965]: 
+          beanData: '{"ionBean":"GridCol"}'
+          tagName: ion-col
+          ↓GenericItem [ngx.components.UIDynamicElement-1701427547998]: 
+            beanData: '{"ionBean":"GenericItem"}'
+            tagName: ion-item
+            ↓some_text [ngx.components.UIText-1701428586946]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701369309078,"regular":true}],"path":"?.customer","prefix":"","suffix":"","custom":"","useCustom":false}}
+            ↓SelectContainer [ngx.components.UIDynamicElement-1701427576330]: 
+              beanData: |
+                '{
+                 "ionBean": "Select",
+                 "ControlName": "plain:name1701427576330",
+                 "DoubleBinding": "source:{\"filter\":\"Shared\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"priority\":1701369309078,\"regular\":true}],\"path\":\"?.customer\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+                 "Interface": "plain:alert",
+                 "Placeholder": "plain:Customer Name"
+                }'
+              tagName: ion-select
+              ↓tag [ngx.components.UIControlDirective-1701427623232]: 
+                directiveSource: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                    - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetBillingCustomers","marker":""}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
+                ↓SelectOption [ngx.components.UIDynamicElement-1701427603929]: 
+                  beanData: '{"ionBean":"SelectOption","Value":"source:{\"filter\":\"Iteration\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"priority\":1701427623232}],\"path\":\"\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}"}'
+                  tagName: ion-select-option
+                  ↓some_text [ngx.components.UIText-1701427685352]: 
+                    textValue: 
+                      - xmlizable: 
+                        - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                        - MobileSmartSourceType: source:{"filter":"Iteration","project":"C8OBilling","input":"","model":{"data":[{"priority":1701427623232}],"path":"","prefix":"","suffix":"","custom":"","useCustom":false}}
+            ↓Icon [ngx.components.UIDynamicElement-1701427548004]: 
+              beanData: |
+                '{
+                 "ionBean": "Icon",
+                 "IconName": "source:{\"filter\":\"Icon\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"icon\":\"''home-outline''\"}],\"path\":\"\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+                 "IconSlot": "plain:end"
+                }'
+              tagName: ion-icon
+              ↓id [ngx.components.UIAttribute-1701427548007]: 
+                attrName: id
+                attrValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                    - MobileSmartSourceType: plain:end
 ↓dateStart [ngx.components.UICompVariable-1701369372611]: 
   autoEmit: true
 ↓dateEnd [ngx.components.UICompVariable-1701369391678]: 
+  autoEmit: true
+↓SharedComponent_Event [ngx.components.UISharedComponentEvent-1701426962909]: 
+  ↓CallSequence [ngx.components.UIDynamicAction-1701426971964]: 
+    beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:C8OBilling.GetBillingCustomers"}'
+    tagName: CallSequence
+↓customer [ngx.components.UICompVariable-1701427856934]: 
   autoEmit: true

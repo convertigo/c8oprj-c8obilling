@@ -1,0 +1,63 @@
+↓CardContainer [ngx.components.UIDynamicElement-1701426226729]: 
+  beanData: '{"ionBean":"Card"}'
+  tagName: ion-card
+  ↓CardContent [ngx.components.UIDynamicElement-1701426226732]: 
+    beanData: '{"ionBean":"CardContent"}'
+    tagName: ion-card-content
+    ↓Chart [ngx.components.UIDynamicElement-1701426226735]: 
+      beanData: |
+        '{
+         "ionBean": "Charts",
+         "datasets": "source:{\"filter\":\"Sequence\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"sequence\":\"C8OBilling.GetBillingUsersPerDay\",\"marker\":\"\"}],\"path\":\"?.data?.dataset\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+         "labels": "source:{\"filter\":\"Sequence\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"sequence\":\"C8OBilling.GetBillingUsersPerDay\",\"marker\":\"\"}],\"path\":\"?.data?.labels\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+         "Width": "plain:400px",
+         "Height": "plain:400px",
+         "Options": "script:{\n        plugins: {\n            title: {\n                display: true,\n                text: ''Active Users per day''\n            }\n        },\n        responsive: false,\n        maintainAspectRatio: false,\n        scales: {\n            ByDay: {\n                axis: ''y'',\n                id: ''ByDay'',\n                type: ''linear'',\n                position: ''right'',\n                beginAtZero: true\n            },\n            cumulated: {\n                axis: ''y'',\n                id: ''cumulated'',\n                type: ''linear'',\n                position: ''left'',\n                beginAtZero: true\n            }\n        }\n}\n",
+         "ChartType": "plain:line"
+        }'
+      tagName: canvas
+  ↓Style [ngx.components.UIStyle-1701426226738]: 
+    styleContent: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+          →: |
+            '/**
+             * Custom properties (sometimes referred to as CSS variables or cascading variables)
+             * are entities defined by CSS authors that contain specific values to be reused throughout a document.
+             * They are set using custom property notation, e.g.: --main-color: black;
+             * and are accessed using the var() function, e.g.: color: var(--main-color);
+             * You can find below your component''s properties you can customize within the page.
+             * If you''d like to make some customizations for whole app, please see your app Style & Theme components.
+             * For more informations see https://ionicframework.com/docs/theming.
+            **/
+            //--background	//Background of the card
+            //--color	//Color of the card
+            	width: 430px;
+            '
+↓SharedComponent_Event [ngx.components.UISharedComponentEvent-1701426226741]: 
+  componentEvent: onChanges
+  ↓CallSequence [ngx.components.UIDynamicAction-1701426226744]: 
+    beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:C8OBilling.GetBillingUsersPerDay"}'
+    tagName: CallSequence
+    ↓startDate [ngx.components.UIControlVariable-1701426226747]: 
+      comment: new variable
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695310419875,"regular":true}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+    ↓endDate [ngx.components.UIControlVariable-1701426226750]: 
+      comment: new variable
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695310419875,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+    ↓customerName [ngx.components.UIControlVariable-1701426226753]: 
+      comment: customerName
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701370684640,"regular":true}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
+↓dateStart [ngx.components.UICompVariable-1701426226756]: 
+↓dateEnd [ngx.components.UICompVariable-1701426226759]: 
+↓customerName [ngx.components.UICompVariable-1701426226762]: 

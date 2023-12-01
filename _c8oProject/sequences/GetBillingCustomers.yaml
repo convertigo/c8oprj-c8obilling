@@ -1,0 +1,29 @@
+↓inputVars [steps.InputVariablesStep-1701426670583]: 
+↓Call_Transaction [steps.TransactionStep-1701426670586]: 
+  sourceTransaction: C8OBilling.C8oBilling.ListCustomers
+  ↓customerName [variables.StepVariable-1701426670589]: 
+    comment: a Tenant customer name
+    description: customerName
+  ↓startDate [variables.StepVariable-1701426670592]: 
+    comment: a Start date in the YYYY-MM-DD format
+    description: startDate
+  ↓endDate [variables.StepVariable-1701426670595]: 
+    comment: An End date in the YYYY-MM-DD format
+    description: endDate
+↓Copy [steps.XMLCopyStep-1701426721197]: 
+  sourceDefinition: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - java.lang.String: 
+          - ↑value: 1701426670586
+        - java.lang.String: 
+          - ↑value: ./document/sql_output/row/customerName
+↓BookPlanet [core.TestCase]: 
+  ↓startDate [variables.TestCaseVariable-1701426670659]: 
+    value: 2023-11-01
+  ↓endDate [variables.TestCaseVariable-1701426670662]: 
+    value: 2023-12-30
+  ↓customerName [variables.TestCaseVariable-1701426670665]: 
+    description: customerName
+    value: bookplanet
