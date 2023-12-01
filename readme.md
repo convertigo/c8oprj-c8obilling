@@ -14,6 +14,7 @@ For more technical informations : [documentation](./project.md)
         - [Page](#page)
     - [Shared Components](#shared-components)
         - [AccountCreationChart](#accountcreationchart)
+        - [ConvertigoBillingUserChart](#convertigobillinguserchart)
         - [ConvertigoUsersChart](#convertigouserschart)
         - [DateselectionPanel](#dateselectionpanel)
         - [UserTable](#usertable)
@@ -64,6 +65,25 @@ My First Page as root page
 <table>
 <tr>
 <th>name</th><th>comment</th>
+</tr>
+<tr>
+<td>dateEnd</td><td></td>
+</tr>
+<tr>
+<td>dateStart</td><td></td>
+</tr>
+</table>
+
+#### ConvertigoBillingUserChart
+
+**variables**
+
+<table>
+<tr>
+<th>name</th><th>comment</th>
+</tr>
+<tr>
+<td>customerName</td><td></td>
 </tr>
 <tr>
 <td>dateEnd</td><td></td>

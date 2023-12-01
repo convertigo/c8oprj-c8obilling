@@ -27,12 +27,6 @@
         ↓GridCol [ngx.components.UIDynamicElement-1701369309124]: 
           beanData: '{"ionBean":"GridCol"}'
           tagName: ion-col
-          ↓some_text [ngx.components.UIText-1701369309127]: 
-            isEnabled: false
-            textValue: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
           ↓Modal [ngx.components.UIDynamicElement-1701369309130]: 
             beanData: '{"ionBean":"InlineModal","Trigger":"plain:start"}'
             tagName: ion-modal
@@ -126,12 +120,6 @@
         ↓GridCol1 [ngx.components.UIDynamicElement-1701369309172]: 
           beanData: '{"ionBean":"GridCol"}'
           tagName: ion-col
-          ↓some_text [ngx.components.UIText-1701369309175]: 
-            isEnabled: false
-            textValue: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
           ↓Modal [ngx.components.UIDynamicElement-1701369309178]: 
             beanData: '{"ionBean":"InlineModal","Trigger":"plain:end"}'
             tagName: ion-modal
@@ -226,4 +214,6 @@
                     - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
                     - MobileSmartSourceType: plain:end
 ↓dateStart [ngx.components.UICompVariable-1701369372611]: 
+  autoEmit: true
 ↓dateEnd [ngx.components.UICompVariable-1701369391678]: 
+  autoEmit: true

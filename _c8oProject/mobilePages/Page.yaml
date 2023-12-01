@@ -63,15 +63,17 @@ title: First page
   ↓tag [ngx.components.UIUseShared-1701369309219]: 
     sharedcomponent: C8OBilling.Application.NgxApp.DateselectionPanel
     ↓dateStart [ngx.components.UIUseVariable-1701369458636]: 
+      binding: twoWayBinding
       varValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+          - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateStart","prefix":"","suffix":"","custom":"local.dateStart","useCustom":true}}
     ↓dateEnd [ngx.components.UIUseVariable-1701369458638]: 
+      binding: twoWayBinding
       varValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+          - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"local.dateEnd","useCustom":true}}
   ↓Grid [ngx.components.UIDynamicElement-1694791330839]: 
     beanData: '{"ionBean":"Grid"}'
     tagName: ion-grid
@@ -80,10 +82,9 @@ title: First page
       tagName: ion-row
       ↓GridCol [ngx.components.UIDynamicElement-1694791330828]: 
         beanData: '{"ionBean":"GridCol"}'
-        isEnabled: false
         tagName: ion-col
         ↓tag [ngx.components.UIUseShared-1694779653965]: 
-          sharedcomponent: C8OBilling.Application.NgxApp.AccountCreationChart
+          sharedcomponent: C8OBilling.Application.NgxApp.ConvertigoBillingUserChart
           ↓dateStart [ngx.components.UIUseVariable-1694796831946]: 
             varValue: 
               - xmlizable: 
@@ -94,8 +95,14 @@ title: First page
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
                 - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+          ↓customerName [ngx.components.UIUseVariable-1701425285280]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'bookplanet'
       ↓GridCol1 [ngx.components.UIDynamicElement-1695310814513]: 
         beanData: '{"ionBean":"GridCol"}'
+        isEnabled: false
         tagName: ion-col
         ↓tag [ngx.components.UIUseShared-1695310814516]: 
           sharedcomponent: C8OBilling.Application.NgxApp.ConvertigoUsersChart
@@ -111,11 +118,13 @@ title: First page
                 - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
     ↓GridRow1 [ngx.components.UIDynamicElement-1695386677593]: 
       beanData: '{"ionBean":"GridRow"}'
+      isEnabled: false
       tagName: ion-row
       ↓GridCol [ngx.components.UIDynamicElement-1695386677595]: 
         beanData: '{"ionBean":"GridCol"}'
         tagName: ion-col
         ↓tag [ngx.components.UIUseShared-1695386699963]: 
+          isEnabled: false
           sharedcomponent: C8OBilling.Application.NgxApp.UserTable
 ↓Footer [ngx.components.UIDynamicElement-1491634242460]: 
   beanData: '{"ionBean":"Footer"}'
