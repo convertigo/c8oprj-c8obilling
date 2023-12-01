@@ -15,7 +15,7 @@ scriptContent:
         /*Begin_c8o_PageFunction*/
         	/*End_c8o_PageFunction*/
         
-segment: path-to-xfirst
+segment: Dashboard/:startDate/:endDate/:customerName
 title: First page
 ↓Header [ngx.components.UIDynamicElement-1491634212350]: 
   beanData: '{"ionBean":"Header"}'
@@ -166,12 +166,13 @@ title: First page
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:Action 2
 ↓PageEvent [ngx.components.UIPageEvent-1694796197073]: 
+  viewEvent: onWillLoad
   ↓SetLocal [ngx.components.UIDynamicAction-1694796207926]: 
     beanData: |
       '{
        "ionBean": "SetLocalAction",
        "Property": "plain:dateStart",
-       "Value": "script:new Date(new Date().getTime() - 365*24*3600*1000).toISOString().split(''T'')[0]"
+       "Value": "script:this.navParams.data.startDate ? this.navParams.data.startDate : new Date(new Date().getTime() - 365*24*3600*1000).toISOString().split(''T'')[0]"
       }'
     tagName: SetLocal
   ↓SetLocal1 [ngx.components.UIDynamicAction-1694796521150]: 
@@ -179,7 +180,7 @@ title: First page
       '{
        "ionBean": "SetLocalAction",
        "Property": "plain:dateEnd",
-       "Value": "script:new Date().toISOString().split(''T'')[0]"
+       "Value": "script:this.navParams.data.endDate ? this.navParams.data.endDate : new Date().toISOString().split(''T'')[0]"
       }'
     tagName: SetLocal
   ↓SetLocal2 [ngx.components.UIDynamicAction-1701428026864]: 
@@ -187,6 +188,6 @@ title: First page
       '{
        "ionBean": "SetLocalAction",
        "Property": "plain:customerName",
-       "Value": "script:''bookplanet''"
+       "Value": "script:this.navParams.data.customerName"
       }'
     tagName: SetLocal

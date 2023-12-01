@@ -11,7 +11,7 @@ For more technical informations : [documentation](./project.md)
 - [Installation](#installation)
 - [Mobile Application](#mobile-application)
     - [Pages](#pages)
-        - [Page](#page)
+        - [Dashboard](#dashboard)
     - [Shared Components](#shared-components)
         - [AccountCreationChart](#accountcreationchart)
         - [ConvertigoBillingConcurrentSessions](#convertigobillingconcurrentsessions)
@@ -53,7 +53,7 @@ Describes the mobile application global properties
 
 ### Pages
 
-#### Page
+#### Dashboard
 
 My First Page as root page
 
