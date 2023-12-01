@@ -12,7 +12,7 @@
          "labels": "source:{\"filter\":\"Sequence\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"sequence\":\"C8OBilling.GetBillingSessionsPerDay\",\"marker\":\"\"}],\"path\":\"?.data?.labels\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
          "Width": "plain:400px",
          "Height": "plain:400px",
-         "Options": "script:{\n        plugins: {\n            title: {\n                display: true,\n                text: ''Active Users per day''\n            }\n        },\n        responsive: true,\n        maintainAspectRatio: false\n}\n",
+         "Options": "script:{\n        plugins: {\n            title: {\n                display: true,\n                text: ''Concurrent Sessions by day''\n            }\n        },\n        responsive: true,\n        maintainAspectRatio: false\n}\n",
          "ChartType": "plain:line"
         }'
       tagName: canvas
