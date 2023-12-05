@@ -42,6 +42,13 @@
             </xsd:element>
         </xsd:sequence>
     </xsd:complexType>
+    <xsd:complexType name="C8oBilling_ComputeSessions_document_sql_output_row_EpochType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
     <xsd:complexType name="C8oBilling_ComputeSessions_document_sql_output_row_DateTimeType">
         <xsd:simpleContent>
             <xsd:extension base="xsd:string">
@@ -72,6 +79,7 @@
     </xsd:complexType>
     <xsd:complexType name="C8oBilling_ComputeSessions_document_sql_output_rowType">
         <xsd:sequence>
+            <xsd:element minOccurs="0" name="Epoch" type="C8OBilling_ns:C8oBilling_ComputeSessions_document_sql_output_row_EpochType"/>
             <xsd:element minOccurs="0" name="DateTime" type="C8OBilling_ns:C8oBilling_ComputeSessions_document_sql_output_row_DateTimeType"/>
             <xsd:element minOccurs="0" name="sessionID" type="C8OBilling_ns:C8oBilling_ComputeSessions_document_sql_output_row_sessionIDType"/>
             <xsd:element minOccurs="0" name="userName" type="C8OBilling_ns:C8oBilling_ComputeSessions_document_sql_output_row_userNameType"/>

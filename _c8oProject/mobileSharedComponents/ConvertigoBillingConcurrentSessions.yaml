@@ -1,3 +1,35 @@
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_CompImport*/
+        import 'chartjs-adapter-date-fns';
+        import {fr} from 'date-fns/locale';
+        /*End_c8o_CompImport*/
+        /*Begin_c8o_CompDeclaration*/
+        	/*End_c8o_CompDeclaration*/
+        /*Begin_c8o_CompConstructor*/
+        		/*End_c8o_CompConstructor*/
+        /*Begin_c8o_CompInitialization*/
+        		/*End_c8o_CompInitialization*/
+        /*Begin_c8o_CompFinalization*/
+        		/*End_c8o_CompFinalization*/
+        /*Begin_c8o_CompChanges*/
+        		/*End_c8o_CompChanges*/
+        /*Begin_c8o_CompDoCheck*/
+        		/*End_c8o_CompDoCheck*/
+        /*Begin_c8o_CompAfterContentInit*/
+        		/*End_c8o_CompAfterContentInit*/
+        /*Begin_c8o_CompAfterContentChecked*/
+        		/*End_c8o_CompAfterContentChecked*/
+        /*Begin_c8o_CompAfterViewInit*/
+        		/*End_c8o_CompAfterViewInit*/
+        /*Begin_c8o_CompAfterViewChecked*/
+        		/*End_c8o_CompAfterViewChecked*/
+        /*Begin_c8o_CompFunction*/
+        	/*End_c8o_CompFunction*/
+        
 ↓CardContainer [ngx.components.UIDynamicElement-1701426226729]: 
   beanData: '{"ionBean":"Card"}'
   tagName: ion-card
@@ -12,7 +44,7 @@
          "labels": "source:{\"filter\":\"Sequence\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"sequence\":\"C8OBilling.GetBillingSessionsPerDay\",\"marker\":\"\"}],\"path\":\"?.data?.labels\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
          "Width": "plain:400px",
          "Height": "plain:400px",
-         "Options": "script:{\n        plugins: {\n            title: {\n                display: true,\n                text: ''Concurrent Sessions by day''\n            }\n        },\n        responsive: true,\n        maintainAspectRatio: false\n}\n",
+         "Options": "script:{\r\n    plugins: {\r\n        title: {\r\n            display: true,\r\n            text: ''Concurrent Sessions by day''\r\n        }\r\n    },\r\n    responsive: true,\r\n    maintainAspectRatio: false,\r\n    scales: {\r\n        x: {\r\n            type: ''time'',\r\n            time: {\r\n                unit: ''month''\r\n            }\r\n        }\r\n    }\r\n}\r\n",
          "ChartType": "plain:line"
         }'
       tagName: canvas
@@ -58,6 +90,25 @@
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
           - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701370684640,"regular":true}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
+  ↓AddDateFnsPackages [ngx.components.UICustomAction-1701799051594]: 
+    package_dependencies: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: chartjs-adapter-date-fns
+              - java.lang.String: 
+                - ↑value: 3.0
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: date-fns
+              - java.lang.String: 
+                - ↑value: 2.3.0
 ↓dateStart [ngx.components.UICompVariable-1701426226756]: 
 ↓dateEnd [ngx.components.UICompVariable-1701426226759]: 
 ↓customerName [ngx.components.UICompVariable-1701426226762]: 

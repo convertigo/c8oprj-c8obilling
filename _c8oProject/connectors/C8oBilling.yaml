@@ -55,6 +55,7 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
             SessionEvents
     )
     SELECT 
+        ROUND(creationDate / 1000, 0) as Epoch, 
         FROM_UNIXTIME(creationDate / 1000) as DateTime, 
         sessionID,
         userName,
