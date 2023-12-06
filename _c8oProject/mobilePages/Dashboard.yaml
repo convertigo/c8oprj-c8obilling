@@ -136,6 +136,19 @@ title: First page
         ↓tag [ngx.components.UIUseShared-1695386699963]: 
           isEnabled: false
           sharedcomponent: C8OBilling.Application.NgxApp.UserTable
+    ↓GridRow2 [ngx.components.UIDynamicElement-1701880795976]: 
+      beanData: '{"ionBean":"GridRow"}'
+      tagName: ion-row
+      ↓GridCol [ngx.components.UIDynamicElement-1701880795965]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓tag [ngx.components.UIUseShared-1701880815419]: 
+          sharedcomponent: C8OBilling.Application.NgxApp.PieChart
+          ↓customerName [ngx.components.UIUseVariable-1701880830553]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:''
 ↓Footer [ngx.components.UIDynamicElement-1491634242460]: 
   beanData: '{"ionBean":"Footer"}'
   comment: Page footer

@@ -11,6 +11,7 @@
   ↓GetBillingCustomers [sequences.GenericSequence]: 🗏 sequences/GetBillingCustomers.yaml
   ↓GetBillingSessionsPerDay [sequences.GenericSequence]: 🗏 sequences/GetBillingSessionsPerDay.yaml
   ↓GetBillingUsersPerDay [sequences.GenericSequence]: 🗏 sequences/GetBillingUsersPerDay.yaml
+  ↓GetPercentageUser [sequences.GenericSequence]: 🗏 sequences/GetPercentageUser.yaml
   ↓GetUsersByDay [sequences.GenericSequence]: 🗏 sequences/GetUsersByDay.yaml
   ↓GetUserTable [sequences.GenericSequence]: 🗏 sequences/GetUserTable.yaml
   ↓project [references.ProjectSchemaReference]: 
