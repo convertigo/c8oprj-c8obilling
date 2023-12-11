@@ -3,6 +3,10 @@
   sourceTransaction: C8OBilling.C8oBilling.ListUserAgents
   ↓customerName [variables.StepVariable-1701855720971]: 
     description: customerName
+  ↓startDate [variables.StepVariable-1702304785451]: 
+    description: startDate
+  ↓endDate [variables.StepVariable-1702304785453]: 
+    description: endDate
 ↓data [steps.JsonObjectStep-1701855646087]: 
   key: 
     - xmlizable: 
@@ -172,7 +176,51 @@
               - SmartType: 
                 - ↑mode: PLAIN
                 - →→: rgb(255, 0, 255)
+      ↓startDate [steps.JsonFieldStep-1702307503800]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: startDate
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: SOURCE
+              - com.twinsoft.convertigo.beans.common.XMLVector: 
+                - java.lang.String: 
+                  - ↑value: 1701855669135
+                - java.lang.String: 
+                  - ↑value: ./startDate/text()
+      ↓endDate [steps.JsonFieldStep-1702307513794]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: endDate
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: SOURCE
+              - com.twinsoft.convertigo.beans.common.XMLVector: 
+                - java.lang.String: 
+                  - ↑value: 1701855669135
+                - java.lang.String: 
+                  - ↑value: ./endDate/text()
 ↓customerName [variables.RequestableVariable-1701858494458]: 
+↓startDate [variables.RequestableVariable-1702304809112]: 
+  description: startDate
+↓endDate [variables.RequestableVariable-1702304809114]: 
+  description: endDate
 ↓Bookplanet [core.TestCase]: 
   ↓customerName [variables.TestCaseVariable-1701859644797]: 
     value: bookplanet
+  ↓startDate [variables.TestCaseVariable-1702304985450]: 
+    description: startDate
+    value: 2023-11-03
+  ↓endDate [variables.TestCaseVariable-1702304985452]: 
+    description: endDate
+    value: 2023-11-12

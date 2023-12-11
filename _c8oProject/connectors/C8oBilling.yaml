@@ -193,7 +193,9 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
     SELECT 
         Platform,
         Total,
-        (Total * 100.0 / (SELECT COUNT(*) FROM Ticket)) AS Percentage
+        (Total * 100.0 / (SELECT COUNT(*) FROM Ticket)) AS Percentage,
+        FROM_UNIXTIME(UNIX_TIMESTAMP('{startDate}') * 1000) AS DateStart,
+        FROM_UNIXTIME(UNIX_TIMESTAMP('{endDate}') * 1000) AS DateEnd
     FROM 
         (SELECT 
             CASE
@@ -208,8 +210,8 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
             Ticket
     	WHERE
     		customerName = '{customerName}'
-            AND
-            (connectorName = 'start' OR connectorName = 'stop')
+            AND (connectorName = 'start' OR connectorName = 'stop')
+            AND creationDate BETWEEN (UNIX_TIMESTAMP('{startDate}') * 1000) AND (UNIX_TIMESTAMP('{endDate}') * 1000)
         GROUP BY 
             Platform) AS SubQuery;
     
@@ -217,8 +219,18 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
     ↓customerName [variables.TestCaseVariable-1701022466248]: 
       description: customerName
       value: bookplanet
+    ↓startDate [variables.TestCaseVariable-1702305091657]: 
+      description: startDate
+      value: 2023-11-03
+    ↓endDate [variables.TestCaseVariable-1702305091659]: 
+      description: endDate
+      value: 2023-11-12
   ↓customerName [variables.RequestableVariable-1701022451995]: 
     description: customerName
+  ↓startDate [variables.RequestableVariable-1702304703870]: 
+    description: startDate
+  ↓endDate [variables.RequestableVariable-1702304703872]: 
+    description: endDate
 ↓ListUsers [transactions.SqlTransaction-1701018823748]: 
   comment: Give a table of all session starts and stops and the date/time they occured
   sqlQuery: |

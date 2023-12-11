@@ -51,8 +51,11 @@
                        "ionBean": "DateTime",
                        "ControlName": "plain:name1695137115833",
                        "DoubleBinding": "source:{\"filter\":\"Local\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"localObject\":\"local\"}],\"path\":\"?.dateStart\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+                       "DoneText": "plain:Done",
                        "Locale": "plain:fr-FR",
-                       "Presentation": "plain:date"
+                       "Presentation": "plain:date",
+                       "ShowDefaultButtons": "plain:true",
+                       "Size": "plain:cover"
                       }'
                     tagName: ion-datetime
                 ↓GridCol2 [ngx.components.UIDynamicElement-1701369309151]: 
