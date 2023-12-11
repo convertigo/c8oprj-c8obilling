@@ -1,38 +1,14 @@
 ↓inputVars [steps.InputVariablesStep-1695387694837]: 
 ↓Call_Transaction [steps.TransactionStep-1695387694840]: 
-  sourceTransaction: C8OBilling.lib_usermanager_fullsync.GetUserTable
-  ↓_use_startkey [variables.StepVariable-1695387694843]: 
-    description: (string) – Return records starting with the specified key. Optional
-    sourceDefinition: 
-      - xmlizable: 
-        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
-        - com.twinsoft.convertigo.beans.common.XMLVector: 
-          - java.lang.String: 
-            - ↑value: 1695387694837
-          - java.lang.String: 
-            - ↑value: ./startDate/text()
-  ↓_use_endkey [variables.StepVariable-1695387694846]: 
-    description: (string) – Stop returning records when the specified key is reached. Optional
-    sourceDefinition: 
-      - xmlizable: 
-        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
-        - com.twinsoft.convertigo.beans.common.XMLVector: 
-          - java.lang.String: 
-            - ↑value: 1695387694837
-          - java.lang.String: 
-            - ↑value: ./endDate/text()
-↓complex [steps.XMLComplexStep-1695387694849]: 
-  nodeName: backend-data
-  ↓Copy [steps.XMLCopyStep-1695387694852]: 
-    output: false
-    sourceDefinition: 
-      - xmlizable: 
-        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
-        - com.twinsoft.convertigo.beans.common.XMLVector: 
-          - java.lang.String: 
-            - ↑value: 1695387694840
-          - java.lang.String: 
-            - ↑value: ./document/couchdb_output
+  sourceTransaction: C8OBilling.C8oBilling.ListUsers
+  ↓customerName [variables.StepVariable-1702297045418]: 
+    description: customerName
+  ↓startDate [variables.StepVariable-1702297045420]: 
+    comment: a Start date in the YYYY-MM-DD format
+    description: startDate
+  ↓endDate [variables.StepVariable-1702297045422]: 
+    comment: An End date in the YYYY-MM-DD format
+    description: endDate
 ↓object [steps.JsonObjectStep-1695387694855]: 
   key: 
     - xmlizable: 
@@ -67,7 +43,7 @@
             - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
             - SmartType: 
               - ↑mode: PLAIN
-              - →→: value.lastConnected
+              - →→: DateTime
     ↓object1 [steps.JsonObjectStep-1695387955323]: 
       ↓headerName [steps.JsonFieldStep-1695387955326]: 
         key: 
@@ -81,14 +57,14 @@
             - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
             - SmartType: 
               - ↑mode: PLAIN
-              - →→: Identity provider
+              - →→: SessionID
       ↓field [steps.JsonFieldStep-1695387955329]: 
         value: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
             - SmartType: 
               - ↑mode: PLAIN
-              - →→: value.provider
+              - →→: sessionID
     ↓object2 [steps.JsonObjectStep-1695387989763]: 
       ↓headerName [steps.JsonFieldStep-1695387989766]: 
         key: 
@@ -102,22 +78,39 @@
             - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
             - SmartType: 
               - ↑mode: PLAIN
-              - →→: User email id
+              - →→: User
       ↓field [steps.JsonFieldStep-1695387989769]: 
         value: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
             - SmartType: 
               - ↑mode: PLAIN
-              - →→: value.email
-  ↓Copy [steps.XMLCopyStep-1695388053735]: 
-    sourceDefinition: 
+              - →→: userName
+  ↓array1 [steps.JsonArrayStep-1702297526596]: 
+    key: 
       - xmlizable: 
-        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
-        - com.twinsoft.convertigo.beans.common.XMLVector: 
-          - java.lang.String: 
-            - ↑value: 1695387694840
-          - java.lang.String: 
-            - ↑value: ./document/couchdb_output/rows
+        - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+        - SmartType: 
+          - ↑mode: PLAIN
+          - →→: values
+    ↓Copy [steps.XMLCopyStep-1695388053735]: 
+      sourceDefinition: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+          - com.twinsoft.convertigo.beans.common.XMLVector: 
+            - java.lang.String: 
+              - ↑value: 1695387694840
+            - java.lang.String: 
+              - ↑value: ./document/sql_output/row
 ↓startDate [variables.RequestableVariable-1695387694915]: 
 ↓endDate [variables.RequestableVariable-1695387694918]: 
+↓customerName [variables.RequestableVariable-1702298021616]: 
+  description: customerName
+↓BookPlanet [core.TestCase]: 
+  ↓startDate [variables.TestCaseVariable-1702297215118]: 
+    value: 2023-12-01
+  ↓endDate [variables.TestCaseVariable-1702297215121]: 
+    value: 2023-12-30
+  ↓customerName [variables.TestCaseVariable-1702297215124]: 
+    description: customerName
+    value: bookplanet
