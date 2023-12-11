@@ -18,6 +18,7 @@ For more technical informations : [documentation](./project.md)
         - [ConvertigoBillingUserChart](#convertigobillinguserchart)
         - [ConvertigoUsersChart](#convertigouserschart)
         - [DateselectionPanel](#dateselectionpanel)
+        - [PieChart](#piechart)
         - [UserTable](#usertable)
 
 
@@ -148,7 +149,37 @@ My First Page as root page
 </tr>
 </table>
 
+#### PieChart
+
+**variables**
+
+<table>
+<tr>
+<th>name</th><th>comment</th>
+</tr>
+<tr>
+<td>customerName</td><td></td>
+</tr>
+</table>
+
 #### UserTable
+
+**variables**
+
+<table>
+<tr>
+<th>name</th><th>comment</th>
+</tr>
+<tr>
+<td>customerName</td><td></td>
+</tr>
+<tr>
+<td>dateEnd</td><td></td>
+</tr>
+<tr>
+<td>dateStart</td><td></td>
+</tr>
+</table>
 
 
 

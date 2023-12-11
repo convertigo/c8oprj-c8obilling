@@ -147,3 +147,6 @@
   ↓CallSequence [ngx.components.UIDynamicAction-1695389882896]: 
     beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:C8OBilling.GetUserTable"}'
     tagName: CallSequence
+↓dateStart [ngx.components.UICompVariable-1702295805771]: 
+↓dateEnd [ngx.components.UICompVariable-1702295805774]: 
+↓customerName [ngx.components.UICompVariable-1702295805777]: 

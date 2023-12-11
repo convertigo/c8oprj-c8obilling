@@ -219,6 +219,54 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
       value: bookplanet
   ↓customerName [variables.RequestableVariable-1701022451995]: 
     description: customerName
+↓ListUsers [transactions.SqlTransaction-1701018823748]: 
+  comment: Give a table of all session starts and stops and the date/time they occured
+  sqlQuery: |
+    SELECT 
+    	customerName,
+    	from_unixtime(creationDate / 1000) AS DateTime,
+    	userName,
+    	sessionID
+    FROM
+    	c8oAnalytics.Ticket
+    WHERE
+    	customerName ='{customerName}'
+    AND
+    	userName <> ''
+    AND
+    	connectorName = 'stop'
+    AND
+            	creationDate
+    		BETWEEN
+    			UNIX_TIMESTAMP('{startDate}') * 1000
+                	AND
+                		UNIX_TIMESTAMP('{endDate}') * 1000
+    
+    ORDER BY
+    	creationDate	
+    
+  ↓Bookplanet [core.TestCase]: 
+    ↓customerName [variables.TestCaseVariable-1702295871260]: 
+      description: customerName
+      value: bookplanet
+    ↓startDate [variables.TestCaseVariable-1702295926128]: 
+      description: startDate
+      value: 2023-12-01
+    ↓endDate [variables.TestCaseVariable-1702295926130]: 
+      description: endDate
+      value: 2023-12-30
+  ↓Trialnocode [core.TestCase]: 
+    ↓customerName [variables.TestCaseVariable-1702295871264]: 
+      description: customerName
+      value: trial-nocode
+  ↓customerName [variables.RequestableVariable-1702295871267]: 
+    description: customerName
+  ↓startDate [variables.RequestableVariable-1702295909582]: 
+    comment: a Start date in the YYYY-MM-DD format
+    description: startDate
+  ↓endDate [variables.RequestableVariable-1702295909585]: 
+    comment: An End date in the YYYY-MM-DD format
+    description: endDate
 ↓ListUsersPerDay [transactions.SqlTransaction-1701018823748]: 
   comment: List all users by day they first appear
   sqlQuery: |
