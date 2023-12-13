@@ -110,7 +110,7 @@ title: First page
         beanData: '{"ionBean":"GridCol"}'
         tagName: ion-col
         ↓tag [ngx.components.UIUseShared-1695310814516]: 
-          sharedcomponent: C8OBilling.Application.NgxApp.ConvertigoBillingConcurrentSessions
+          sharedcomponent: C8OBilling.Application.NgxApp.ConvertigoBillingConcurrentSessionsForApex
           ↓dateStart [ngx.components.UIUseVariable-1695310814519]: 
             varValue: 
               - xmlizable: 
@@ -224,6 +224,6 @@ title: First page
       '{
        "ionBean": "SetLocalAction",
        "Property": "plain:customerName",
-       "Value": "script:this.navParams.data.customerName"
+       "Value": "script:this.navParams.data.customerName ? \r\n\tthis.navParams.data.customerName :\r\n\t''bookplanet''"
       }'
     tagName: SetLocal

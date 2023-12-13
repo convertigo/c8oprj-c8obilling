@@ -1,0 +1,141 @@
+↓inputVars [steps.InputVariablesStep-1702400872255]: 
+↓Call_Transaction [steps.TransactionStep-1702400872258]: 
+  sourceTransaction: C8OBilling.C8oBilling.ComputeSessions
+  ↓customerName [variables.StepVariable-1702400872261]: 
+    comment: a Tenant customer name
+    description: customerName
+  ↓startDate [variables.StepVariable-1702400872264]: 
+    comment: a Start date in the YYYY-MM-DD format
+    description: startDate
+  ↓endDate [variables.StepVariable-1702400872267]: 
+    comment: An End date in the YYYY-MM-DD format
+    description: endDate
+↓options [steps.JsonObjectStep-1702464591059]: 
+  key: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: PLAIN
+        - →→: options
+  ↓chart [steps.JsonObjectStep-1702476107281]: 
+    key: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+        - SmartType: 
+          - ↑mode: PLAIN
+          - →→: chart
+    ↓type [steps.JsonFieldStep-1702476118468]: 
+      key: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: type
+      value: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: line
+  ↓series [steps.JsonArrayStep-1702461736772]: 
+    key: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+        - SmartType: 
+          - ↑mode: PLAIN
+          - →→: series
+    ↓object [steps.JsonObjectStep-1702461778656]: 
+      ↓data [steps.JsonArrayStep-1702461799317]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: data
+        ↓Iterator [steps.IteratorStep-1702462162022]: 
+          sourceDefinition: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+              - com.twinsoft.convertigo.beans.common.XMLVector: 
+                - java.lang.String: 
+                  - ↑value: 1702400872258
+                - java.lang.String: 
+                  - ↑value: ./document/sql_output/row
+          ↓field [steps.JsonFieldStep-1702463755037]: 
+            type: number
+            value: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+                - SmartType: 
+                  - ↑mode: SOURCE
+                  - com.twinsoft.convertigo.beans.common.XMLVector: 
+                    - java.lang.String: 
+                      - ↑value: 1702462162022
+                    - java.lang.String: 
+                      - ↑value: ./concurrentSessions/text()
+  ↓xaxis [steps.JsonObjectStep-1702461811324]: 
+    key: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+        - SmartType: 
+          - ↑mode: PLAIN
+          - →→: xaxis
+    ↓type [steps.JsonFieldStep-1702477271357]: 
+      key: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: type
+      value: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: datetime
+    ↓categories [steps.JsonArrayStep-1702462153070]: 
+      key: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: categories
+      ↓Iterator [steps.IteratorStep-1702463115342]: 
+        sourceDefinition: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: 1702400872258
+              - java.lang.String: 
+                - ↑value: ./document/sql_output/row
+        ↓field [steps.JsonFieldStep-1702462258062]: 
+          key: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+              - SmartType: 
+                - ↑mode: PLAIN
+                - →→: Day
+          value: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+              - SmartType: 
+                - ↑mode: SOURCE
+                - com.twinsoft.convertigo.beans.common.XMLVector: 
+                  - java.lang.String: 
+                    - ↑value: 1702463115342
+                  - java.lang.String: 
+                    - ↑value: ./DateTime/text()
+↓startDate [variables.RequestableVariable-1702400872303]: 
+↓endDate [variables.RequestableVariable-1702400872306]: 
+↓customerName [variables.RequestableVariable-1702400872309]: 
+  comment: a Tenant customer name
+  description: customerName
+↓BookPlanet [core.TestCase]: 
+  ↓startDate [variables.TestCaseVariable-1702400872313]: 
+    value: 2023-11-01
+  ↓endDate [variables.TestCaseVariable-1702400872316]: 
+    value: 2023-12-01
+  ↓customerName [variables.TestCaseVariable-1702400872319]: 
+    description: customerName
+    value: bookplanet
