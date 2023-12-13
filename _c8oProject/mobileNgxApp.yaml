@@ -67,11 +67,11 @@ tplProjectName: mobilebuilder_tpl_8_1_0_ngx
 ↓AccountCreationChart [ngx.components.UISharedRegularComponent-1694779619306]: 🗏 mobileSharedComponents/AccountCreationChart.yaml
 ↓ConvertigoUsersChart [ngx.components.UISharedRegularComponent-1695310419875]: 🗏 mobileSharedComponents/ConvertigoUsersChart.yaml
 ↓ConvertigoBillingUserChart [ngx.components.UISharedRegularComponent-1701370684640]: 🗏 mobileSharedComponents/ConvertigoBillingUserChart.yaml
-↓ConvertigoBillingConcurrentSessions [ngx.components.UISharedRegularComponent-1701426226726]: 🗏 mobileSharedComponents/ConvertigoBillingConcurrentSessions.yaml
 ↓UserTable [ngx.components.UISharedRegularComponent-1695386269421]: 🗏 mobileSharedComponents/UserTable.yaml
 ↓DateselectionPanel [ngx.components.UISharedRegularComponent-1701369309078]: 🗏 mobileSharedComponents/DateselectionPanel.yaml
 ↓PieChart [ngx.components.UISharedRegularComponent-1701857037776]: 🗏 mobileSharedComponents/PieChart.yaml
 ↓ConvertigoBillingConcurrentSessionsForApex [ngx.components.UISharedRegularComponent-1702400403612]: 🗏 mobileSharedComponents/ConvertigoBillingConcurrentSessionsForApex.yaml
+↓ConvertigoBillingUserChartForApex [ngx.components.UISharedRegularComponent-1702477891967]: 🗏 mobileSharedComponents/ConvertigoBillingUserChartForApex.yaml
 ↓Dashboard [ngx.components.PageComponent-1500538678074]: 🗏 mobilePages/Dashboard.yaml
 ↓Style [ngx.components.UIStyle-1491635462437]: 
   comment: You can add some global application styles here

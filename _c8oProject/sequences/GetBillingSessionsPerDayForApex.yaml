@@ -80,7 +80,7 @@
         - SmartType: 
           - ↑mode: PLAIN
           - →→: xaxis
-    ↓type [steps.JsonFieldStep-1702477271357]: 
+    ↓type [steps.JsonFieldStep-1702487676614]: 
       key: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType

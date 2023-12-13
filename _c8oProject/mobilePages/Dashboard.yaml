@@ -90,7 +90,7 @@ title: First page
         beanData: '{"ionBean":"GridCol"}'
         tagName: ion-col
         ↓tag [ngx.components.UIUseShared-1694779653965]: 
-          sharedcomponent: C8OBilling.Application.NgxApp.ConvertigoBillingUserChart
+          sharedcomponent: C8OBilling.Application.NgxApp.ConvertigoBillingUserChartForApex
           ↓dateStart [ngx.components.UIUseVariable-1694796831946]: 
             varValue: 
               - xmlizable: 

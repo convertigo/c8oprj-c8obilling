@@ -9,9 +9,9 @@
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
   ↓GetAccountCreationsByDay [sequences.GenericSequence]: 🗏 sequences/GetAccountCreationsByDay.yaml
   ↓GetBillingCustomers [sequences.GenericSequence]: 🗏 sequences/GetBillingCustomers.yaml
-  ↓GetBillingSessionsPerDay [sequences.GenericSequence]: 🗏 sequences/GetBillingSessionsPerDay.yaml
   ↓GetBillingSessionsPerDayForApex [sequences.GenericSequence]: 🗏 sequences/GetBillingSessionsPerDayForApex.yaml
   ↓GetBillingUsersPerDay [sequences.GenericSequence]: 🗏 sequences/GetBillingUsersPerDay.yaml
+  ↓GetBillingUsersPerDayForApex [sequences.GenericSequence]: 🗏 sequences/GetBillingUsersPerDayForApex.yaml
   ↓GetPercentageUser [sequences.GenericSequence]: 🗏 sequences/GetPercentageUser.yaml
   ↓GetUsersByDay [sequences.GenericSequence]: 🗏 sequences/GetUsersByDay.yaml
   ↓GetUserTable [sequences.GenericSequence]: 🗏 sequences/GetUserTable.yaml
