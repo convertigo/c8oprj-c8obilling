@@ -149,6 +149,19 @@
         - SmartType: 
           - ↑mode: PLAIN
           - →→: xaxis
+    ↓type [steps.JsonFieldStep-1702488555349]: 
+      key: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: type
+      value: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: datetime
     ↓categories [steps.JsonArrayStep-1702477986566]: 
       key: 
         - xmlizable: 
