@@ -73,6 +73,19 @@
                       - ↑value: 1702462162022
                     - java.lang.String: 
                       - ↑value: ./concurrentSessions/text()
+      ↓name [steps.JsonFieldStep-1702535017238]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: name
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: Concurrent Sessions
   ↓xaxis [steps.JsonObjectStep-1702461811324]: 
     key: 
       - xmlizable: 

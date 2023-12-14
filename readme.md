@@ -14,8 +14,9 @@ For more technical informations : [documentation](./project.md)
         - [Dashboard](#dashboard)
     - [Shared Components](#shared-components)
         - [AccountCreationChart](#accountcreationchart)
-        - [ConvertigoBillingConcurrentSessions](#convertigobillingconcurrentsessions)
+        - [ConvertigoBillingConcurrentSessionsForApex](#convertigobillingconcurrentsessionsforapex)
         - [ConvertigoBillingUserChart](#convertigobillinguserchart)
+        - [ConvertigoBillingUserChartForApex](#convertigobillinguserchartforapex)
         - [ConvertigoUsersChart](#convertigouserschart)
         - [DateselectionPanel](#dateselectionpanel)
         - [PieChart](#piechart)
@@ -76,7 +77,7 @@ My First Page as root page
 </tr>
 </table>
 
-#### ConvertigoBillingConcurrentSessions
+#### ConvertigoBillingConcurrentSessionsForApex
 
 **variables**
 
@@ -96,6 +97,25 @@ My First Page as root page
 </table>
 
 #### ConvertigoBillingUserChart
+
+**variables**
+
+<table>
+<tr>
+<th>name</th><th>comment</th>
+</tr>
+<tr>
+<td>customerName</td><td></td>
+</tr>
+<tr>
+<td>dateEnd</td><td></td>
+</tr>
+<tr>
+<td>dateStart</td><td></td>
+</tr>
+</table>
+
+#### ConvertigoBillingUserChartForApex
 
 **variables**
 
@@ -159,6 +179,12 @@ My First Page as root page
 </tr>
 <tr>
 <td>customerName</td><td></td>
+</tr>
+<tr>
+<td>dateEnd</td><td></td>
+</tr>
+<tr>
+<td>dateStart</td><td></td>
 </tr>
 </table>
 

@@ -72,6 +72,19 @@
             - SmartType: 
               - ↑mode: PLAIN
               - →→: line
+      ↓name [steps.JsonFieldStep-1702534910916]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: name
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: Cumulated Users
       ↓data [steps.JsonArrayStep-1702477986551]: 
         key: 
           - xmlizable: 
@@ -114,6 +127,19 @@
             - SmartType: 
               - ↑mode: PLAIN
               - →→: line
+      ↓name [steps.JsonFieldStep-1702534948587]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: name
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: New Users
       ↓data [steps.JsonArrayStep-1702478269002]: 
         key: 
           - xmlizable: 

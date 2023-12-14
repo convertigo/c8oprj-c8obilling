@@ -11,13 +11,13 @@
       varValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: script:false
+          - MobileSmartSourceType: script:true
     ↓paginationPageSize [ngx.components.UIUseVariable-1695386752123]: 
       comment: 'integer: 10 by default'
       varValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: script:10
+          - MobileSmartSourceType: script:20
     ↓rowSelection [ngx.components.UIUseVariable-1695386752125]: 
       comment: 'string: ''single'' (default) or ''multiple'''
       varValue: 

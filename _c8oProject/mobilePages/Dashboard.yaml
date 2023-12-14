@@ -57,7 +57,7 @@ title: First page
             }'
           tagName: ion-icon
 ↓Content [ngx.components.UIDynamicElement-1489674805352]: 
-  beanData: '{"ionBean":"Content"}'
+  beanData: '{"ionBean":"Content","Padding":"plain:ion-no-padding"}'
   comment: Page content
   tagName: ion-content
   ↓tag [ngx.components.UIUseShared-1701369309219]: 
@@ -84,7 +84,7 @@ title: First page
     beanData: '{"ionBean":"Grid"}'
     tagName: ion-grid
     ↓GridRow [ngx.components.UIDynamicElement-1694791330826]: 
-      beanData: '{"ionBean":"GridRow"}'
+      beanData: '{"ionBean":"GridRow","Height":"plain"}'
       tagName: ion-row
       ↓GridCol [ngx.components.UIDynamicElement-1694791330828]: 
         beanData: '{"ionBean":"GridCol"}'
@@ -127,32 +127,9 @@ title: First page
                 - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
                 - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
     ↓GridRow2 [ngx.components.UIDynamicElement-1701880795976]: 
-      beanData: '{"ionBean":"GridRow"}'
+      beanData: '{"ionBean":"GridRow","Height":"plain"}'
       tagName: ion-row
-      ↓GridCol [ngx.components.UIDynamicElement-1701880795965]: 
-        beanData: '{"ionBean":"GridCol"}'
-        tagName: ion-col
-        ↓tag [ngx.components.UIUseShared-1701880815419]: 
-          sharedcomponent: C8OBilling.Application.NgxApp.PieChart
-          ↓customerName [ngx.components.UIUseVariable-1701880830553]: 
-            varValue: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
-          ↓dateStart [ngx.components.UIUseVariable-1702311163855]: 
-            varValue: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
-          ↓dateEnd [ngx.components.UIUseVariable-1702311163857]: 
-            varValue: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
-    ↓GridRow1 [ngx.components.UIDynamicElement-1695386677593]: 
-      beanData: '{"ionBean":"GridRow"}'
-      tagName: ion-row
-      ↓GridCol [ngx.components.UIDynamicElement-1695386677595]: 
+      ↓GridCol1 [ngx.components.UIDynamicElement-1695386677595]: 
         beanData: '{"ionBean":"GridCol"}'
         tagName: ion-col
         ↓tag [ngx.components.UIUseShared-1695386699963]: 
@@ -172,6 +149,26 @@ title: First page
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
                 - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓GridCol [ngx.components.UIDynamicElement-1701880795965]: 
+        beanData: '{"ionBean":"GridCol","Size":"plain:3"}'
+        tagName: ion-col
+        ↓tag [ngx.components.UIUseShared-1701880815419]: 
+          sharedcomponent: C8OBilling.Application.NgxApp.PieChart
+          ↓customerName [ngx.components.UIUseVariable-1701880830553]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
+          ↓dateStart [ngx.components.UIUseVariable-1702311163855]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+          ↓dateEnd [ngx.components.UIUseVariable-1702311163857]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
 ↓Footer [ngx.components.UIDynamicElement-1491634242460]: 
   beanData: '{"ionBean":"Footer"}'
   comment: Page footer
