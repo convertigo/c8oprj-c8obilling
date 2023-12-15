@@ -36,7 +36,7 @@
           - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
           - SmartType: 
             - ↑mode: PLAIN
-            - →→: line
+            - →→: area
   ↓series [steps.JsonArrayStep-1702461736772]: 
     key: 
       - xmlizable: 
