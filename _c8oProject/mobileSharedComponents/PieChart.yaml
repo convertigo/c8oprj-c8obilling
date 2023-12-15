@@ -1,7 +1,12 @@
 ↓compChanges [ngx.components.UISharedComponentEvent-1701857096200]: 
   componentEvent: onChanges
   ↓CallSequence [ngx.components.UIDynamicAction-1701857229330]: 
-    beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:C8OBilling.GetPercentageUser"}'
+    beanData: |
+      '{
+       "ionBean": "CallSequenceAction",
+       "requestable": "plain:C8OBilling.GetPercentageUser",
+       "noLoading": "plain:true"
+      }'
     tagName: CallSequence
     ↓customerName [ngx.components.UIControlVariable-1701858707043]: 
       comment: new variable

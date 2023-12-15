@@ -16,7 +16,7 @@ scriptContent:
         	/*End_c8o_PageFunction*/
         
 segment: Dashboard/:startDate/:endDate/:customerName
-title: First page
+title: Customer Insights
 ↓Header [ngx.components.UIDynamicElement-1491634212350]: 
   beanData: '{"ionBean":"Header"}'
   comment: Page header
