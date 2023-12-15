@@ -50,7 +50,7 @@
                       '{
                        "ionBean": "DateTime",
                        "ControlName": "plain:name1695137115833",
-                       "DoubleBinding": "source:{\"filter\":\"Local\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"localObject\":\"local\"}],\"path\":\"?.dateStart\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+                       "DoubleBinding": "source:{\"filter\":\"Shared\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"priority\":1701369309078,\"regular\":true}],\"path\":\"?.dateStart\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
                        "DoneText": "plain:Done",
                        "Locale": "plain:fr-FR",
                        "Presentation": "plain:date",
@@ -146,7 +146,7 @@
                       '{
                        "ionBean": "DateTime",
                        "ControlName": "plain:name1695137115833",
-                       "DoubleBinding": "source:{\"filter\":\"Local\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"localObject\":\"local\"}],\"path\":\"?.dateEnd\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+                       "DoubleBinding": "source:{\"filter\":\"Shared\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"priority\":1701369309078,\"regular\":true}],\"path\":\"?.dateEnd\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
                        "DoneText": "plain:Done",
                        "Locale": "plain:fr-FR",
                        "Presentation": "plain:date",
