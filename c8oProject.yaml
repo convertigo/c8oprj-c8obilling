@@ -2,7 +2,7 @@
 ↓C8OBilling [core.Project]: 
   comment: Convertigo NGX builder Project
   corsOrigin: =Origin
-  version: 1.0
+  version: 1.2
   ↓C8oBilling [connectors.SqlConnector]: 🗏 connectors/C8oBilling.yaml
   ↓c8ocloudsignup_fullsync [connectors.FullSyncConnector]: 🗏 connectors/c8ocloudsignup_fullsync.yaml
   ↓lib_usermanager_fullsync [connectors.FullSyncConnector]: 🗏 connectors/lib_usermanager_fullsync.yaml

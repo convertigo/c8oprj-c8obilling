@@ -149,32 +149,35 @@
             '
 ↓SharedComponent_Event [ngx.components.UISharedComponentEvent-1702477891982]: 
   componentEvent: onChanges
-  ↓CallSequence [ngx.components.UIDynamicAction-1702477891985]: 
-    beanData: |
-      '{
-       "ionBean": "CallSequenceAction",
-       "requestable": "plain:C8OBilling.GetBillingUsersPerDayForApex",
-       "noLoading": "plain:true"
-      }'
-    tagName: CallSequence
-    ↓startDate [ngx.components.UIControlVariable-1702477891988]: 
-      comment: new variable
-      varValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695310419875,"regular":true}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
-    ↓endDate [ngx.components.UIControlVariable-1702477891991]: 
-      comment: new variable
-      varValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695310419875,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
-    ↓customerName [ngx.components.UIControlVariable-1702477891994]: 
-      comment: customerName
-      varValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701370684640,"regular":true}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
+  ↓ClearDataSource [ngx.components.UIDynamicAction-1702757921481]: 
+    beanData: '{"ionBean":"ClearDataSourceAction","requestables":"source:{\"filter\":\"Sequence\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"sequence\":\"C8OBilling.GetBillingUsersPerDayForApex\",\"marker\":\"\"}],\"path\":\"\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}"}'
+    tagName: ClearDataSource
+    ↓CallSequence [ngx.components.UIDynamicAction-1702477891985]: 
+      beanData: |
+        '{
+         "ionBean": "CallSequenceAction",
+         "requestable": "plain:C8OBilling.GetBillingUsersPerDayForApex",
+         "noLoading": "plain:true"
+        }'
+      tagName: CallSequence
+      ↓startDate [ngx.components.UIControlVariable-1702477891988]: 
+        comment: new variable
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695310419875,"regular":true}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓endDate [ngx.components.UIControlVariable-1702477891991]: 
+        comment: new variable
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695310419875,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓customerName [ngx.components.UIControlVariable-1702477891994]: 
+        comment: customerName
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701370684640,"regular":true}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
 ↓dateStart [ngx.components.UICompVariable-1702477891997]: 
 ↓dateEnd [ngx.components.UICompVariable-1702477892000]: 
 ↓customerName [ngx.components.UICompVariable-1702477892003]: 

@@ -38,6 +38,19 @@ responseExpiryDate: absolute,60
           - SmartType: 
             - ↑mode: PLAIN
             - →→: area
+    ↓type1 [steps.JsonFieldStep-1702758369804]: 
+      key: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: height
+      value: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: 200px
   ↓series [steps.JsonArrayStep-1702461736772]: 
     key: 
       - xmlizable: 
