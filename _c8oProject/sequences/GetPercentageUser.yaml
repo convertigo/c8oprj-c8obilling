@@ -176,23 +176,6 @@
               - SmartType: 
                 - ↑mode: PLAIN
                 - →→: rgb(255, 0, 255)
-      ↓startDate [steps.JsonFieldStep-1702307503800]: 
-        key: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
-            - SmartType: 
-              - ↑mode: PLAIN
-              - →→: startDate
-        value: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
-            - SmartType: 
-              - ↑mode: SOURCE
-              - com.twinsoft.convertigo.beans.common.XMLVector: 
-                - java.lang.String: 
-                  - ↑value: 1701855669135
-                - java.lang.String: 
-                  - ↑value: ./startDate/text()
       ↓endDate [steps.JsonFieldStep-1702307513794]: 
         key: 
           - xmlizable: 
@@ -210,6 +193,23 @@
                   - ↑value: 1701855669135
                 - java.lang.String: 
                   - ↑value: ./endDate/text()
+      ↓startDate [steps.JsonFieldStep-1702307503800]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: startDate
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: SOURCE
+              - com.twinsoft.convertigo.beans.common.XMLVector: 
+                - java.lang.String: 
+                  - ↑value: 1701855669135
+                - java.lang.String: 
+                  - ↑value: ./startDate/text()
 ↓customerName [variables.RequestableVariable-1701858494458]: 
 ↓startDate [variables.RequestableVariable-1702304809112]: 
   description: startDate
