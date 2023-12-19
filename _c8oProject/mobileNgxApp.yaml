@@ -73,6 +73,7 @@ tplProjectName: mobilebuilder_tpl_8_1_0_ngx
 ↓ConvertigoBillingConcurrentSessionsForApex [ngx.components.UISharedRegularComponent-1702400403612]: 🗏 mobileSharedComponents/ConvertigoBillingConcurrentSessionsForApex.yaml
 ↓ConvertigoBillingUserChartForApex [ngx.components.UISharedRegularComponent-1702477891967]: 🗏 mobileSharedComponents/ConvertigoBillingUserChartForApex.yaml
 ↓CustomerActivityForApex [ngx.components.UISharedRegularComponent-1702817604902]: 🗏 mobileSharedComponents/CustomerActivityForApex.yaml
+↓PieChartForApex [ngx.components.UISharedRegularComponent-1702908904764]: 🗏 mobileSharedComponents/PieChartForApex.yaml
 ↓Dashboard [ngx.components.PageComponent-1500538678074]: 🗏 mobilePages/Dashboard.yaml
 ↓Style [ngx.components.UIStyle-1491635462437]: 
   comment: You can add some global application styles here

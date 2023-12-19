@@ -1,0 +1,182 @@
+↓compChanges [ngx.components.UISharedComponentEvent-1702908904767]: 
+  componentEvent: onChanges
+  ↓CallSequence [ngx.components.UIDynamicAction-1702908904770]: 
+    beanData: |
+      '{
+       "ionBean": "CallSequenceAction",
+       "requestable": "plain:C8OBilling.GetPercentageUserForApex",
+       "noLoading": "plain:true"
+      }'
+    tagName: CallSequence
+    ↓customerName [ngx.components.UIControlVariable-1702908904773]: 
+      comment: new variable
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701857037776,"regular":true}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
+    ↓startDate [ngx.components.UIControlVariable-1702908904776]: 
+      comment: startDate
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701857037776,"regular":true}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+    ↓endDate [ngx.components.UIControlVariable-1702908904779]: 
+      comment: endDate
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701857037776,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+↓customerName [ngx.components.UICompVariable-1702908904782]: 
+  autoEmit: true
+↓dateStart [ngx.components.UICompVariable-1702908904797]: 
+↓dateEnd [ngx.components.UICompVariable-1702908904800]: 
+↓CardContainer [ngx.components.UIDynamicElement-1702909206023]: 
+  beanData: '{"ionBean":"Card"}'
+  tagName: ion-card
+  ↓CardContent [ngx.components.UIDynamicElement-1702909206026]: 
+    beanData: '{"ionBean":"CardContent"}'
+    tagName: ion-card-content
+    ↓tag [ngx.components.UIControlDirective-1702918204463]: 
+      directiveName: If
+      directiveSource: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetPercentageUserForApex","marker":""}],"path":"?.options","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓tag2 [ngx.components.UIUseShared-1702909206032]: 
+        sharedcomponent: libApexCharts.Application.NgxApp.apxChart
+        tagName: tag2
+        ↓chart [ngx.components.UIUseVariable-1702909206035]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetPercentageUserForApex","marker":""}],"path":"?.options?.chart","prefix":"","suffix":"","custom":"","useCustom":false}}
+        ↓series [ngx.components.UIUseVariable-1702909206038]: 
+          comment: |
+            The series is a set of data. You may have single or multiple data series.
+            For more information please visit [Series documentation](https://apexcharts.com/docs/series/) 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetPercentageUserForApex","marker":""}],"path":"?.options?.series","prefix":"","suffix":"","custom":"","useCustom":false}}
+        ↓xaxis [ngx.components.UIUseVariable-1702909206041]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:null
+        ↓annotations [ngx.components.UIUseVariable-1702909206044]: 
+          comment: |
+            Annotations in ApexCharts allows you to write custom text on specific data-points or on axes values.
+            For more information please visit [Series documentation](https://apexcharts.com/docs/annotations/) 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:null
+        ↓colors [ngx.components.UIUseVariable-1702909206047]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:null
+        ↓dataLabels [ngx.components.UIUseVariable-1702909206050]: 
+          comment: |
+            Data Labels are the actual values which are passed in the series. You can add formatters which will allow you to modify values before displaying.
+            For more information please visit [Series documentation](https://apexcharts.com/docs/datalabels/) 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: 'script:{ enabled: true}'
+        ↓stroke [ngx.components.UIUseVariable-1702909206053]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: 'script:{ curve: ''smooth''}'
+        ↓labels [ngx.components.UIUseVariable-1702909206056]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetPercentageUserForApex","marker":""}],"path":"?.options?.labels","prefix":"","suffix":"","custom":"","useCustom":false}}
+        ↓legend [ngx.components.UIUseVariable-1702909206059]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:null
+        ↓fill [ngx.components.UIUseVariable-1702909206062]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:null
+        ↓tooltip [ngx.components.UIUseVariable-1702909206065]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:null
+        ↓plotOptions [ngx.components.UIUseVariable-1702909206068]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:null
+        ↓responsive [ngx.components.UIUseVariable-1702909206071]: 
+          comment: |
+            You can configure different options for different screen sizes and ApexCharts will override the configuration based on breakpoints defined.
+            For more information please visit [Series documentation](https://apexcharts.com/docs/responsive/) 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetPercentageUserForApex","marker":""}],"path":"?.options?.responsive","prefix":"","suffix":"","custom":"","useCustom":false}}
+        ↓yaxis [ngx.components.UIUseVariable-1702909206074]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:null
+        ↓grid [ngx.components.UIUseVariable-1702909206077]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:null
+        ↓states [ngx.components.UIUseVariable-1702909206080]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:null
+        ↓title [ngx.components.UIUseVariable-1702909206083]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:null
+        ↓subtitle [ngx.components.UIUseVariable-1702909206086]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:null
+        ↓theme [ngx.components.UIUseVariable-1702909206089]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:null
+    ↓tag1 [ngx.components.UIControlDirective-1702918300048]: 
+      directiveName: If
+      directiveSource: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetBillingSessionsPerDayForApex","marker":""}],"path":"?.options","prefix":"!","suffix":"","custom":"","useCustom":false}}
+      ↓Spinner [ngx.components.UIDynamicElement-1702918443367]: 
+        beanData: '{"ionBean":"Spinner"}'
+        tagName: ion-spinner
+  ↓Style [ngx.components.UIStyle-1702909206098]: 
+    styleContent: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+          →: |
+            '/**
+             * Custom properties (sometimes referred to as CSS variables or cascading variables)
+             * are entities defined by CSS authors that contain specific values to be reused throughout a document.
+             * They are set using custom property notation, e.g.: --main-color: black;
+             * and are accessed using the var() function, e.g.: color: var(--main-color);
+             * You can find below your component''s properties you can customize within the page.
+             * If you''d like to make some customizations for whole app, please see your app Style & Theme components.
+             * For more informations see https://ionicframework.com/docs/theming.
+            **/
+            //--background	//Background of the card
+            //--color	//Color of the card
+            //	width: 430px;
+            '
