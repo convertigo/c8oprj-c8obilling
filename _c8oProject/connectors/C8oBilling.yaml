@@ -147,6 +147,37 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
   ↓endDate [variables.RequestableVariable-1701368843707]: 
     comment: An End date in the YYYY-MM-DD format
     description: endDate
+↓ListCustomerActivity [transactions.SqlTransaction-1701018823748]: 
+  comment: List all users by day they first appear
+  sqlQuery: |
+    SELECT
+        	customerName, 
+    	COUNT(*) AS Activity
+    FROM
+       	Ticket
+    WHERE
+        	creationDate BETWEEN (UNIX_TIMESTAMP('{startDate}') * 1000) AND (UNIX_TIMESTAMP('{endDate}') * 1000)
+    AND
+    	(connectorName = 'start' OR connectorName = 'stop')
+    GROUP BY
+    	customerName
+    ORDER BY
+    
+    	Activity DESC
+    
+  ↓Test [core.TestCase]: 
+    ↓startDate [variables.TestCaseVariable-1702804003468]: 
+      description: startDate
+      value: 2022-12-30
+    ↓endDate [variables.TestCaseVariable-1702804003471]: 
+      description: endDate
+      value: 2023-12-30
+  ↓startDate [variables.RequestableVariable-1702804003487]: 
+    comment: a Start date in the YYYY-MM-DD format
+    description: startDate
+  ↓endDate [variables.RequestableVariable-1702804003490]: 
+    comment: An End date in the YYYY-MM-DD format
+    description: endDate
 ↓ListCustomers [transactions.SqlTransaction]: 
   comment: List all the customers in the billing database
   sqlQuery: |
@@ -238,7 +269,8 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
     	customerName,
     	from_unixtime(creationDate / 1000) AS DateTime,
     	userName,
-    	sessionID
+    	sessionID,
+    	creationDate
     FROM
     	c8oAnalytics.Ticket
     WHERE
@@ -248,15 +280,13 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
     AND
     	connectorName = 'stop'
     AND
-            	creationDate
+          	creationDate
     		BETWEEN
     			UNIX_TIMESTAMP('{startDate}') * 1000
                 	AND
                 		UNIX_TIMESTAMP('{endDate}') * 1000
-    
     ORDER BY
-    	creationDate	
-    
+    	creationDate
   ↓Bookplanet [core.TestCase]: 
     ↓customerName [variables.TestCaseVariable-1702295871260]: 
       description: customerName

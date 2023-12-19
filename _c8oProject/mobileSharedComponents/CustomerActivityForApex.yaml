@@ -1,0 +1,93 @@
+↓CardContainer [ngx.components.UIDynamicElement-1702817604905]: 
+  beanData: '{"ionBean":"Card"}'
+  tagName: ion-card
+  ↓CardContent [ngx.components.UIDynamicElement-1702817604908]: 
+    beanData: '{"ionBean":"CardContent"}'
+    tagName: ion-card-content
+    ↓tag1 [ngx.components.UIControlDirective-1702817604911]: 
+      directiveName: If
+      directiveSource: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetCustomerActivityForApex","marker":""}],"path":"?.options","prefix":"! ","suffix":"","custom":"","useCustom":false}}
+      ↓Spinner [ngx.components.UIDynamicElement-1702817604914]: 
+        beanData: '{"ionBean":"Spinner"}'
+        tagName: ion-spinner
+    ↓tag2 [ngx.components.UIControlDirective-1702817604917]: 
+      directiveName: If
+      directiveSource: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetCustomerActivityForApex","marker":""}],"path":"?.options","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓tag [ngx.components.UIUseShared-1702817604920]: 
+        sharedcomponent: libApexCharts.Application.NgxApp.apxChart
+        ↓chart [ngx.components.UIUseVariable-1702817604923]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetCustomerActivityForApex","marker":""}],"path":"?.options?.chart","prefix":"","suffix":"","custom":"","useCustom":false}}
+        ↓series [ngx.components.UIUseVariable-1702817604926]: 
+          comment: |
+            The series is a set of data. You may have single or multiple data series.
+            For more information please visit [Series documentation](https://apexcharts.com/docs/series/) 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetCustomerActivityForApex","marker":""}],"path":"?.options?.series","prefix":"","suffix":"","custom":"","useCustom":false}}
+        ↓xaxis [ngx.components.UIUseVariable-1702817604929]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetCustomerActivityForApex","marker":""}],"path":"?.options?.xaxis","prefix":"","suffix":"","custom":"","useCustom":false}}
+  ↓Style [ngx.components.UIStyle-1702817604980]: 
+    styleContent: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+          →: |
+            '/**
+             * Custom properties (sometimes referred to as CSS variables or cascading variables)
+             * are entities defined by CSS authors that contain specific values to be reused throughout a document.
+             * They are set using custom property notation, e.g.: --main-color: black;
+             * and are accessed using the var() function, e.g.: color: var(--main-color);
+             * You can find below your component''s properties you can customize within the page.
+             * If you''d like to make some customizations for whole app, please see your app Style & Theme components.
+             * For more informations see https://ionicframework.com/docs/theming.
+            **/
+            //--background	//Background of the card
+            //--color	//Color of the card
+            //	width: 430px;
+            '
+↓SharedComponent_Event [ngx.components.UISharedComponentEvent-1702817604983]: 
+  componentEvent: onChanges
+  ↓ClearDataSource [ngx.components.UIDynamicAction-1702817604986]: 
+    beanData: '{"ionBean":"ClearDataSourceAction","requestables":"source:{\"filter\":\"Sequence\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"sequence\":\"C8OBilling.GetCustomerActivityForApex\",\"marker\":\"\"}],\"path\":\"\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}"}'
+    tagName: ClearDataSource
+    ↓CallSequence [ngx.components.UIDynamicAction-1702817604989]: 
+      beanData: |
+        '{
+         "ionBean": "CallSequenceAction",
+         "requestable": "plain:C8OBilling.GetCustomerActivityForApex",
+         "noLoading": "plain:true"
+        }'
+      tagName: CallSequence
+      ↓startDate [ngx.components.UIControlVariable-1702817604992]: 
+        comment: new variable
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695310419875,"regular":true}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓endDate [ngx.components.UIControlVariable-1702817604995]: 
+        comment: new variable
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695310419875,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓customerName [ngx.components.UIControlVariable-1702817604998]: 
+        comment: customerName
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701370684640,"regular":true}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
+↓dateStart [ngx.components.UICompVariable-1702817605001]: 
+↓dateEnd [ngx.components.UICompVariable-1702817605004]: 
