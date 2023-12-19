@@ -2,7 +2,7 @@
 ↓C8OBilling [core.Project]: 
   comment: Convertigo NGX builder Project
   corsOrigin: =Origin
-  version: 1.2
+  version: 1.3
   ↓C8oBilling [connectors.SqlConnector]: 🗏 connectors/C8oBilling.yaml
   ↓c8ocloudsignup_fullsync [connectors.FullSyncConnector]: 🗏 connectors/c8ocloudsignup_fullsync.yaml
   ↓lib_usermanager_fullsync [connectors.FullSyncConnector]: 🗏 connectors/lib_usermanager_fullsync.yaml
@@ -12,6 +12,7 @@
   ↓GetBillingSessionsPerDayForApex [sequences.GenericSequence]: 🗏 sequences/GetBillingSessionsPerDayForApex.yaml
   ↓GetBillingUsersPerDay [sequences.GenericSequence]: 🗏 sequences/GetBillingUsersPerDay.yaml
   ↓GetBillingUsersPerDayForApex [sequences.GenericSequence]: 🗏 sequences/GetBillingUsersPerDayForApex.yaml
+  ↓GetCustomerActivityForApex [sequences.GenericSequence]: 🗏 sequences/GetCustomerActivityForApex.yaml
   ↓GetPercentageUser [sequences.GenericSequence]: 🗏 sequences/GetPercentageUser.yaml
   ↓GetUsersByDay [sequences.GenericSequence]: 🗏 sequences/GetUsersByDay.yaml
   ↓GetUserTable [sequences.GenericSequence]: 🗏 sequences/GetUserTable.yaml
