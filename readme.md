@@ -18,8 +18,10 @@ For more technical informations : [documentation](./project.md)
         - [ConvertigoBillingUserChart](#convertigobillinguserchart)
         - [ConvertigoBillingUserChartForApex](#convertigobillinguserchartforapex)
         - [ConvertigoUsersChart](#convertigouserschart)
+        - [CustomerActivityForApex](#customeractivityforapex)
         - [DateselectionPanel](#dateselectionpanel)
         - [PieChart](#piechart)
+        - [PieChartForApex](#piechartforapex)
         - [UserTable](#usertable)
 
 
@@ -150,6 +152,22 @@ My First Page as root page
 </tr>
 </table>
 
+#### CustomerActivityForApex
+
+**variables**
+
+<table>
+<tr>
+<th>name</th><th>comment</th>
+</tr>
+<tr>
+<td>dateEnd</td><td></td>
+</tr>
+<tr>
+<td>dateStart</td><td></td>
+</tr>
+</table>
+
 #### DateselectionPanel
 
 **variables**
@@ -170,6 +188,25 @@ My First Page as root page
 </table>
 
 #### PieChart
+
+**variables**
+
+<table>
+<tr>
+<th>name</th><th>comment</th>
+</tr>
+<tr>
+<td>customerName</td><td></td>
+</tr>
+<tr>
+<td>dateEnd</td><td></td>
+</tr>
+<tr>
+<td>dateStart</td><td></td>
+</tr>
+</table>
+
+#### PieChartForApex
 
 **variables**
 

@@ -83,6 +83,30 @@ title: Customer Insights
   ↓Grid [ngx.components.UIDynamicElement-1694791330839]: 
     beanData: '{"ionBean":"Grid"}'
     tagName: ion-grid
+    ↓GridRow2 [ngx.components.UIDynamicElement-1701880795976]: 
+      beanData: |
+        '{
+         "ionBean": "GridRow",
+         "Height": "plain",
+         "FlexJustifyContent": "plain:ion-justify-content-center",
+         "FlexAlignement": "plain:ion-align-items-end"
+        }'
+      tagName: ion-row
+      ↓GridCol [ngx.components.UIDynamicElement-1702969480847]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓tag [ngx.components.UIUseShared-1702969494726]: 
+          sharedcomponent: C8OBilling.Application.NgxApp.CustomerActivityForApex
+          ↓dateStart [ngx.components.UIUseVariable-1702969523251]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+          ↓dateEnd [ngx.components.UIUseVariable-1702969523253]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
     ↓GridRow [ngx.components.UIDynamicElement-1694791330826]: 
       beanData: '{"ionBean":"GridRow","Height":"plain"}'
       tagName: ion-row
@@ -130,6 +154,7 @@ title: Customer Insights
       beanData: |
         '{
          "ionBean": "GridRow",
+         "Height": "plain",
          "FlexJustifyContent": "plain:ion-justify-content-center",
          "FlexAlignement": "plain:ion-align-items-center"
         }'
@@ -174,15 +199,6 @@ title: Customer Insights
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
                 - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
-    ↓GridRow2 [ngx.components.UIDynamicElement-1701880795976]: 
-      beanData: |
-        '{
-         "ionBean": "GridRow",
-         "Height": "plain",
-         "FlexJustifyContent": "plain:ion-justify-content-center",
-         "FlexAlignement": "plain:ion-align-items-end"
-        }'
-      tagName: ion-row
 ↓Footer [ngx.components.UIDynamicElement-1491634242460]: 
   beanData: '{"ionBean":"Footer"}'
   comment: Page footer

@@ -34,6 +34,19 @@
           - SmartType: 
             - ↑mode: PLAIN
             - →→: pie
+    ↓type1 [steps.JsonFieldStep-1702969306373]: 
+      key: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: height
+      value: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: 200px
   ↓series [steps.JsonArrayStep-1702900137269]: 
     key: 
       - xmlizable: 

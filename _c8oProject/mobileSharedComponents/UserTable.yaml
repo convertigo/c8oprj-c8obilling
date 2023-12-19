@@ -51,7 +51,7 @@
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:true
+              - MobileSmartSourceType: script:false
         ↓paginationPageSize [ngx.components.UIUseVariable-1695386752123]: 
           comment: 'integer: 10 by default'
           varValue: 
@@ -99,7 +99,7 @@
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:'auto'
+              - MobileSmartSourceType: script:'200px'
         ↓class [ngx.components.UIUseVariable-1695386752139]: 
           comment: |
             'One of the themes provided here :
