@@ -149,6 +149,7 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
     description: endDate
 ↓ListCustomerActivity [transactions.SqlTransaction-1701018823748]: 
   comment: List all users by day they first appear
+  responseExpiryDate: daily,00:00:00
   sqlQuery: |
     SELECT
         	customerName, 
