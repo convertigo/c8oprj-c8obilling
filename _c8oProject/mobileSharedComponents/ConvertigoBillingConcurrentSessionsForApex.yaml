@@ -211,3 +211,4 @@ scriptContent:
 ↓dateStart [ngx.components.UICompVariable-1702400403645]: 
 ↓dateEnd [ngx.components.UICompVariable-1702400403648]: 
 ↓customerName [ngx.components.UICompVariable-1702400403651]: 
+  autoEmit: true

@@ -69,7 +69,6 @@ tplProjectName: mobilebuilder_tpl_8_1_0_ngx
 ↓ConvertigoBillingUserChart [ngx.components.UISharedRegularComponent-1701370684640]: 🗏 mobileSharedComponents/ConvertigoBillingUserChart.yaml
 ↓UserTable [ngx.components.UISharedRegularComponent-1695386269421]: 🗏 mobileSharedComponents/UserTable.yaml
 ↓DateselectionPanel [ngx.components.UISharedRegularComponent-1701369309078]: 🗏 mobileSharedComponents/DateselectionPanel.yaml
-↓PieChart [ngx.components.UISharedRegularComponent-1701857037776]: 🗏 mobileSharedComponents/PieChart.yaml
 ↓ConvertigoBillingConcurrentSessionsForApex [ngx.components.UISharedRegularComponent-1702400403612]: 🗏 mobileSharedComponents/ConvertigoBillingConcurrentSessionsForApex.yaml
 ↓ConvertigoBillingUserChartForApex [ngx.components.UISharedRegularComponent-1702477891967]: 🗏 mobileSharedComponents/ConvertigoBillingUserChartForApex.yaml
 ↓CustomerActivityForApex [ngx.components.UISharedRegularComponent-1702817604902]: 🗏 mobileSharedComponents/CustomerActivityForApex.yaml

@@ -33,34 +33,19 @@
 ]]></xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
+            <xsd:element name="customerName" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
         </xsd:sequence>
-    </xsd:complexType>
-    <xsd:complexType name="C8oBilling_ListCustomerActivity_document_sql_output_row_customerNameType">
-        <xsd:simpleContent>
-            <xsd:extension base="xsd:string">
-                <xsd:attribute default="string" name="type" type="xsd:string"/>
-            </xsd:extension>
-        </xsd:simpleContent>
-    </xsd:complexType>
-    <xsd:complexType name="C8oBilling_ListCustomerActivity_document_sql_output_row_ActivityType">
-        <xsd:simpleContent>
-            <xsd:extension base="xsd:string">
-                <xsd:attribute default="string" name="type" type="xsd:string"/>
-            </xsd:extension>
-        </xsd:simpleContent>
-    </xsd:complexType>
-    <xsd:complexType name="C8oBilling_ListCustomerActivity_document_sql_output_rowType">
-        <xsd:sequence>
-            <xsd:element minOccurs="0" name="customerName" type="C8OBilling_ns:C8oBilling_ListCustomerActivity_document_sql_output_row_customerNameType"/>
-            <xsd:element minOccurs="0" name="Activity" type="C8OBilling_ns:C8oBilling_ListCustomerActivity_document_sql_output_row_ActivityType"/>
-        </xsd:sequence>
-        <xsd:attribute default="object" name="type" type="xsd:string"/>
     </xsd:complexType>
     <xsd:complexType name="C8oBilling_ListCustomerActivity_document_sql_outputType">
-        <xsd:sequence>
-            <xsd:element maxOccurs="unbounded" minOccurs="0" name="row" type="C8OBilling_ns:C8oBilling_ListCustomerActivity_document_sql_output_rowType"/>
-        </xsd:sequence>
-        <xsd:attribute default="array" name="type" type="xsd:string"/>
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
     </xsd:complexType>
     <xsd:complexType name="C8oBilling__ListCustomerActivityResponseData">
         <xsd:sequence>

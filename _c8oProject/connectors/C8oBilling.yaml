@@ -172,12 +172,15 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
     ↓endDate [variables.TestCaseVariable-1702804003471]: 
       description: endDate
       value: 2023-12-30
+    ↓customerName [variables.TestCaseVariable-1703582364290]: 
+      value: 
   ↓startDate [variables.RequestableVariable-1702804003487]: 
     comment: a Start date in the YYYY-MM-DD format
     description: startDate
   ↓endDate [variables.RequestableVariable-1702804003490]: 
     comment: An End date in the YYYY-MM-DD format
     description: endDate
+  ↓customerName [variables.RequestableVariable-1703582304938]: 
 ↓ListCustomers [transactions.SqlTransaction]: 
   comment: List all the customers in the billing database
   sqlQuery: |

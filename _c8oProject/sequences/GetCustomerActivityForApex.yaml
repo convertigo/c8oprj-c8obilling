@@ -18,53 +18,6 @@ responseExpiryDate: absolute,60
       - SmartType: 
         - ↑mode: PLAIN
         - →→: options
-  ↓chart [steps.JsonObjectStep-1702804783979]: 
-    key: 
-      - xmlizable: 
-        - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
-        - SmartType: 
-          - ↑mode: PLAIN
-          - →→: chart
-    ↓stacked [steps.JsonFieldStep-1702804783982]: 
-      key: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
-          - SmartType: 
-            - ↑mode: PLAIN
-            - →→: stacked
-      type: bool
-      value: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
-          - SmartType: 
-            - ↑mode: JS
-            - →→: false
-    ↓type [steps.JsonFieldStep-1702804783985]: 
-      key: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
-          - SmartType: 
-            - ↑mode: PLAIN
-            - →→: type
-      value: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
-          - SmartType: 
-            - ↑mode: PLAIN
-            - →→: bar
-    ↓type1 [steps.JsonFieldStep-1702804783988]: 
-      key: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
-          - SmartType: 
-            - ↑mode: PLAIN
-            - →→: height
-      value: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
-          - SmartType: 
-            - ↑mode: PLAIN
-            - →→: 200px
   ↓series [steps.JsonArrayStep-1702804783991]: 
     key: 
       - xmlizable: 
@@ -169,6 +122,9 @@ responseExpiryDate: absolute,60
                     - ↑value: ./customerName/text()
 ↓startDate [variables.RequestableVariable-1702804784045]: 
 ↓endDate [variables.RequestableVariable-1702804784048]: 
+↓customerName [variables.RequestableVariable-1703582478290]: 
+  comment: a Tenant customer name
+  description: customerName
 ↓TestOK [core.TestCase]: 
   ↓startDate [variables.TestCaseVariable-1702804784055]: 
     value: 2023-11-01

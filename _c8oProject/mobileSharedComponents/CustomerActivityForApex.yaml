@@ -1,3 +1,42 @@
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        '/*Begin_c8o_CompImport*/
+         	/*End_c8o_CompImport*/
+        /*Begin_c8o_CompDeclaration*/
+        	/*End_c8o_CompDeclaration*/
+        /*Begin_c8o_CompConstructor*/
+        		/*End_c8o_CompConstructor*/
+        /*Begin_c8o_CompInitialization*/
+        		/*End_c8o_CompInitialization*/
+        /*Begin_c8o_CompFinalization*/
+        		/*End_c8o_CompFinalization*/
+        /*Begin_c8o_CompChanges*/
+        		/*End_c8o_CompChanges*/
+        /*Begin_c8o_CompDoCheck*/
+        		/*End_c8o_CompDoCheck*/
+        /*Begin_c8o_CompAfterContentInit*/
+        		/*End_c8o_CompAfterContentInit*/
+        /*Begin_c8o_CompAfterContentChecked*/
+        		/*End_c8o_CompAfterContentChecked*/
+        /*Begin_c8o_CompAfterViewInit*/
+        		/*End_c8o_CompAfterViewInit*/
+        /*Begin_c8o_CompAfterViewChecked*/
+        		/*End_c8o_CompAfterViewChecked*/
+        /*Begin_c8o_CompFunction*/
+        	handleApexChartEvent(event, chartContext, config) {
+        		let customer = config.config.xaxis.categories[config.labelIndex];
+        		
+        		console.log("Clicked on : " + customer);
+        	  	this.customerName = customer;
+        	  	
+        	}
+        	
+        	
+        	/*End_c8o_CompFunction*/
+        '
 ↓CardContainer [ngx.components.UIDynamicElement-1702817604905]: 
   beanData: '{"ionBean":"Card"}'
   tagName: ion-card
@@ -25,7 +64,14 @@
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetCustomerActivityForApex","marker":""}],"path":"?.options?.chart","prefix":"","suffix":"","custom":"","useCustom":false}}
+              - MobileSmartSourceType: |
+                  'script:{
+                  	type:''bar'',
+                  	height:''200px'',
+                  	events: {
+                  		xAxisLabelClick:handleApexChartEvent
+                  	}
+                  }'
         ↓series [ngx.components.UIUseVariable-1702817604926]: 
           comment: |
             The series is a set of data. You may have single or multiple data series.
@@ -91,3 +137,5 @@
             - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701370684640,"regular":true}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
 ↓dateStart [ngx.components.UICompVariable-1702817605001]: 
 ↓dateEnd [ngx.components.UICompVariable-1702817605004]: 
+↓customerName [ngx.components.UICompVariable-1703584769819]: 
+  autoEmit: true
