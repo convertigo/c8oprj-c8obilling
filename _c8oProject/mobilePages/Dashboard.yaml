@@ -62,6 +62,7 @@ title: Customer Insights
   tagName: ion-content
   ↓H1 [ngx.components.UIDynamicElement-1703668390603]: 
     beanData: '{"ionBean":"Heading1"}'
+    isEnabled: false
     tagName: h1
     ↓some_text [ngx.components.UIText-1703668390602]: 
       textValue: 

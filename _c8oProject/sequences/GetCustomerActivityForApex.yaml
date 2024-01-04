@@ -120,6 +120,19 @@ responseExpiryDate: absolute,60
                     - ↑value: 1702804784039
                   - java.lang.String: 
                     - ↑value: ./customerName/text()
+    ↓tickPlacement [steps.JsonFieldStep-1704206745875]: 
+      key: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: tickPlacement
+      value: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: on
 ↓startDate [variables.RequestableVariable-1702804784045]: 
 ↓endDate [variables.RequestableVariable-1702804784048]: 
 ↓customerName [variables.RequestableVariable-1703582478290]: 

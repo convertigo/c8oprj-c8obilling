@@ -9,17 +9,15 @@ scriptContent:
         	public handleApexChartEvent;
         	/*End_c8o_CompDeclaration*/
         /*Begin_c8o_CompConstructor*/
+        		//Get the customer clicked on the activity chart and change the value of customerName
         		this.handleApexChartEvent = (event, chartContext, config)=> {
         		
-        		let customer = config.config.xaxis.categories[config.labelIndex];
-        		
-        		console.log("Clicked on : " + customer);
+        		let customer = event.currentTarget?.getElementsByTagName("title")?.[0]?.textContent;
+        		//console.log("Clicked on : " + customer);
         	  	this.customerName = customer;
         	  	this.ref.detectChanges();
-        	  	
-        	  	
-        	}
-        	
+        		}
+        		
         		/*End_c8o_CompConstructor*/
         /*Begin_c8o_CompInitialization*/
         		/*End_c8o_CompInitialization*/
