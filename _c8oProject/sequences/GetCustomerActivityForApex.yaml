@@ -133,6 +133,69 @@ responseExpiryDate: absolute,60
           - SmartType: 
             - ↑mode: PLAIN
             - →→: on
+    ↓field [steps.JsonFieldStep-1704819504568]: 
+      key: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: tickAmount
+      type: number
+      value: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: 25
+    ↓scrollbar [steps.JsonObjectStep-1704882681326]: 
+      key: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: scrollbar
+      ↓enabled [steps.JsonFieldStep-1704882687985]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: enabled
+        type: bool
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: JS
+              - →→: true
+  ↓plotOptions [steps.JsonObjectStep-1704878400614]: 
+    key: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+        - SmartType: 
+          - ↑mode: PLAIN
+          - →→: plotOptions
+    ↓bar [steps.JsonObjectStep-1704878419500]: 
+      key: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: bar
+      ↓horizontal [steps.JsonFieldStep-1704878424466]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: horizontal
+        type: bool
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: JS
+              - →→: true
 ↓startDate [variables.RequestableVariable-1702804784045]: 
 ↓endDate [variables.RequestableVariable-1702804784048]: 
 ↓customerName [variables.RequestableVariable-1703582478290]: 
