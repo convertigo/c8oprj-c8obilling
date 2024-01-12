@@ -1,6 +1,14 @@
 ↓CardContainer [ngx.components.UIDynamicElement-1702477891970]: 
   beanData: '{"ionBean":"Card"}'
   tagName: ion-card
+  ↓CardHeader [ngx.components.UIDynamicElement-1705058270582]: 
+    beanData: '{"ionBean":"CardHeader"}'
+    tagName: ion-card-header
+    ↓some_text [ngx.components.UIText-1705058270585]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Cumulated users and new users for this customer
   ↓CardContent [ngx.components.UIDynamicElement-1702477891973]: 
     beanData: '{"ionBean":"CardContent"}'
     tagName: ion-card-content

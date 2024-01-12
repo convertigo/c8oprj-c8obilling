@@ -31,6 +31,14 @@ scriptContent:
 ↓CardContainer [ngx.components.UIDynamicElement-1702400403615]: 
   beanData: '{"ionBean":"Card"}'
   tagName: ion-card
+  ↓CardHeader [ngx.components.UIDynamicElement-1705058193244]: 
+    beanData: '{"ionBean":"CardHeader"}'
+    tagName: ion-card-header
+    ↓some_text [ngx.components.UIText-1705058193247]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Number of concurrent sessions for this customer
   ↓CardContent [ngx.components.UIDynamicElement-1702623740512]: 
     beanData: '{"ionBean":"CardContent"}'
     tagName: ion-card-content

@@ -33,6 +33,14 @@
 ↓CardContainer [ngx.components.UIDynamicElement-1702909206023]: 
   beanData: '{"ionBean":"Card"}'
   tagName: ion-card
+  ↓CardHeader [ngx.components.UIDynamicElement-1705058334885]: 
+    beanData: '{"ionBean":"CardHeader"}'
+    tagName: ion-card-header
+    ↓some_text [ngx.components.UIText-1705058334888]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Device usage breakdown for this customer
   ↓CardContent [ngx.components.UIDynamicElement-1702909206026]: 
     beanData: '{"ionBean":"CardContent"}'
     tagName: ion-card-content
@@ -157,7 +165,7 @@
       directiveSource: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetBillingSessionsPerDayForApex","marker":""}],"path":"?.options","prefix":"!","suffix":"","custom":"","useCustom":false}}
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetPercentageUserForApex","marker":""}],"path":"?.options","prefix":"!","suffix":"","custom":"","useCustom":false}}
       ↓Spinner [ngx.components.UIDynamicElement-1702918443367]: 
         beanData: '{"ionBean":"Spinner"}'
         tagName: ion-spinner
