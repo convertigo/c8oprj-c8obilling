@@ -7,20 +7,23 @@ scriptContent:
          	/*End_c8o_CompImport*/
         /*Begin_c8o_CompDeclaration*/
         	public handleApexChartEvent;
+        	public clickedData;
         	/*End_c8o_CompDeclaration*/
         /*Begin_c8o_CompConstructor*/
         		//Get the customer clicked on the activity chart and change the value of customerName
-        		this.handleApexChartEvent = (event, chartContext, config)=> {
+        		this.handleApexChartEvent = (event, chartContext, config) => {
         		
-        		this.customerName = event.currentTarget?.getElementsByTagName("title")?.[0]?.textContent;
+        			this.customerName = event.currentTarget?.getElementsByTagName("title")?.[0]?.textContent;
         		
-        		//console.log("Clicked on : " + customer);
-        	  	//this.customerName = customer;
-        	  	this.ref.detectChanges();
+        			//console.log("Clicked on : " + customerName);
+        	  		this.ref.detectChanges();
         		}
         		
         		this.clickedData = (event, chartContext, config) => {
-        			console.log(chartContext, config);
+        			this.customerName = config.w.config.xaxis.categories[config.selectedDataPoints];
+        		
+        			//console.log("Clicked on : " + customerName);
+        	  		this.ref.detectChanges();
         		}
         		
         		/*End_c8o_CompConstructor*/
@@ -74,8 +77,8 @@ scriptContent:
                   	type:''bar'',
                   	height:''2500px'',
                   	events: {
-                  		xAxisLabelClick:handleApexChartEvent
-                  dataPointSelection:clickedData
+                  		xAxisLabelClick:handleApexChartEvent,
+                  		dataPointSelection:clickedData
                   	}
                   }'
         ↓series [ngx.components.UIUseVariable-1702817604926]: 
