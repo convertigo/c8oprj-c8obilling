@@ -12,10 +12,15 @@ scriptContent:
         		//Get the customer clicked on the activity chart and change the value of customerName
         		this.handleApexChartEvent = (event, chartContext, config)=> {
         		
-        		let customer = event.currentTarget?.getElementsByTagName("title")?.[0]?.textContent;
+        		this.customerName = event.currentTarget?.getElementsByTagName("title")?.[0]?.textContent;
+        		
         		//console.log("Clicked on : " + customer);
-        	  	this.customerName = customer;
+        	  	//this.customerName = customer;
         	  	this.ref.detectChanges();
+        		}
+        		
+        		this.clickedData = (event, chartContext, config) => {
+        			console.log(chartContext, config);
         		}
         		
         		/*End_c8o_CompConstructor*/
@@ -48,7 +53,7 @@ scriptContent:
       textValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: plain:Customer activity by number of Sequences & Transaction executed
+          - MobileSmartSourceType: plain:Customer activity by number of Sequences & Transaction executed (click to a customerName to get details)
   ↓CardContent [ngx.components.UIDynamicElement-1702817604908]: 
     beanData: '{"ionBean":"CardContent"}'
     tagName: ion-card-content
@@ -70,6 +75,7 @@ scriptContent:
                   	height:''2500px'',
                   	events: {
                   		xAxisLabelClick:handleApexChartEvent
+                  dataPointSelection:clickedData
                   	}
                   }'
         ↓series [ngx.components.UIUseVariable-1702817604926]: 

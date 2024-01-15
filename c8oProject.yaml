@@ -10,10 +10,8 @@
   ↓GetAccountCreationsByDay [sequences.GenericSequence]: 🗏 sequences/GetAccountCreationsByDay.yaml
   ↓GetBillingCustomers [sequences.GenericSequence]: 🗏 sequences/GetBillingCustomers.yaml
   ↓GetBillingSessionsPerDayForApex [sequences.GenericSequence]: 🗏 sequences/GetBillingSessionsPerDayForApex.yaml
-  ↓GetBillingUsersPerDay [sequences.GenericSequence]: 🗏 sequences/GetBillingUsersPerDay.yaml
   ↓GetBillingUsersPerDayForApex [sequences.GenericSequence]: 🗏 sequences/GetBillingUsersPerDayForApex.yaml
   ↓GetCustomerActivityForApex [sequences.GenericSequence]: 🗏 sequences/GetCustomerActivityForApex.yaml
-  ↓GetPercentageUser [sequences.GenericSequence]: 🗏 sequences/GetPercentageUser.yaml
   ↓GetPercentageUserForApex [sequences.GenericSequence]: 🗏 sequences/GetPercentageUserForApex.yaml
   ↓GetUsersByDay [sequences.GenericSequence]: 🗏 sequences/GetUsersByDay.yaml
   ↓GetUserTable [sequences.GenericSequence]: 🗏 sequences/GetUserTable.yaml

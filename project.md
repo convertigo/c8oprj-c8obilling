@@ -12,7 +12,7 @@ Convertigo NGX builder Project
 ## ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/references/images/ProjectSchemaReference_16x16.png?raw=true "ProjectSchemaReference") lib_ExtendedComponents_ui_ngx
 
 
-see [readme](https://github.com/convertigo/c8oprj-lib-extended-components-ui-ngx/tree/8.0.0.1#readme)
+see [readme](https://github.com/convertigo/c8oprj-lib-extended-components-ui-ngx/tree/8.1.0.0#readme)
 </p></blockquote></details>
 
 <details><summary><b>libApexCharts</b> : ngx builder template</summary><blockquote><p>
@@ -620,52 +620,6 @@ a Tenant customer name
 
 </p></blockquote></details>
 
-<details><summary><b>GetBillingUsersPerDay</b></summary><blockquote><p>
-
-
-## ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/sequences/images/genericsequence_color_16x16.png?raw=true "GenericSequence") GetBillingUsersPerDay
-
-
-
-<span style="color:DarkGoldenRod">Variables</span>
-
-<table>
-<tr>
-<th>
-name
-</th>
-<th>
-comment
-</th>
-</tr>
-<tr>
-<td>
-<img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;customerName
-</td>
-<td>
-a Tenant customer name
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;endDate
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;startDate
-</td>
-<td>
-
-</td>
-</tr>
-</table>
-
-</p></blockquote></details>
-
 <details><summary><b>GetBillingUsersPerDayForApex</b></summary><blockquote><p>
 
 
@@ -736,52 +690,6 @@ comment
 </td>
 <td>
 a Tenant customer name
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;endDate
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;startDate
-</td>
-<td>
-
-</td>
-</tr>
-</table>
-
-</p></blockquote></details>
-
-<details><summary><b>GetPercentageUser</b></summary><blockquote><p>
-
-
-## ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/sequences/images/genericsequence_color_16x16.png?raw=true "GenericSequence") GetPercentageUser
-
-
-
-<span style="color:DarkGoldenRod">Variables</span>
-
-<table>
-<tr>
-<th>
-name
-</th>
-<th>
-comment
-</th>
-</tr>
-<tr>
-<td>
-<img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;customerName
-</td>
-<td>
-
 </td>
 </tr>
 <tr>
