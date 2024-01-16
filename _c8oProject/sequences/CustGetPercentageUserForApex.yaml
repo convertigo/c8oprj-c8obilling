@@ -1,0 +1,36 @@
+↓Get_from_session [steps.SessionGetStep-1705418989915]: 
+  key: CustomerName
+  output: false
+↓Call_Sequence [steps.SequenceStep-1705418895927]: 
+  sourceSequence: C8OBilling.GetPercentageUserForApex
+  ↓customerName [variables.StepVariable-1705418895929]: 
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1705418989915
+          - java.lang.String: 
+            - ↑value: ./expression/text()
+  ↓startDate [variables.StepVariable-1705418895931]: 
+    description: startDate
+  ↓endDate [variables.StepVariable-1705418895933]: 
+    description: endDate
+↓Copy [steps.XMLCopyStep-1705418915703]: 
+  sourceDefinition: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - java.lang.String: 
+          - ↑value: 1705418895927
+        - java.lang.String: 
+          - ↑value: .
+↓startDate [variables.RequestableVariable-1705418958876]: 
+  description: startDate
+↓endDate [variables.RequestableVariable-1705418958878]: 
+  description: endDate
+↓TestOK [core.TestCase]: 
+  ↓startDate [variables.TestCaseVariable-1705421930350]: 
+    value: 2023-11-01
+  ↓endDate [variables.TestCaseVariable-1705421930353]: 
+    value: 2023-11-30

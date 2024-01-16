@@ -7,6 +7,10 @@
   ↓c8ocloudsignup_fullsync [connectors.FullSyncConnector]: 🗏 connectors/c8ocloudsignup_fullsync.yaml
   ↓lib_usermanager_fullsync [connectors.FullSyncConnector]: 🗏 connectors/lib_usermanager_fullsync.yaml
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
+  ↓CustGetBillingSessionsPerDayForApex [sequences.GenericSequence]: 🗏 sequences/CustGetBillingSessionsPerDayForApex.yaml
+  ↓CustGetBillingUsersPerDayForApex [sequences.GenericSequence]: 🗏 sequences/CustGetBillingUsersPerDayForApex.yaml
+  ↓CustGetCustomerActivityForApex [sequences.GenericSequence]: 🗏 sequences/CustGetCustomerActivityForApex.yaml
+  ↓CustGetPercentageUserForApex [sequences.GenericSequence]: 🗏 sequences/CustGetPercentageUserForApex.yaml
   ↓GetAccountCreationsByDay [sequences.GenericSequence]: 🗏 sequences/GetAccountCreationsByDay.yaml
   ↓GetBillingCustomers [sequences.GenericSequence]: 🗏 sequences/GetBillingCustomers.yaml
   ↓GetBillingSessionsPerDayForApex [sequences.GenericSequence]: 🗏 sequences/GetBillingSessionsPerDayForApex.yaml
@@ -15,6 +19,7 @@
   ↓GetPercentageUserForApex [sequences.GenericSequence]: 🗏 sequences/GetPercentageUserForApex.yaml
   ↓GetUsersByDay [sequences.GenericSequence]: 🗏 sequences/GetUsersByDay.yaml
   ↓GetUserTable [sequences.GenericSequence]: 🗏 sequences/GetUserTable.yaml
+  ↓SetCustomerName [sequences.GenericSequence]: 🗏 sequences/SetCustomerName.yaml
   ↓project [references.ProjectSchemaReference]: 
     projectName: lib_ExtendedComponents_ui_ngx
   ↓Project_reference [references.ProjectSchemaReference]: 

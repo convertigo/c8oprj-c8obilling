@@ -1,0 +1,34 @@
+↓Get_from_session [steps.SessionGetStep-1705419311454]: 
+  key: CustomerName
+  output: false
+↓Call_Sequence [steps.SequenceStep-1705419118277]: 
+  sourceSequence: C8OBilling.GetBillingUsersPerDayForApex
+  ↓startDate [variables.StepVariable-1705419118279]: 
+  ↓endDate [variables.StepVariable-1705419118281]: 
+  ↓customerName [variables.StepVariable-1705419118283]: 
+    comment: a Tenant customer name
+    description: customerName
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1705419311454
+          - java.lang.String: 
+            - ↑value: ./expression/text()
+↓Copy [steps.XMLCopyStep-1705419517246]: 
+  sourceDefinition: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - java.lang.String: 
+          - ↑value: 1705419118277
+        - java.lang.String: 
+          - ↑value: .
+↓startDate [variables.RequestableVariable-1705419340681]: 
+↓endDate [variables.RequestableVariable-1705419340683]: 
+↓TestOK [core.TestCase]: 
+  ↓startDate [variables.TestCaseVariable-1705421844329]: 
+    value: 2023-11-01
+  ↓endDate [variables.TestCaseVariable-1705421844331]: 
+    value: 2023-11-30

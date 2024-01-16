@@ -1,3 +1,4 @@
+accessibility: Private
 ↓inputVars [steps.InputVariablesStep-1694797201934]: 
 ↓Call_Transaction [steps.TransactionStep-1694770016662]: 
   sourceTransaction: C8OBilling.c8ocloudsignup_fullsync.GetAccountByDateView

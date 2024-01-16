@@ -56,7 +56,7 @@ scriptContent:
       textValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: plain:Customer activity by number of Sequences & Transaction executed (click to a customerName to get details)
+          - MobileSmartSourceType: plain:Customer activity by number of Sequences & Transaction executed (click to a customerName or on the bar to get details)
   ↓CardContent [ngx.components.UIDynamicElement-1702817604908]: 
     beanData: '{"ionBean":"CardContent"}'
     tagName: ion-card-content

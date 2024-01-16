@@ -1,3 +1,4 @@
+accessibility: Private
 ↓inputVars [steps.InputVariablesStep-1695387694837]: 
 ↓Call_Transaction [steps.TransactionStep-1695387694840]: 
   sourceTransaction: C8OBilling.C8oBilling.ListUsers

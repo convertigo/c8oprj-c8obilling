@@ -1,0 +1,12 @@
+↓Set_in_session [steps.SessionSetStep-1705420758079]: 
+  expression: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: JS
+        - →→: customerName
+  key: CustomerName
+↓customerName [variables.RequestableVariable-1705420743149]: 
+↓TestOK [core.TestCase]: 
+  ↓customerName [variables.TestCaseVariable-1705420807662]: 
+    value: bookplanet
