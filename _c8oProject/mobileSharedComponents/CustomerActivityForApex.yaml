@@ -65,7 +65,7 @@ scriptContent:
       directiveSource: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetCustomerActivityForApex","marker":""}],"path":"?.options","prefix":"","suffix":"","custom":"","useCustom":false}}
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetCustomerActivityForApex","marker":""}],"path":"?.options","prefix":"","suffix":"","custom":"","useCustom":false}}
       ↓tag [ngx.components.UIUseShared-1702817604920]: 
         sharedcomponent: libApexCharts.Application.NgxApp.apxChart
         ↓chart [ngx.components.UIUseVariable-1702817604923]: 
@@ -88,23 +88,23 @@ scriptContent:
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetCustomerActivityForApex","marker":""}],"path":"?.options?.series","prefix":"","suffix":"","custom":"","useCustom":false}}
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetCustomerActivityForApex","marker":""}],"path":"?.options?.series","prefix":"","suffix":"","custom":"","useCustom":false}}
         ↓xaxis [ngx.components.UIUseVariable-1702817604929]: 
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetCustomerActivityForApex","marker":""}],"path":"?.options?.xaxis","prefix":"","suffix":"","custom":"","useCustom":false}}
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetCustomerActivityForApex","marker":""}],"path":"?.options?.xaxis","prefix":"","suffix":"","custom":"","useCustom":false}}
         ↓plotOptions [ngx.components.UIUseVariable-1704878465832]: 
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetCustomerActivityForApex","marker":""}],"path":"?.options?.plotOptions","prefix":"","suffix":"","custom":"","useCustom":false}}
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetCustomerActivityForApex","marker":""}],"path":"?.options?.plotOptions","prefix":"","suffix":"","custom":"","useCustom":false}}
     ↓tag1 [ngx.components.UIControlDirective-1702817604911]: 
       directiveName: If
       directiveSource: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetCustomerActivityForApex","marker":""}],"path":"?.options","prefix":"! ","suffix":"","custom":"","useCustom":false}}
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetCustomerActivityForApex","marker":""}],"path":"?.options","prefix":"! ","suffix":"","custom":"","useCustom":false}}
       ↓Spinner [ngx.components.UIDynamicElement-1702817604914]: 
         beanData: '{"ionBean":"Spinner"}'
         tagName: ion-spinner
@@ -126,7 +126,7 @@ scriptContent:
       beanData: |
         '{
          "ionBean": "CallSequenceAction",
-         "requestable": "plain:C8OBilling.GetCustomerActivityForApex",
+         "requestable": "plain:C8OBilling.CustGetCustomerActivityForApex",
          "noLoading": "plain:true"
         }'
       tagName: CallSequence
@@ -142,12 +142,6 @@ scriptContent:
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
             - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695310419875,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
-      ↓customerName [ngx.components.UIControlVariable-1702817604998]: 
-        comment: customerName
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701370684640,"regular":true}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
 ↓dateStart [ngx.components.UICompVariable-1702817605001]: 
 ↓dateEnd [ngx.components.UICompVariable-1702817605004]: 
 ↓customerName [ngx.components.UICompVariable-1703584769819]: 

@@ -4,16 +4,10 @@
     beanData: |
       '{
        "ionBean": "CallSequenceAction",
-       "requestable": "plain:C8OBilling.GetPercentageUserForApex",
+       "requestable": "plain:C8OBilling.CustGetPercentageUserForApex",
        "noLoading": "plain:true"
       }'
     tagName: CallSequence
-    ↓customerName [ngx.components.UIControlVariable-1702908904773]: 
-      comment: new variable
-      varValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701857037776,"regular":true}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
     ↓startDate [ngx.components.UIControlVariable-1702908904776]: 
       comment: startDate
       varValue: 
@@ -26,8 +20,6 @@
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
           - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701857037776,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
-↓customerName [ngx.components.UICompVariable-1702908904782]: 
-  autoEmit: true
 ↓dateStart [ngx.components.UICompVariable-1702908904797]: 
 ↓dateEnd [ngx.components.UICompVariable-1702908904800]: 
 ↓CardContainer [ngx.components.UIDynamicElement-1702909206023]: 
@@ -49,7 +41,7 @@
       directiveSource: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetPercentageUserForApex","marker":""}],"path":"?.options","prefix":"","suffix":"","custom":"","useCustom":false}}
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetPercentageUserForApex","marker":""}],"path":"?.options","prefix":"","suffix":"","custom":"","useCustom":false}}
       ↓tag2 [ngx.components.UIUseShared-1702909206032]: 
         sharedcomponent: libApexCharts.Application.NgxApp.apxChart
         tagName: tag2
@@ -57,7 +49,7 @@
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetPercentageUserForApex","marker":""}],"path":"?.options?.chart","prefix":"","suffix":"","custom":"","useCustom":false}}
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetPercentageUserForApex","marker":""}],"path":"?.options?.chart","prefix":"","suffix":"","custom":"","useCustom":false}}
         ↓series [ngx.components.UIUseVariable-1702909206038]: 
           comment: |
             The series is a set of data. You may have single or multiple data series.
@@ -65,7 +57,7 @@
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetPercentageUserForApex","marker":""}],"path":"?.options?.series","prefix":"","suffix":"","custom":"","useCustom":false}}
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetPercentageUserForApex","marker":""}],"path":"?.options?.series","prefix":"","suffix":"","custom":"","useCustom":false}}
         ↓xaxis [ngx.components.UIUseVariable-1702909206041]: 
           varValue: 
             - xmlizable: 
@@ -101,7 +93,7 @@
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetPercentageUserForApex","marker":""}],"path":"?.options?.labels","prefix":"","suffix":"","custom":"","useCustom":false}}
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetPercentageUserForApex","marker":""}],"path":"?.options?.labels","prefix":"","suffix":"","custom":"","useCustom":false}}
         ↓legend [ngx.components.UIUseVariable-1702909206059]: 
           varValue: 
             - xmlizable: 
@@ -129,7 +121,7 @@
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetPercentageUserForApex","marker":""}],"path":"?.options?.responsive","prefix":"","suffix":"","custom":"","useCustom":false}}
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetPercentageUserForApex","marker":""}],"path":"?.options?.responsive","prefix":"","suffix":"","custom":"","useCustom":false}}
         ↓yaxis [ngx.components.UIUseVariable-1702909206074]: 
           varValue: 
             - xmlizable: 
@@ -165,7 +157,7 @@
       directiveSource: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetPercentageUserForApex","marker":""}],"path":"?.options","prefix":"!","suffix":"","custom":"","useCustom":false}}
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetPercentageUserForApex","marker":""}],"path":"?.options","prefix":"!","suffix":"","custom":"","useCustom":false}}
       ↓Spinner [ngx.components.UIDynamicElement-1702918443367]: 
         beanData: '{"ionBean":"Spinner"}'
         tagName: ion-spinner
@@ -188,3 +180,4 @@
             //--color	//Color of the card
             //	width: 430px;
             '
+↓customerName [ngx.components.UICompVariable-1705424669104]: 

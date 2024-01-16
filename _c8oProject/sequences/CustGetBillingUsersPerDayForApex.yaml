@@ -24,7 +24,7 @@
         - java.lang.String: 
           - ↑value: 1705419118277
         - java.lang.String: 
-          - ↑value: .
+          - ↑value: ./document/*
 ↓startDate [variables.RequestableVariable-1705419340681]: 
 ↓endDate [variables.RequestableVariable-1705419340683]: 
 ↓TestOK [core.TestCase]: 

@@ -47,14 +47,14 @@ scriptContent:
       directiveSource: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetBillingSessionsPerDayForApex","marker":""}],"path":"?.options","prefix":"","suffix":"","custom":"","useCustom":false}}
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetBillingSessionsPerDayForApex","marker":""}],"path":"?.options","prefix":"","suffix":"","custom":"","useCustom":false}}
       ↓tag [ngx.components.UIUseShared-1702400458674]: 
         sharedcomponent: libApexCharts.Application.NgxApp.apxChart
         ↓chart [ngx.components.UIUseVariable-1702400514844]: 
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetBillingSessionsPerDayForApex","marker":""}],"path":"?.options?.chart","prefix":"","suffix":"","custom":"","useCustom":false}}
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetBillingSessionsPerDayForApex","marker":""}],"path":"?.options?.chart","prefix":"","suffix":"","custom":"","useCustom":false}}
         ↓series [ngx.components.UIUseVariable-1702400514852]: 
           comment: |
             The series is a set of data. You may have single or multiple data series.
@@ -62,12 +62,12 @@ scriptContent:
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetBillingSessionsPerDayForApex","marker":""}],"path":"?.options?.series","prefix":"","suffix":"","custom":"","useCustom":false}}
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetBillingSessionsPerDayForApex","marker":""}],"path":"?.options?.series","prefix":"","suffix":"","custom":"","useCustom":false}}
         ↓xaxis [ngx.components.UIUseVariable-1702400514868]: 
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetBillingSessionsPerDayForApex","marker":""}],"path":"?.options?.xaxis","prefix":"","suffix":"","custom":"","useCustom":false}}
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetBillingSessionsPerDayForApex","marker":""}],"path":"?.options?.xaxis","prefix":"","suffix":"","custom":"","useCustom":false}}
         ↓annotations [ngx.components.UIUseVariable-1702476786035]: 
           comment: |
             Annotations in ApexCharts allows you to write custom text on specific data-points or on axes values.
@@ -162,7 +162,7 @@ scriptContent:
       directiveSource: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetBillingSessionsPerDayForApex","marker":""}],"path":"?.options","prefix":"! ","suffix":"","custom":"","useCustom":false}}
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetBillingSessionsPerDayForApex","marker":""}],"path":"?.options","prefix":"! ","suffix":"","custom":"","useCustom":false}}
       ↓Spinner [ngx.components.UIDynamicElement-1702623820707]: 
         beanData: '{"ionBean":"Spinner"}'
         tagName: ion-spinner

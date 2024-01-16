@@ -17,7 +17,7 @@
       directiveSource: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetBillingUsersPerDayForApex","marker":""}],"path":"?.options","prefix":"! ","suffix":"","custom":"","useCustom":false}}
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetBillingUsersPerDayForApex","marker":""}],"path":"?.options","prefix":"! ","suffix":"","custom":"","useCustom":false}}
       ↓Spinner [ngx.components.UIDynamicElement-1702624223775]: 
         beanData: '{"ionBean":"Spinner"}'
         tagName: ion-spinner
@@ -26,14 +26,14 @@
       directiveSource: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetBillingUsersPerDayForApex","marker":""}],"path":"?.options","prefix":"","suffix":"","custom":"","useCustom":false}}
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetBillingUsersPerDayForApex","marker":""}],"path":"?.options","prefix":"","suffix":"","custom":"","useCustom":false}}
       ↓tag [ngx.components.UIUseShared-1702478371676]: 
         sharedcomponent: libApexCharts.Application.NgxApp.apxChart
         ↓chart [ngx.components.UIUseVariable-1702484612689]: 
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetBillingUsersPerDayForApex","marker":""}],"path":"?.options?.chart","prefix":"","suffix":"","custom":"","useCustom":false}}
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetBillingUsersPerDayForApex","marker":""}],"path":"?.options?.chart","prefix":"","suffix":"","custom":"","useCustom":false}}
         ↓series [ngx.components.UIUseVariable-1702484612697]: 
           comment: |
             The series is a set of data. You may have single or multiple data series.
@@ -41,12 +41,12 @@
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetBillingUsersPerDayForApex","marker":""}],"path":"?.options?.series","prefix":"","suffix":"","custom":"","useCustom":false}}
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetBillingUsersPerDayForApex","marker":""}],"path":"?.options?.series","prefix":"","suffix":"","custom":"","useCustom":false}}
         ↓xaxis [ngx.components.UIUseVariable-1702484612713]: 
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetBillingUsersPerDayForApex","marker":""}],"path":"?.options?.xaxis","prefix":"","suffix":"","custom":"","useCustom":false}}
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetBillingUsersPerDayForApex","marker":""}],"path":"?.options?.xaxis","prefix":"","suffix":"","custom":"","useCustom":false}}
         ↓annotations [ngx.components.UIUseVariable-1702484612691]: 
           comment: |
             Annotations in ApexCharts allows you to write custom text on specific data-points or on axes values.
@@ -164,7 +164,7 @@
       beanData: |
         '{
          "ionBean": "CallSequenceAction",
-         "requestable": "plain:C8OBilling.GetBillingUsersPerDayForApex",
+         "requestable": "plain:C8OBilling.CustGetBillingUsersPerDayForApex",
          "noLoading": "plain:true"
         }'
       tagName: CallSequence
@@ -180,12 +180,6 @@
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
             - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695310419875,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
-      ↓customerName [ngx.components.UIControlVariable-1702477891994]: 
-        comment: customerName
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701370684640,"regular":true}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
 ↓dateStart [ngx.components.UICompVariable-1702477891997]: 
 ↓dateEnd [ngx.components.UICompVariable-1702477892000]: 
 ↓customerName [ngx.components.UICompVariable-1702477892003]: 
