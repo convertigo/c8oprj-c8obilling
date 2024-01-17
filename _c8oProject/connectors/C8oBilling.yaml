@@ -15,15 +15,17 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
         FROM 
             Ticket
         WHERE 
-            	connectorName = 'start'
+            connectorName = 'start'
     	AND
     		customerName = '{customerName}'
     	AND
-                	creationDate
+    		LENGTH(sessionID) > 8
+    	AND
+            creationDate
     		BETWEEN
     			UNIX_TIMESTAMP('{startDate}') * 1000
-                	AND
-                		UNIX_TIMESTAMP('{endDate}') * 1000
+            AND
+    			UNIX_TIMESTAMP('{endDate}') * 1000
     
         UNION ALL
     
@@ -39,11 +41,13 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
     	AND
     		customerName = '{customerName}'
     	AND
-                	creationDate
+    		LENGTH(sessionID) > 8
+    	AND
+            creationDate
     		BETWEEN
     			UNIX_TIMESTAMP('{startDate}') * 1000
-                	AND
-                		UNIX_TIMESTAMP('{endDate}') * 1000
+            AND
+    			UNIX_TIMESTAMP('{endDate}') * 1000
     ),
     CumulativeSessions AS (
         SELECT 
@@ -59,11 +63,10 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
         FROM_UNIXTIME(creationDate / 1000) as DateTime, 
         sessionID,
         userName,
-        concurrentSessions
+        concurrentSessions,
+    	(ROUND((LEAD(creationDate) OVER (ORDER BY creationDate) - creationDate) / 1000 ) * concurrentSessions) AS sessionSeconds
     FROM 
         CumulativeSessions
-    WHERE
-        userName <> ''
     ORDER BY 
         creationDate;
         
