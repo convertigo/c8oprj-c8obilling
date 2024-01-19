@@ -74,6 +74,7 @@ tplProjectName: mobilebuilder_tpl_8_1_0_ngx
 ↓CustomerActivityForApex [ngx.components.UISharedRegularComponent-1702817604902]: 🗏 mobileSharedComponents/CustomerActivityForApex.yaml
 ↓PieChartForApex [ngx.components.UISharedRegularComponent-1702908904764]: 🗏 mobileSharedComponents/PieChartForApex.yaml
 ↓Dashboard [ngx.components.PageComponent-1500538678074]: 🗏 mobilePages/Dashboard.yaml
+↓Loading [ngx.components.PageComponent-1705673424619]: 🗏 mobilePages/Loading.yaml
 ↓Style [ngx.components.UIStyle-1491635462437]: 
   comment: You can add some global application styles here
   styleContent: 
@@ -487,3 +488,11 @@ tplProjectName: mobilebuilder_tpl_8_1_0_ngx
                   //selected-row-background-color:rgba(0, 123, 255, 0.3)
               ));
           }'
+↓AppEvent [ngx.components.UIAppEvent-1705673032120]: 
+  appEvent: onNetworkReachable
+  ↓CallSequence [ngx.components.UIDynamicAction-1705673047152]: 
+    beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:C8OBilling.SetCurrentSite"}'
+    tagName: CallSequence
+    ↓RootPage [ngx.components.UIDynamicAction-1705673452651]: 
+      beanData: '{"ionBean":"RootPageAction","page":"plain:C8OBilling.Application.NgxApp.Dashboard"}'
+      tagName: RootPage

@@ -1,0 +1,16 @@
+↓authenticatedUserID [steps.GetAuthenticatedUserStep-1705673105254]: 
+↓Call_Sequence [steps.SequenceStep-1705673118407]: 
+  output: true
+  sourceSequence: C8oCloudSignup.GetUserInfo
+  ↓email [variables.StepVariable-1705673141534]: 
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1705673105254
+          - java.lang.String: 
+            - ↑value: ./text()
+↓TestOK [core.TestCase]: 
+  ↓customerName [variables.TestCaseVariable-1705420807662]: 
+    value: bookplanet

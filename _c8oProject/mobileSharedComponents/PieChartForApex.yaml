@@ -1,25 +1,28 @@
 ↓compChanges [ngx.components.UISharedComponentEvent-1702908904767]: 
   componentEvent: onChanges
-  ↓CallSequence [ngx.components.UIDynamicAction-1702908904770]: 
-    beanData: |
-      '{
-       "ionBean": "CallSequenceAction",
-       "requestable": "plain:C8OBilling.CustGetPercentageUserForApex",
-       "noLoading": "plain:true"
-      }'
-    tagName: CallSequence
-    ↓startDate [ngx.components.UIControlVariable-1702908904776]: 
-      comment: startDate
-      varValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701857037776,"regular":true}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
-    ↓endDate [ngx.components.UIControlVariable-1702908904779]: 
-      comment: endDate
-      varValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701857037776,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+  ↓ClearDataSource [ngx.components.UIDynamicAction-1705675892904]: 
+    beanData: '{"ionBean":"ClearDataSourceAction","requestables":"source:{\"filter\":\"Sequence\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"sequence\":\"C8OBilling.CustGetPercentageUserForApex\",\"marker\":\"\"}],\"path\":\"\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}"}'
+    tagName: ClearDataSource
+    ↓CallSequence [ngx.components.UIDynamicAction-1702908904770]: 
+      beanData: |
+        '{
+         "ionBean": "CallSequenceAction",
+         "requestable": "plain:C8OBilling.CustGetPercentageUserForApex",
+         "noLoading": "plain:true"
+        }'
+      tagName: CallSequence
+      ↓startDate [ngx.components.UIControlVariable-1702908904776]: 
+        comment: startDate
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701857037776,"regular":true}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓endDate [ngx.components.UIControlVariable-1702908904779]: 
+        comment: endDate
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701857037776,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
 ↓dateStart [ngx.components.UICompVariable-1702908904797]: 
 ↓dateEnd [ngx.components.UICompVariable-1702908904800]: 
 ↓CardContainer [ngx.components.UIDynamicElement-1702909206023]: 

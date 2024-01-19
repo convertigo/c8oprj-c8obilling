@@ -19,7 +19,10 @@
   ↓GetPercentageUserForApex [sequences.GenericSequence]: 🗏 sequences/GetPercentageUserForApex.yaml
   ↓GetUsersByDay [sequences.GenericSequence]: 🗏 sequences/GetUsersByDay.yaml
   ↓GetUserTable [sequences.GenericSequence]: 🗏 sequences/GetUserTable.yaml
-  ↓SetCustomerName [sequences.GenericSequence]: 🗏 sequences/SetCustomerName.yaml
+  ↓SetCurrentSite [sequences.GenericSequence]: 🗏 sequences/SetCurrentSite.yaml
+  ↓SetCustomer [sequences.GenericSequence]: 🗏 sequences/SetCustomer.yaml
+  ↓C8oCloudSignup_reference [references.ProjectSchemaReference]: 
+    projectName: C8oCloudSignup=https://github.com/convertigo/c8oprj-c8o-cloud-signup.git:branch=master
   ↓project [references.ProjectSchemaReference]: 
     projectName: lib_ExtendedComponents_ui_ngx
   ↓Project_reference [references.ProjectSchemaReference]: 

@@ -279,7 +279,7 @@ scriptContent:
                 attrName: (ionChange)
                 eventName: ionChange
                 ↓CallSequence [ngx.components.UIDynamicAction-1705425252524]: 
-                  beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:C8OBilling.SetCustomerName"}'
+                  beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:C8OBilling.SetCustomer"}'
                   tagName: CallSequence
                   ↓customerName [ngx.components.UIControlVariable-1705425265190]: 
                     comment: new variable
@@ -287,6 +287,12 @@ scriptContent:
                       - xmlizable: 
                         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
                         - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701369309078,"regular":true}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
+                  ↓PauseAction [ngx.components.UIDynamicAction-1705675210206]: 
+                    beanData: '{"ionBean":"PauseAction"}'
+                    tagName: PauseAction
+                    ↓EmitValue [ngx.components.UIDynamicEmit-1705674128032]: 
+                      beanData: '{"ionBean":"EmitValueAction","compvar":"plain:C8OBilling.Application.NgxApp.DateselectionPanel.customerName"}'
+                      tagName: EmitValue
             ↓Icon [ngx.components.UIDynamicElement-1701427548004]: 
               beanData: |
                 '{
@@ -315,4 +321,3 @@ scriptContent:
       }'
     tagName: CallSequence
 ↓customerName [ngx.components.UICompVariable-1701427856934]: 
-  autoEmit: true
