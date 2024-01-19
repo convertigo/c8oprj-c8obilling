@@ -93,7 +93,7 @@ scriptContent:
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: 'script:{ curve: ''smooth''}'
+              - MobileSmartSourceType: 'script:{ curve: ''straight''}'
         ↓labels [ngx.components.UIUseVariable-1702476786043]: 
           varValue: 
             - xmlizable: 

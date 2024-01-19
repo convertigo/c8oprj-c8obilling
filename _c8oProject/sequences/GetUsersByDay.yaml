@@ -1,4 +1,5 @@
 accessibility: Private
+responseExpiryDate: daily,00:00:00
 ↓inputVars [steps.InputVariablesStep-1695310481146]: 
 ↓Call_Transaction [steps.TransactionStep-1695310481149]: 
   sourceTransaction: C8OBilling.lib_usermanager_fullsync.GetUsersByDate

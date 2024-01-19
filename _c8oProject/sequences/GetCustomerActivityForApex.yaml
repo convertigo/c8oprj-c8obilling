@@ -1,11 +1,8 @@
 accessibility: Private
-responseExpiryDate: absolute,60
+responseExpiryDate: daily,00:00:00
 ↓inputVars [steps.InputVariablesStep-1702804783961]: 
 ↓Call_Transaction [steps.TransactionStep-1702804783964]: 
   sourceTransaction: C8OBilling.C8oBilling.ListCustomerActivity
-  ↓customerName [variables.StepVariable-1702804783967]: 
-    comment: a Tenant customer name
-    description: customerName
   ↓startDate [variables.StepVariable-1702804783970]: 
     comment: a Start date in the YYYY-MM-DD format
     description: startDate

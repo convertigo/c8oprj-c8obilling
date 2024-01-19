@@ -1,5 +1,5 @@
 accessibility: Private
-responseExpiryDate: absolute,60
+responseExpiryDate: daily,00:00:00
 ↓inputVars [steps.InputVariablesStep-1702400872255]: 
 ↓Call_Transaction [steps.TransactionStep-1702400872258]: 
   sourceTransaction: C8OBilling.C8oBilling.ComputeSessions
@@ -38,7 +38,7 @@ responseExpiryDate: absolute,60
           - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
           - SmartType: 
             - ↑mode: PLAIN
-            - →→: bar
+            - →→: area
     ↓type1 [steps.JsonFieldStep-1702758369804]: 
       key: 
         - xmlizable: 

@@ -1,5 +1,5 @@
 accessibility: Private
-responseExpiryDate: absolute,60
+responseExpiryDate: daily,00:00:00
 ↓inputVars [steps.InputVariablesStep-1702477949167]: 
 ↓Call_Transaction [steps.TransactionStep-1702477949170]: 
   sourceTransaction: C8OBilling.C8oBilling.CountUsers

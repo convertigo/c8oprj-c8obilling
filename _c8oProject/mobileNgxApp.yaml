@@ -490,6 +490,7 @@ tplProjectName: mobilebuilder_tpl_8_1_0_ngx
           }'
 ↓AppEvent [ngx.components.UIAppEvent-1705673032120]: 
   appEvent: onNetworkReachable
+  isEnabled: false
   ↓CallSequence [ngx.components.UIDynamicAction-1705673047152]: 
     beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:C8OBilling.SetCurrentSite"}'
     tagName: CallSequence

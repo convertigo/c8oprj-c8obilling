@@ -1,3 +1,4 @@
+↑isRoot: true
 comment: My First Page as root page
 preloadPriority: high
 scriptContent: 
@@ -64,6 +65,11 @@ title: Customer Insights
     isEnabled: false
     tagName: h1
     ↓some_text [ngx.components.UIText-1703668390602]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+    ↓some_text1 [ngx.components.UIText-1705683329776]: 
       textValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
@@ -245,22 +251,22 @@ title: Customer Insights
       '{
        "ionBean": "SetLocalAction",
        "Property": "plain:dateStart",
-       "Value": "script:this.navParams.data.startDate ? this.navParams.data.startDate : new Date(new Date().getTime() - 365*24*3600*1000).toISOString().split(''T'')[0]"
+       "Value": "script:this.navParams.get(''startDate'') ?? new Date(new Date().getTime() - 30*24*3600*1000).toISOString().split(''T'')[0]"
       }'
     tagName: SetLocal
-  ↓SetLocal1 [ngx.components.UIDynamicAction-1694796521150]: 
-    beanData: |
-      '{
-       "ionBean": "SetLocalAction",
-       "Property": "plain:dateEnd",
-       "Value": "script:this.navParams.data.endDate ? this.navParams.data.endDate : new Date().toISOString().split(''T'')[0]"
-      }'
-    tagName: SetLocal
-  ↓SetLocal2 [ngx.components.UIDynamicAction-1701428026864]: 
-    beanData: |
-      '{
-       "ionBean": "SetLocalAction",
-       "Property": "plain:customerName",
-       "Value": "script:this.navParams.data.customerName ? \r\n\tthis.navParams.data.customerName :\r\n\t''bookplanet''"
-      }'
-    tagName: SetLocal
+    ↓SetLocal1 [ngx.components.UIDynamicAction-1694796521150]: 
+      beanData: |
+        '{
+         "ionBean": "SetLocalAction",
+         "Property": "plain:dateEnd",
+         "Value": "script:this.navParams.data.endDate ? this.navParams.data.endDate : new Date().toISOString().split(''T'')[0]"
+        }'
+      tagName: SetLocal
+      ↓SetLocal2 [ngx.components.UIDynamicAction-1701428026864]: 
+        beanData: |
+          '{
+           "ionBean": "SetLocalAction",
+           "Property": "plain:customerName",
+           "Value": "script:this.navParams.data.customerName ? this.navParams.data.customerName : ''bookplanet''"
+          }'
+        tagName: SetLocal
