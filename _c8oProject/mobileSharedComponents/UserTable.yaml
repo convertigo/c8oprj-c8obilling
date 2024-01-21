@@ -1,13 +1,13 @@
 ↓SharedComponent_Event [ngx.components.UISharedComponentEvent-1695389871353]: 
   componentEvent: onChanges
   ↓ClearDataSource [ngx.components.UIDynamicAction-1702758061061]: 
-    beanData: '{"ionBean":"ClearDataSourceAction","requestables":"source:{\"filter\":\"Sequence\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"sequence\":\"C8OBilling.GetUserTable\",\"marker\":\"\"}],\"path\":\"\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}"}'
+    beanData: '{"ionBean":"ClearDataSourceAction","requestables":"source:{\"filter\":\"Sequence\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"sequence\":\"C8OBilling.CustGetUserTable\",\"marker\":\"\"}],\"path\":\"\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}"}'
     tagName: ClearDataSource
     ↓CallSequence [ngx.components.UIDynamicAction-1695389882896]: 
       beanData: |
         '{
          "ionBean": "CallSequenceAction",
-         "requestable": "plain:C8OBilling.GetUserTable",
+         "requestable": "plain:C8OBilling.CustGetUserTable",
          "noLoading": "plain:true"
         }'
       tagName: CallSequence
@@ -23,12 +23,6 @@
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
             - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695386269421,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
-      ↓customerName [ngx.components.UIControlVariable-1702298064235]: 
-        comment: customerName
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695386269421,"regular":true}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
 ↓dateStart [ngx.components.UICompVariable-1702295805771]: 
 ↓dateEnd [ngx.components.UICompVariable-1702295805774]: 
 ↓customerName [ngx.components.UICompVariable-1702295805777]: 
@@ -51,7 +45,7 @@
       directiveSource: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetUserTable","marker":""}],"path":"?.data","prefix":"","suffix":"","custom":"","useCustom":false}}
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetUserTable","marker":""}],"path":"?.data","prefix":"","suffix":"","custom":"","useCustom":false}}
       ↓tag [ngx.components.UIUseShared-1695386633722]: 
         sharedcomponent: lib_ExtendedComponents_ui_ngx.MobileApplication.Application.agGrid
         ↓pagination [ngx.components.UIUseVariable-1695386752121]: 
@@ -89,13 +83,13 @@
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetUserTable","marker":""}],"path":"?.data?.labels","prefix":"","suffix":"","custom":"","useCustom":false}}
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetUserTable","marker":""}],"path":"?.data?.labels","prefix":"","suffix":"","custom":"","useCustom":false}}
         ↓rowData [ngx.components.UIUseVariable-1695386752133]: 
           comment: 'Array of row { fieldName1: ''value1'', fieldName2: ''value2'', fieldName3: true, ...} objects'
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetUserTable","marker":""}],"path":"?.data?.values","prefix":"","suffix":"","custom":"","useCustom":false}}
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetUserTable","marker":""}],"path":"?.data?.values","prefix":"","suffix":"","custom":"","useCustom":false}}
         ↓width [ngx.components.UIUseVariable-1695386752135]: 
           comment: width value in % or px
           varValue: 
@@ -196,7 +190,7 @@
       directiveSource: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetUserTable","marker":""}],"path":"?.data","prefix":"! ","suffix":"","custom":"","useCustom":false}}
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetUserTable","marker":""}],"path":"?.data","prefix":"! ","suffix":"","custom":"","useCustom":false}}
       ↓Spinner [ngx.components.UIDynamicElement-1702757594903]: 
         beanData: '{"ionBean":"Spinner"}'
         tagName: ion-spinner

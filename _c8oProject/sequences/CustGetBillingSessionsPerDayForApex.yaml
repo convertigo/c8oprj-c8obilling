@@ -1,3 +1,4 @@
+authenticatedContextRequired: true
 ↓Get_from_session [steps.SessionGetStep-1705419300635]: 
   key: CustomerName
   output: false

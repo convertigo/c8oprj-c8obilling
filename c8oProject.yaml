@@ -11,6 +11,7 @@
   ↓CustGetBillingUsersPerDayForApex [sequences.GenericSequence]: 🗏 sequences/CustGetBillingUsersPerDayForApex.yaml
   ↓CustGetCustomerActivityForApex [sequences.GenericSequence]: 🗏 sequences/CustGetCustomerActivityForApex.yaml
   ↓CustGetPercentageUserForApex [sequences.GenericSequence]: 🗏 sequences/CustGetPercentageUserForApex.yaml
+  ↓CustGetUserTable [sequences.GenericSequence]: 🗏 sequences/CustGetUserTable.yaml
   ↓GetAccountCreationsByDay [sequences.GenericSequence]: 🗏 sequences/GetAccountCreationsByDay.yaml
   ↓GetBillingCustomers [sequences.GenericSequence]: 🗏 sequences/GetBillingCustomers.yaml
   ↓GetBillingSessionsPerDayForApex [sequences.GenericSequence]: 🗏 sequences/GetBillingSessionsPerDayForApex.yaml

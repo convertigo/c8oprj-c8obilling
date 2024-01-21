@@ -11,6 +11,19 @@
             - ↑value: 1705673105254
           - java.lang.String: 
             - ↑value: ./text()
+↓Set_in_session [steps.SessionSetStep-1705849146197]: 
+  expression: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: SOURCE
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1705673118407
+          - java.lang.String: 
+            - ↑value: ./document/site/text()
+  key: CustomerName
+  output: true
 ↓TestOK [core.TestCase]: 
   ↓customerName [variables.TestCaseVariable-1705420807662]: 
     value: bookplanet

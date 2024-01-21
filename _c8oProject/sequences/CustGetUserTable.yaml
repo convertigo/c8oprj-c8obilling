@@ -1,37 +1,37 @@
 authenticatedContextRequired: true
-↓Get_from_session [steps.SessionGetStep-1705418989915]: 
+↓Get_from_session [steps.SessionGetStep-1705852281808]: 
   key: CustomerName
   output: false
-↓Call_Sequence [steps.SequenceStep-1705418895927]: 
-  sourceSequence: C8OBilling.GetPercentageUserForApex
-  ↓customerName [variables.StepVariable-1705418895929]: 
+↓Call_Sequence [steps.SequenceStep-1705852281811]: 
+  sourceSequence: C8OBilling.GetUserTable
+  ↓customerName [variables.StepVariable-1705852281814]: 
     sourceDefinition: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
         - com.twinsoft.convertigo.beans.common.XMLVector: 
           - java.lang.String: 
-            - ↑value: 1705418989915
+            - ↑value: 1705852281808
           - java.lang.String: 
             - ↑value: ./expression/text()
-  ↓startDate [variables.StepVariable-1705418895931]: 
+  ↓startDate [variables.StepVariable-1705852281817]: 
     description: startDate
-  ↓endDate [variables.StepVariable-1705418895933]: 
+  ↓endDate [variables.StepVariable-1705852281820]: 
     description: endDate
-↓Copy [steps.XMLCopyStep-1705418915703]: 
+↓Copy [steps.XMLCopyStep-1705852281823]: 
   sourceDefinition: 
     - xmlizable: 
       - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
       - com.twinsoft.convertigo.beans.common.XMLVector: 
         - java.lang.String: 
-          - ↑value: 1705418895927
+          - ↑value: 1705852281811
         - java.lang.String: 
           - ↑value: ./document/*
-↓startDate [variables.RequestableVariable-1705418958876]: 
+↓startDate [variables.RequestableVariable-1705852281826]: 
   description: startDate
-↓endDate [variables.RequestableVariable-1705418958878]: 
+↓endDate [variables.RequestableVariable-1705852281829]: 
   description: endDate
 ↓TestOK [core.TestCase]: 
-  ↓startDate [variables.TestCaseVariable-1705421930350]: 
+  ↓startDate [variables.TestCaseVariable-1705852281833]: 
     value: 2023-11-01
-  ↓endDate [variables.TestCaseVariable-1705421930353]: 
-    value: 2023-11-30
+  ↓endDate [variables.TestCaseVariable-1705852281836]: 
+    value: 2024-01-30

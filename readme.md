@@ -12,6 +12,7 @@ For more technical informations : [documentation](./project.md)
 - [Mobile Application](#mobile-application)
     - [Pages](#pages)
         - [Dashboard](#dashboard)
+        - [Loading](#loading)
     - [Shared Components](#shared-components)
         - [AccountCreationChart](#accountcreationchart)
         - [ConvertigoBillingConcurrentSessionsForApex](#convertigobillingconcurrentsessionsforapex)
@@ -20,7 +21,6 @@ For more technical informations : [documentation](./project.md)
         - [ConvertigoUsersChart](#convertigouserschart)
         - [CustomerActivityForApex](#customeractivityforapex)
         - [DateselectionPanel](#dateselectionpanel)
-        - [PieChart](#piechart)
         - [PieChartForApex](#piechartforapex)
         - [UserTable](#usertable)
 
@@ -60,6 +60,8 @@ Describes the mobile application global properties
 #### Dashboard
 
 My First Page as root page
+
+#### Loading
 
 ### Shared Components
 
@@ -161,6 +163,9 @@ My First Page as root page
 <th>name</th><th>comment</th>
 </tr>
 <tr>
+<td>customerName</td><td></td>
+</tr>
+<tr>
 <td>dateEnd</td><td></td>
 </tr>
 <tr>
@@ -169,25 +174,6 @@ My First Page as root page
 </table>
 
 #### DateselectionPanel
-
-**variables**
-
-<table>
-<tr>
-<th>name</th><th>comment</th>
-</tr>
-<tr>
-<td>customer</td><td></td>
-</tr>
-<tr>
-<td>dateEnd</td><td></td>
-</tr>
-<tr>
-<td>dateStart</td><td></td>
-</tr>
-</table>
-
-#### PieChart
 
 **variables**
 
