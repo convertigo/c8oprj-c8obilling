@@ -1,3 +1,4 @@
+↑default: true
 jdbcDriverClassName: org.mariadb.jdbc.Driver
 jdbcURL: jdbc:mysql://${C8OBilling.database=127.0.0.1:3306}/c8oAnalytics
 jdbcUserName: ${C8OBilling.user=analytics}

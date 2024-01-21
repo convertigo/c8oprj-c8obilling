@@ -4,9 +4,6 @@
   corsOrigin: =Origin
   version: 1.4
   ↓C8oBilling [connectors.SqlConnector]: 🗏 connectors/C8oBilling.yaml
-  ↓c8ocloudsignup_fullsync [connectors.FullSyncConnector]: 🗏 connectors/c8ocloudsignup_fullsync.yaml
-  ↓lib_usermanager_fullsync [connectors.FullSyncConnector]: 🗏 connectors/lib_usermanager_fullsync.yaml
-  ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
   ↓CustGetBillingSessionsPerDayForApex [sequences.GenericSequence]: 🗏 sequences/CustGetBillingSessionsPerDayForApex.yaml
   ↓CustGetBillingUsersPerDayForApex [sequences.GenericSequence]: 🗏 sequences/CustGetBillingUsersPerDayForApex.yaml
   ↓CustGetCustomerActivityForApex [sequences.GenericSequence]: 🗏 sequences/CustGetCustomerActivityForApex.yaml
