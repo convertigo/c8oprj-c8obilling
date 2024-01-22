@@ -488,3 +488,16 @@ tplProjectName: mobilebuilder_tpl_8_1_0_ngx
                   //selected-row-background-color:rgba(0, 123, 255, 0.3)
               ));
           }'
+↓AppGuard [ngx.components.UIAppGuard-1705928943278]: 
+  ↓CallSequence [ngx.components.UIDynamicAction-1705929032396]: 
+    beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:C8OBilling.SetCurrentSite"}'
+    tagName: CallSequence
+    ↓ReturnTrue [ngx.components.UICustomAction-1705929070743]: 
+      actionValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+              		resolve(true);
+              '
