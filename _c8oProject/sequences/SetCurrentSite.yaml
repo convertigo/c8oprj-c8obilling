@@ -24,6 +24,28 @@
             - ↑value: ./document/site/text()
   key: CustomerName
   output: true
+↓CheckAdmin [steps.SimpleStep-1705870094551]: 
+  expression: |
+    let bAdmin = com.twinsoft.convertigo.engine.Engine.authenticatedSessionManager.hasRole(
+    	context.httpSession, 
+    	com.twinsoft.convertigo.engine.AuthenticatedSessionManager.Role.WEB_ADMIN
+    )
+    
+    //todo
+↓field [steps.JsonFieldStep-1705870117537]: 
+  key: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: PLAIN
+        - →→: isAdmin
+  type: bool
+  value: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: JS
+        - →→: bAdmin
 ↓TestOK [core.TestCase]: 
   ↓customerName [variables.TestCaseVariable-1705420807662]: 
     value: bookplanet

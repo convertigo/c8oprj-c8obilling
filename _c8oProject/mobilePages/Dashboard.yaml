@@ -106,52 +106,58 @@ title: Customer Insights
          "FlexAlignement": "plain:ion-align-items-end"
         }'
       tagName: ion-row
-      ↓GridCol [ngx.components.UIDynamicElement-1702969480847]: 
-        beanData: '{"ionBean":"GridCol"}'
-        tagName: ion-col
-        ↓tag1 [ngx.components.UIUseShared-1702969494726]: 
-          sharedcomponent: C8OBilling.Application.NgxApp.CustomerActivityForApex
-          tagName: tag1
-          ↓dateStart [ngx.components.UIUseVariable-1702969523251]: 
-            varValue: 
+      ↓tag1 [ngx.components.UIControlDirective-1705870188924]: 
+        directiveName: If
+        directiveSource: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.SetCurrentSite","marker":""}],"path":"?.isAdmin","prefix":"","suffix":"","custom":"","useCustom":false}}
+        ↓GridCol [ngx.components.UIDynamicElement-1702969480847]: 
+          beanData: '{"ionBean":"GridCol"}'
+          tagName: ion-col
+          ↓tag1 [ngx.components.UIUseShared-1702969494726]: 
+            sharedcomponent: C8OBilling.Application.NgxApp.CustomerActivityForApex
+            tagName: tag1
+            ↓dateStart [ngx.components.UIUseVariable-1702969523251]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateStart","prefix":"","suffix":"","custom":"local.dateStart","useCustom":true}}
+            ↓dateEnd [ngx.components.UIUseVariable-1702969523253]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"local.dateEnd","useCustom":true}}
+            ↓customerName [ngx.components.UIUseVariable-1703588559235]: 
+              binding: twoWayBinding
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.customerName","prefix":"","suffix":"","custom":"local.customerName","useCustom":true}}
+          ↓Style [ngx.components.UIStyle-1704884754267]: 
+            styleContent: 
               - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateStart","prefix":"","suffix":"","custom":"local.dateStart","useCustom":true}}
-          ↓dateEnd [ngx.components.UIUseVariable-1702969523253]: 
-            varValue: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"local.dateEnd","useCustom":true}}
-          ↓customerName [ngx.components.UIUseVariable-1703588559235]: 
-            binding: twoWayBinding
-            varValue: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.customerName","prefix":"","suffix":"","custom":"local.customerName","useCustom":true}}
-        ↓Style [ngx.components.UIStyle-1704884754267]: 
-          styleContent: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-              - com.twinsoft.convertigo.beans.common.FormatedContent: 
-                →: |
-                  '	overflow-y: auto;
-                  /**
-                   * Custom properties (sometimes referred to as CSS variables or cascading variables)
-                   * are entities defined by CSS authors that contain specific values to be reused throughout a document.
-                   * They are set using custom property notation, e.g.: --main-color: black;
-                   * and are accessed using the var() function, e.g.: color: var(--main-color);
-                   * You can find below your component''s properties you can customize within the page.
-                   * If you''d like to make some customizations for whole app, please see your app Style & Theme components.
-                   * For more informations see https://ionicframework.com/docs/theming.
-                  **/
-                  //--ion-grid-column-padding	//Padding for the Column
-                  //--ion-grid-column-padding-lg	//Padding for the Column on lg screens and up
-                  //--ion-grid-column-padding-md	//Padding for the Column on md screens and up
-                  //--ion-grid-column-padding-sm	//Padding for the Column on sm screens and up
-                  //--ion-grid-column-padding-xl	//Padding for the Column on xl screens and up
-                  //--ion-grid-column-padding-xs	//Padding for the Column on xs screens and up
-                  //--ion-grid-columns	//The number of total Columns in the Grid
-                  '
+                - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                  →: |
+                    '	overflow-y: auto;
+                    /**
+                     * Custom properties (sometimes referred to as CSS variables or cascading variables)
+                     * are entities defined by CSS authors that contain specific values to be reused throughout a document.
+                     * They are set using custom property notation, e.g.: --main-color: black;
+                     * and are accessed using the var() function, e.g.: color: var(--main-color);
+                     * You can find below your component''s properties you can customize within the page.
+                     * If you''d like to make some customizations for whole app, please see your app Style & Theme components.
+                     * For more informations see https://ionicframework.com/docs/theming.
+                    **/
+                    //--ion-grid-column-padding	//Padding for the Column
+                    //--ion-grid-column-padding-lg	//Padding for the Column on lg screens and up
+                    //--ion-grid-column-padding-md	//Padding for the Column on md screens and up
+                    //--ion-grid-column-padding-sm	//Padding for the Column on sm screens and up
+                    //--ion-grid-column-padding-xl	//Padding for the Column on xl screens and up
+                    //--ion-grid-column-padding-xs	//Padding for the Column on xs screens and up
+                    //--ion-grid-columns	//The number of total Columns in the Grid
+                    '
     ↓GridRow [ngx.components.UIDynamicElement-1694791330826]: 
       beanData: '{"ionBean":"GridRow","Height":"plain"}'
       tagName: ion-row
