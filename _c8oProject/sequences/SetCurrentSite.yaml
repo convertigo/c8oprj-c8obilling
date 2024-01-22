@@ -1,3 +1,4 @@
+authenticatedContextRequired: true
 ↓authenticatedUserID [steps.GetAuthenticatedUserStep-1705673105254]: 
 ↓Call_Sequence [steps.SequenceStep-1705673118407]: 
   output: true

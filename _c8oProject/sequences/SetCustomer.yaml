@@ -1,3 +1,4 @@
+authenticatedContextRequired: true
 ↓Set_in_session [steps.SessionSetStep-1705673968433]: 
   expression: 
     - xmlizable: 
