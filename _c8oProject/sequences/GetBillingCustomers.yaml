@@ -52,3 +52,17 @@ authenticatedContextRequired: true
                   - ↑value: 1705850293558
                 - java.lang.String: 
                   - ↑value: ./expression/text()
+↓field [steps.JsonFieldStep-1705930258800]: 
+  key: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: PLAIN
+        - →→: isAdmin
+  type: bool
+  value: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: PLAIN
+        - →→: bAdmin
