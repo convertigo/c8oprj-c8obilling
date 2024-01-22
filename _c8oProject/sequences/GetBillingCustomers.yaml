@@ -64,5 +64,5 @@ authenticatedContextRequired: true
     - xmlizable: 
       - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
       - SmartType: 
-        - ↑mode: PLAIN
+        - ↑mode: JS
         - →→: bAdmin
