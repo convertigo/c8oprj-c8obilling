@@ -77,6 +77,20 @@
             </xsd:extension>
         </xsd:simpleContent>
     </xsd:complexType>
+    <xsd:complexType name="C8oBilling_ComputeSessions_document_sql_output_row_sessionSecondsType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="C8oBilling_ComputeSessions_document_sql_output_row_cumulatedSessionHoursType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
     <xsd:complexType name="C8oBilling_ComputeSessions_document_sql_output_rowType">
         <xsd:sequence>
             <xsd:element minOccurs="0" name="Epoch" type="C8OBilling_ns:C8oBilling_ComputeSessions_document_sql_output_row_EpochType"/>
@@ -84,6 +98,8 @@
             <xsd:element minOccurs="0" name="sessionID" type="C8OBilling_ns:C8oBilling_ComputeSessions_document_sql_output_row_sessionIDType"/>
             <xsd:element minOccurs="0" name="userName" type="C8OBilling_ns:C8oBilling_ComputeSessions_document_sql_output_row_userNameType"/>
             <xsd:element minOccurs="0" name="concurrentSessions" type="C8OBilling_ns:C8oBilling_ComputeSessions_document_sql_output_row_concurrentSessionsType"/>
+            <xsd:element minOccurs="0" name="sessionSeconds" type="C8OBilling_ns:C8oBilling_ComputeSessions_document_sql_output_row_sessionSecondsType"/>
+            <xsd:element minOccurs="0" name="cumulatedSessionHours" type="C8OBilling_ns:C8oBilling_ComputeSessions_document_sql_output_row_cumulatedSessionHoursType"/>
         </xsd:sequence>
         <xsd:attribute default="object" name="type" type="xsd:string"/>
     </xsd:complexType>

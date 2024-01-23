@@ -131,7 +131,7 @@ scriptContent:
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:null
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetBillingSessionsPerDayForApex","marker":""}],"path":"?.options?.yaxis","prefix":"","suffix":"","custom":"","useCustom":false}}
         ↓grid [ngx.components.UIUseVariable-1702476786057]: 
           varValue: 
             - xmlizable: 

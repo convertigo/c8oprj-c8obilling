@@ -58,8 +58,9 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
             SUM(sessionChange) OVER (ORDER BY creationDate) as concurrentSessions
         FROM 
             SessionEvents
-    )
-    SELECT 
+    ),
+    SessionTime AS (
+        SELECT 
         ROUND(creationDate / 1000, 0) as Epoch, 
         FROM_UNIXTIME(creationDate / 1000) as DateTime, 
         sessionID,
@@ -69,8 +70,14 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
     FROM 
         CumulativeSessions
     ORDER BY 
-        creationDate;
-        
+        creationDate
+    )
+    SELECT 
+        *,
+        ROUND(SUM(sessionSeconds) OVER (ORDER BY Epoch) / 3600)  as cumulatedSessionHours
+    FROM
+        SessionTime
+    
   ↓Bookplanet [core.TestCase]: 
     ↓customerName [variables.TestCaseVariable-1701019320201]: 
       description: customerName

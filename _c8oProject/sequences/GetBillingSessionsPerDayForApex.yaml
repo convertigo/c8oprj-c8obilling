@@ -1,5 +1,4 @@
 accessibility: Private
-responseExpiryDate: daily,00:00:00
 ↓inputVars [steps.InputVariablesStep-1702400872255]: 
 ↓Call_Transaction [steps.TransactionStep-1702400872258]: 
   sourceTransaction: C8OBilling.C8oBilling.ComputeSessions
@@ -101,6 +100,48 @@ responseExpiryDate: daily,00:00:00
             - SmartType: 
               - ↑mode: PLAIN
               - →→: Concurrent Sessions
+    ↓object1 [steps.JsonObjectStep-1706022759530]: 
+      ↓data [steps.JsonArrayStep-1706022759533]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: data
+        ↓Iterator [steps.IteratorStep-1706022759536]: 
+          sourceDefinition: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+              - com.twinsoft.convertigo.beans.common.XMLVector: 
+                - java.lang.String: 
+                  - ↑value: 1702400872258
+                - java.lang.String: 
+                  - ↑value: ./document/sql_output/row
+          ↓field [steps.JsonFieldStep-1706022759539]: 
+            type: number
+            value: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+                - SmartType: 
+                  - ↑mode: SOURCE
+                  - com.twinsoft.convertigo.beans.common.XMLVector: 
+                    - java.lang.String: 
+                      - ↑value: 1706022759536
+                    - java.lang.String: 
+                      - ↑value: ./cumulatedSessionHours/text()
+      ↓name [steps.JsonFieldStep-1706022759542]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: name
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: Cumulated Session Hours
   ↓xaxis [steps.JsonObjectStep-1702461811324]: 
     key: 
       - xmlizable: 
@@ -154,6 +195,69 @@ responseExpiryDate: daily,00:00:00
                     - ↑value: 1702463115342
                   - java.lang.String: 
                     - ↑value: ./DateTime/text()
+  ↓yaxis [steps.JsonArrayStep-1706022331037]: 
+    key: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+        - SmartType: 
+          - ↑mode: PLAIN
+          - →→: yaxis
+    ↓object [steps.JsonObjectStep-1706022336665]: 
+      ↓title [steps.JsonObjectStep-1706022341514]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: title
+        ↓text [steps.JsonFieldStep-1706022349206]: 
+          key: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+              - SmartType: 
+                - ↑mode: PLAIN
+                - →→: text
+          value: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+              - SmartType: 
+                - ↑mode: PLAIN
+                - →→: Concurrent Sessions
+    ↓object1 [steps.JsonObjectStep-1706022359303]: 
+      ↓opposite [steps.JsonFieldStep-1706022365949]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: opposite
+        type: bool
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: true
+      ↓title [steps.JsonObjectStep-1706022359306]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: title
+        ↓text [steps.JsonFieldStep-1706022359309]: 
+          key: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+              - SmartType: 
+                - ↑mode: PLAIN
+                - →→: text
+          value: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+              - SmartType: 
+                - ↑mode: PLAIN
+                - →→: Cumulated Session Hours
 ↓startDate [variables.RequestableVariable-1702400872303]: 
 ↓endDate [variables.RequestableVariable-1702400872306]: 
 ↓customerName [variables.RequestableVariable-1702400872309]: 
