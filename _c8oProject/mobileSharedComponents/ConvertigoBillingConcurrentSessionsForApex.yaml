@@ -210,6 +210,12 @@ scriptContent:
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
             - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695310419875,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓__context [ngx.components.UIControlVariable-1706886048266]: 
+        comment: endDate
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:ConvertigoBillingConcurrentSessionsForApex
 ↓dateStart [ngx.components.UICompVariable-1702400403645]: 
 ↓dateEnd [ngx.components.UICompVariable-1702400403648]: 
 ↓customerName [ngx.components.UICompVariable-1702400403651]: 

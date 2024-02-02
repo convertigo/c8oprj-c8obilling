@@ -2,7 +2,7 @@
 ↓C8OBilling [core.Project]: 
   comment: Convertigo NGX builder Project
   corsOrigin: =Origin
-  version: 1.5
+  version: 1.6
   ↓C8oBilling [connectors.SqlConnector]: 🗏 connectors/C8oBilling.yaml
   ↓CustGetBillingSessionsPerDayForApex [sequences.GenericSequence]: 🗏 sequences/CustGetBillingSessionsPerDayForApex.yaml
   ↓CustGetBillingUsersPerDayForApex [sequences.GenericSequence]: 🗏 sequences/CustGetBillingUsersPerDayForApex.yaml

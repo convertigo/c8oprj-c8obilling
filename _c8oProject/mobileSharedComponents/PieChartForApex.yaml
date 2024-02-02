@@ -23,6 +23,12 @@
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
             - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1701857037776,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓__context [ngx.components.UIControlVariable-1706885933334]: 
+        comment: endDate
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:PieChartForApex
 ↓dateStart [ngx.components.UICompVariable-1702908904797]: 
 ↓dateEnd [ngx.components.UICompVariable-1702908904800]: 
 ↓CardContainer [ngx.components.UIDynamicElement-1702909206023]: 

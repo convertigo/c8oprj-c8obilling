@@ -142,6 +142,12 @@ scriptContent:
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
             - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695310419875,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓__context [ngx.components.UIControlVariable-1706885973584]: 
+        comment: endDate
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:CustomerActivityForApex
 ↓dateStart [ngx.components.UICompVariable-1702817605001]: 
 ↓dateEnd [ngx.components.UICompVariable-1702817605004]: 
 ↓customerName [ngx.components.UICompVariable-1703584769819]: 
