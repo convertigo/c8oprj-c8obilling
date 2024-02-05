@@ -9,14 +9,14 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
   sqlQuery: |
     WITH SessionEvents AS (
         SELECT 
-            creationDate, 
+            creationDate - responseTime as creationDate, 
             sessionID,
             userName,
             1 as sessionChange
         FROM 
             Ticket
         WHERE 
-            connectorName = 'start'
+            connectorName = 'stop'
     	AND
     		customerName = '{customerName}'
     	AND
