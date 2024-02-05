@@ -3,11 +3,14 @@ scriptContent:
     - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
     - com.twinsoft.convertigo.beans.common.FormatedContent: 
       →: |
-        /*Begin_c8o_CompImport*/
+        '/*Begin_c8o_CompImport*/
         /*End_c8o_CompImport*/
         /*Begin_c8o_CompDeclaration*/
+        	
         	/*End_c8o_CompDeclaration*/
         /*Begin_c8o_CompConstructor*/
+        		
+        
         		/*End_c8o_CompConstructor*/
         /*Begin_c8o_CompInitialization*/
         		/*End_c8o_CompInitialization*/
@@ -26,8 +29,32 @@ scriptContent:
         /*Begin_c8o_CompAfterViewChecked*/
         		/*End_c8o_CompAfterViewChecked*/
         /*Begin_c8o_CompFunction*/
+        	
+        	setDateRange(lastDays: number): void {
+        		const currentDate = new Date();
+        		const pastDate = new Date();
+        		pastDate.setDate(currentDate.getDate() - lastDays);
+        		
+        		// Format dates as string in the ''YYYY-MM-DD'' format
+        		const currentYear = currentDate.getFullYear().toString();
+        		const currentMonth = (currentDate.getMonth() + 1).toString().padStart(2, ''0''); 
+        		const currentDay = currentDate.getDate().toString().padStart(2, ''0'');
+        		
+        		const pastYear = pastDate.getFullYear().toString();
+        		const pastMonth = (pastDate.getMonth() + 1).toString().padStart(2, ''0''); 
+        		const pastDay = pastDate.getDate().toString().padStart(2, ''0'');
+        		
+        		this.dateEnd = `${currentYear}-${currentMonth}-${currentDay}`;
+        		this.dateStart = `${pastYear}-${pastMonth}-${pastDay}`;
+        		
+        		// Emit the new date values to inform parent components of the update
+        		this.dateStartChange.emit(this.dateStart);
+        		this.dateEndChange.emit(this.dateEnd);
+        		debugger;
+        	}
+        	
         	/*End_c8o_CompFunction*/
-        
+        '
 ↓CardContainer [ngx.components.UIDynamicElement-1701369309100]: 
   beanData: '{"ionBean":"Card"}'
   tagName: ion-card
@@ -335,6 +362,282 @@ scriptContent:
                     - xmlizable: 
                       - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
                       - MobileSmartSourceType: plain:end
+      ↓GridRow1 [ngx.components.UIDynamicElement-1707133663787]: 
+        beanData: '{"ionBean":"GridRow"}'
+        tagName: ion-row
+        ↓GridCol [ngx.components.UIDynamicElement-1707133663776]: 
+          beanData: '{"ionBean":"GridCol"}'
+          tagName: ion-col
+          ↓RadioGroup [ngx.components.UIDynamicElement-1707134565793]: 
+            beanData: |
+              '{
+               "ionBean": "RadioGroup",
+               "ControlName": "plain:name1707134565793",
+               "Value": "plain"
+              }'
+            tagName: ion-radio-group
+            ↓TextItem [ngx.components.UIDynamicElement-1707139506272]: 
+              beanData: '{"ionBean":"TextItem"}'
+              tagName: ion-text
+              ↓RadioButton [ngx.components.UIDynamicElement-1707134422922]: 
+                beanData: '{"ionBean":"RadioButton","Value":"plain:date1"}'
+                tagName: ion-radio
+                ↓Style [ngx.components.UIStyle-1707140516671]: 
+                  styleContent: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                        →: |
+                          '	
+                          	padding-top: 10px
+                          	/**
+                           * Custom properties (sometimes referred to as CSS variables or cascading variables)
+                           * are entities defined by CSS authors that contain specific values to be reused throughout a document.
+                           * They are set using custom property notation, e.g.: --main-color: black;
+                           * and are accessed using the var() function, e.g.: color: var(--main-color);
+                           * You can find below your component''s properties you can customize within the page.
+                           * If you''d like to make some customizations for whole app, please see your app Style & Theme components.
+                           * For more informations see https://ionicframework.com/docs/theming.
+                          **/
+                          //--border-radius	//Border radius of the radio
+                          //--color	//Color of the radio
+                          //--color-checked	//Color of the checked radio
+                          //--inner-border-radius	//Border radius of the inner checked radio
+                          '
+                ↓attr [ngx.components.UIControlEvent-1707140922486]: 
+                  ↓CustomAction [ngx.components.UICustomAction-1707141419001]: 
+                    actionValue: 
+                      - xmlizable: 
+                        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                          →: |
+                            '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                            		// 7 days
+                            		page.setDateRange(7);
+                            		
+                            		resolve();
+                            '
+              ↓some_text [ngx.components.UIText-1707139506271]: 
+                textValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                    - MobileSmartSourceType: plain:Last 7 days
+            ↓TextItem1 [ngx.components.UIDynamicElement-1707139532392]: 
+              beanData: '{"ionBean":"TextItem"}'
+              tagName: ion-text
+              ↓RadioButton [ngx.components.UIDynamicElement-1707139532398]: 
+                beanData: '{"ionBean":"RadioButton","Value":"plain:date2"}'
+                tagName: ion-radio
+                ↓Style [ngx.components.UIStyle-1707140757556]: 
+                  styleContent: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                        →: |
+                          '	
+                          	padding-top: 10px
+                          /**
+                           * Custom properties (sometimes referred to as CSS variables or cascading variables)
+                           * are entities defined by CSS authors that contain specific values to be reused throughout a document.
+                           * They are set using custom property notation, e.g.: --main-color: black;
+                           * and are accessed using the var() function, e.g.: color: var(--main-color);
+                           * You can find below your component''s properties you can customize within the page.
+                           * If you''d like to make some customizations for whole app, please see your app Style & Theme components.
+                           * For more informations see https://ionicframework.com/docs/theming.
+                          **/
+                          //--border-radius	//Border radius of the radio
+                          //--color	//Color of the radio
+                          //--color-checked	//Color of the checked radio
+                          //--inner-border-radius	//Border radius of the inner checked radio
+                          '
+                ↓attr [ngx.components.UIControlEvent-1707151999641]: 
+                  ↓CustomAction [ngx.components.UICustomAction-1707152011075]: 
+                    actionValue: 
+                      - xmlizable: 
+                        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                          →: |
+                            '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                            		page.setDateRange(28);
+                            		resolve();
+                            '
+              ↓some_text [ngx.components.UIText-1707139532395]: 
+                textValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                    - MobileSmartSourceType: plain:Last 28 days
+            ↓TextItem2 [ngx.components.UIDynamicElement-1707139535669]: 
+              beanData: '{"ionBean":"TextItem"}'
+              tagName: ion-text
+              ↓RadioButton [ngx.components.UIDynamicElement-1707139535675]: 
+                beanData: '{"ionBean":"RadioButton","Value":"plain:date3"}'
+                tagName: ion-radio
+                ↓Style [ngx.components.UIStyle-1707140768535]: 
+                  styleContent: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                        →: |
+                          '	padding-top: 10px
+                          /**
+                           * Custom properties (sometimes referred to as CSS variables or cascading variables)
+                           * are entities defined by CSS authors that contain specific values to be reused throughout a document.
+                           * They are set using custom property notation, e.g.: --main-color: black;
+                           * and are accessed using the var() function, e.g.: color: var(--main-color);
+                           * You can find below your component''s properties you can customize within the page.
+                           * If you''d like to make some customizations for whole app, please see your app Style & Theme components.
+                           * For more informations see https://ionicframework.com/docs/theming.
+                          **/
+                          //--border-radius	//Border radius of the radio
+                          //--color	//Color of the radio
+                          //--color-checked	//Color of the checked radio
+                          //--inner-border-radius	//Border radius of the inner checked radio
+                          '
+                ↓attr [ngx.components.UIControlEvent-1707152486585]: 
+                  ↓CustomAction [ngx.components.UICustomAction-1707152486588]: 
+                    actionValue: 
+                      - xmlizable: 
+                        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                          →: |
+                            '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                            		page.setDateRange(30);
+                            		resolve();
+                            '
+              ↓some_text [ngx.components.UIText-1707139535672]: 
+                textValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                    - MobileSmartSourceType: plain:Last 30 days
+            ↓TextItem3 [ngx.components.UIDynamicElement-1707139602302]: 
+              beanData: '{"ionBean":"TextItem"}'
+              tagName: ion-text
+              ↓RadioButton [ngx.components.UIDynamicElement-1707139602308]: 
+                beanData: '{"ionBean":"RadioButton","Value":"plain:date4"}'
+                tagName: ion-radio
+                ↓Style [ngx.components.UIStyle-1707140775335]: 
+                  styleContent: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                        →: |
+                          '	padding-top: 10px
+                          /**
+                           * Custom properties (sometimes referred to as CSS variables or cascading variables)
+                           * are entities defined by CSS authors that contain specific values to be reused throughout a document.
+                           * They are set using custom property notation, e.g.: --main-color: black;
+                           * and are accessed using the var() function, e.g.: color: var(--main-color);
+                           * You can find below your component''s properties you can customize within the page.
+                           * If you''d like to make some customizations for whole app, please see your app Style & Theme components.
+                           * For more informations see https://ionicframework.com/docs/theming.
+                          **/
+                          //--border-radius	//Border radius of the radio
+                          //--color	//Color of the radio
+                          //--color-checked	//Color of the checked radio
+                          //--inner-border-radius	//Border radius of the inner checked radio
+                          '
+                ↓attr [ngx.components.UIControlEvent-1707152490244]: 
+                  ↓CustomAction [ngx.components.UICustomAction-1707152490247]: 
+                    actionValue: 
+                      - xmlizable: 
+                        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                          →: |
+                            '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                            		page.setDateRange(90);
+                            		resolve();
+                            '
+              ↓some_text [ngx.components.UIText-1707139602305]: 
+                textValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                    - MobileSmartSourceType: plain:Last 90 days
+            ↓TextItem4 [ngx.components.UIDynamicElement-1707139605896]: 
+              beanData: '{"ionBean":"TextItem"}'
+              tagName: ion-text
+              ↓RadioButton [ngx.components.UIDynamicElement-1707139605902]: 
+                beanData: '{"ionBean":"RadioButton","Value":"plain:date35"}'
+                tagName: ion-radio
+                ↓Style [ngx.components.UIStyle-1707140780691]: 
+                  styleContent: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                        →: |
+                          '	padding-top: 10px
+                          /**
+                           * Custom properties (sometimes referred to as CSS variables or cascading variables)
+                           * are entities defined by CSS authors that contain specific values to be reused throughout a document.
+                           * They are set using custom property notation, e.g.: --main-color: black;
+                           * and are accessed using the var() function, e.g.: color: var(--main-color);
+                           * You can find below your component''s properties you can customize within the page.
+                           * If you''d like to make some customizations for whole app, please see your app Style & Theme components.
+                           * For more informations see https://ionicframework.com/docs/theming.
+                          **/
+                          //--border-radius	//Border radius of the radio
+                          //--color	//Color of the radio
+                          //--color-checked	//Color of the checked radio
+                          //--inner-border-radius	//Border radius of the inner checked radio
+                          '
+                ↓attr [ngx.components.UIControlEvent-1707152493719]: 
+                  ↓CustomAction [ngx.components.UICustomAction-1707152493722]: 
+                    actionValue: 
+                      - xmlizable: 
+                        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                          →: |
+                            '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                            		page.setDateRange(365);
+                            		resolve();
+                            '
+              ↓some_text [ngx.components.UIText-1707139605899]: 
+                textValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                    - MobileSmartSourceType: plain:Last 12 months
+          ↓Style [ngx.components.UIStyle-1707139998103]: 
+            styleContent: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                  →: |
+                    '	
+                    	ion-radio {
+                      --border-radius: 4px;
+                      --inner-border-radius: 4px;
+                    
+                      --color: #ddd;
+                      --color-checked: royalblue;
+                    }
+                    
+                    ion-radio.ios::part(container) {
+                      width: 20px;
+                      height: 20px;
+                    
+                      border: 2px solid #ddd;
+                      border-radius: 4px;
+                    }
+                    
+                    .radio-checked.ios::part(container) {
+                      border-color: royalblue;
+                    }
+                    /**
+                     * Custom properties (sometimes referred to as CSS variables or cascading variables)
+                     * are entities defined by CSS authors that contain specific values to be reused throughout a document.
+                     * They are set using custom property notation, e.g.: --main-color: black;
+                     * and are accessed using the var() function, e.g.: color: var(--main-color);
+                     * You can find below your component''s properties you can customize within the page.
+                     * If you''d like to make some customizations for whole app, please see your app Style & Theme components.
+                     * For more informations see https://ionicframework.com/docs/theming.
+                    **/
+                    //--ion-grid-column-padding	//Padding for the Column
+                    //--ion-grid-column-padding-lg	//Padding for the Column on lg screens and up
+                    //--ion-grid-column-padding-md	//Padding for the Column on md screens and up
+                    //--ion-grid-column-padding-sm	//Padding for the Column on sm screens and up
+                    //--ion-grid-column-padding-xl	//Padding for the Column on xl screens and up
+                    //--ion-grid-column-padding-xs	//Padding for the Column on xs screens and up
+                    //--ion-grid-columns	//The number of total Columns in the Grid
+                    '
 ↓dateStart [ngx.components.UICompVariable-1701369372611]: 
   autoEmit: true
 ↓dateEnd [ngx.components.UICompVariable-1701369391678]: 
