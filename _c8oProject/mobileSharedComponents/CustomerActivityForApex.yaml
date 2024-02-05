@@ -16,14 +16,24 @@ scriptContent:
         			this.customerName = event.currentTarget?.getElementsByTagName("title")?.[0]?.textContent;
         		
         			//console.log("Clicked on : " + customerName);
-        	  		this.ref.detectChanges();
+        			this.c8o.callJson(".SetCustomer", {
+        				customerName : this.customerName
+        			})
+        			.async().then((resp)=>{
+        				this.ref.detectChanges();
+        			})
         		}
         		
         		this.clickedData = (event, chartContext, config) => {
         			this.customerName = config.w.config.xaxis.categories[config.selectedDataPoints];
         		
         			//console.log("Clicked on : " + customerName);
-        	  		this.ref.detectChanges();
+        			this.c8o.callJson(".SetCustomer", {
+        				customerName : this.customerName
+        			})
+        			.async().then((resp)=>{
+        				this.ref.detectChanges();
+        			})
         		}
         		
         		/*End_c8o_CompConstructor*/

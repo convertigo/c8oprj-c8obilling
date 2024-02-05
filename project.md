@@ -21,7 +21,7 @@ see [readme](https://github.com/convertigo/c8oprj-c8o-cloud-signup/tree/master#r
 ## ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/references/images/ProjectSchemaReference_16x16.png?raw=true "ProjectSchemaReference") lib_ExtendedComponents_ui_ngx
 
 
-see [readme](https://github.com/convertigo/c8oprj-lib-extended-components-ui-ngx/tree/8.0.0.1#readme)
+see [readme](https://github.com/convertigo/c8oprj-lib-extended-components-ui-ngx/tree/8.1.0.0#readme)
 </p></blockquote></details>
 
 <details><summary><b>libApexCharts</b> : ngx builder template</summary><blockquote><p>
