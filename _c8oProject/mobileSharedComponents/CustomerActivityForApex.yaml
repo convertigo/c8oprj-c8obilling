@@ -20,11 +20,11 @@ scriptContent:
         				customerName : this.customerName
         			})
         			.then((resp)=>{
+        				this.customerNameChange.emit(this.customerName);
         				this.ref.detectChanges();
-        				
         				return null;
         			})
-        			this.customerNameChange.emit(this.customerName);
+        			
         		}
         		
         		this.clickedData = (event, chartContext, config) => {
@@ -36,6 +36,7 @@ scriptContent:
         			})
         			.then((resp)=>{
         				this.customerNameChange.emit(this.customerName);
+        				this.ref.detectChanges();
         				return null;
         			})
         			
