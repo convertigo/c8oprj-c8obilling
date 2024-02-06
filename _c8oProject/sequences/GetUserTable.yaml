@@ -87,6 +87,27 @@ accessibility: Private
             - SmartType: 
               - ↑mode: PLAIN
               - →→: userName
+    ↓object3 [steps.JsonObjectStep-1707220238289]: 
+      ↓headerName [steps.JsonFieldStep-1707220238294]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: headerName
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: Session Duration
+      ↓field [steps.JsonFieldStep-1707220238297]: 
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: sessionTime
   ↓array1 [steps.JsonArrayStep-1702297526596]: 
     key: 
       - xmlizable: 

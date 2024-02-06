@@ -16,24 +16,29 @@ scriptContent:
         			this.customerName = event.currentTarget?.getElementsByTagName("title")?.[0]?.textContent;
         		
         			//console.log("Clicked on : " + customerName);
-        			this.c8o.callJson(".SetCustomer", {
+        			this.c8o.callJsonObject(".SetCustomer", {
         				customerName : this.customerName
         			})
-        			.async().then((resp)=>{
+        			.then((resp)=>{
         				this.ref.detectChanges();
+        				
+        				return null;
         			})
+        			this.customerNameChange.emit(this.customerName);
         		}
         		
         		this.clickedData = (event, chartContext, config) => {
         			this.customerName = config.w.config.xaxis.categories[config.selectedDataPoints];
         		
         			//console.log("Clicked on : " + customerName);
-        			this.c8o.callJson(".SetCustomer", {
+        			this.c8o.callJsonObject(".SetCustomer", {
         				customerName : this.customerName
         			})
-        			.async().then((resp)=>{
-        				this.ref.detectChanges();
+        			.then((resp)=>{
+        				this.customerNameChange.emit(this.customerName);
+        				return null;
         			})
+        			
         		}
         		
         		/*End_c8o_CompConstructor*/
@@ -161,4 +166,3 @@ scriptContent:
 ↓dateStart [ngx.components.UICompVariable-1702817605001]: 
 ↓dateEnd [ngx.components.UICompVariable-1702817605004]: 
 ↓customerName [ngx.components.UICompVariable-1703584769819]: 
-  autoEmit: true

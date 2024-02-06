@@ -284,13 +284,12 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
     	from_unixtime(creationDate / 1000) AS DateTime,
     	userName,
     	sessionID,
-    	creationDate
+    	creationDate,
+    	sec_to_time(responseTime/1000) AS sessionTime
     FROM
     	c8oAnalytics.Ticket
     WHERE
     	customerName ='{customerName}'
-    AND
-    	userName <> ''
     AND
     	connectorName = 'stop'
     AND
