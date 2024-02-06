@@ -50,7 +50,7 @@ scriptContent:
         		// Emit the new date values to inform parent components of the update
         		this.dateStartChange.emit(this.dateStart);
         		this.dateEndChange.emit(this.dateEnd);
-        		debugger;
+        		
         	}
         	
         	/*End_c8o_CompFunction*/
