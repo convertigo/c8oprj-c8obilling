@@ -21,27 +21,24 @@ scriptContent:
         			})
         			.then((resp)=>{
         				this.customerNameChange.emit(this.customerName);
-        				this.ref.detectChanges();
+        				this.pageOwner.ref.detectChanges();
         				return null;
         			})
         			
         		}
         		
-        		this.clickedData = (event, chartContext, config) => {
-        			this.customerName = config.w.config.xaxis.categories[config.selectedDataPoints];
-        		
-        			//console.log("Clicked on : " + customerName);
-        			this.c8o.callJsonObject(".SetCustomer", {
-        				customerName : this.customerName
-        			})
-        			.then((resp)=>{
+        		this.clickedData = async (event, chartContext, config) => {
+        		    this.customerName = config.w.config.xaxis.categories[config.selectedDataPoints];
+        		    try {
+        		        await this.c8o.callJsonObject(".SetCustomer", {
+        		            customerName: this.customerName
+        		        });
         				this.customerNameChange.emit(this.customerName);
-        				this.ref.detectChanges();
-        				return null;
-        			})
-        			
+        				this.pageOwner.ref.detectChanges();				
+        		    } catch (error) {
+        		        console.error("Erreur lors de l''appel de SetCustomer", error);
+        		    }
         		}
-        		
         		/*End_c8o_CompConstructor*/
         /*Begin_c8o_CompInitialization*/
         		/*End_c8o_CompInitialization*/
