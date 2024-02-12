@@ -6,8 +6,18 @@ scriptContent:
         /*Begin_c8o_CompImport*/
         /*End_c8o_CompImport*/
         /*Begin_c8o_CompDeclaration*/
+        	public handleZoomUsers;
         	/*End_c8o_CompDeclaration*/
         /*Begin_c8o_CompConstructor*/
+        		this.handleZoomUsers = (chartContext, {xaxis}) => {
+        			
+        			let dateEnd1 = new Date(xaxis.max).toISOString();
+        			let dateStart1 = new Date(xaxis.min).toISOString();
+        			
+        			console.log("date start is ${dateStart1} and date end is ${dateEnd1}")
+        			
+        			
+            	}
         		/*End_c8o_CompConstructor*/
         /*Begin_c8o_CompInitialization*/
         		/*End_c8o_CompInitialization*/
@@ -54,7 +64,14 @@ scriptContent:
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetBillingSessionsPerDayForApex","marker":""}],"path":"?.options?.chart","prefix":"","suffix":"","custom":"","useCustom":false}}
+              - MobileSmartSourceType: |
+                  'script:{
+                  	type:''area'',
+                  	height:''200px'',
+                  	events:{
+                  		zoomed: handleZoomUsers
+                  	}
+                  }'
         ↓series [ngx.components.UIUseVariable-1702400514852]: 
           comment: |
             The series is a set of data. You may have single or multiple data series.
@@ -68,19 +85,6 @@ scriptContent:
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetBillingSessionsPerDayForApex","marker":""}],"path":"?.options?.xaxis","prefix":"","suffix":"","custom":"","useCustom":false}}
-        ↓annotations [ngx.components.UIUseVariable-1702476786035]: 
-          comment: |
-            Annotations in ApexCharts allows you to write custom text on specific data-points or on axes values.
-            For more information please visit [Series documentation](https://apexcharts.com/docs/annotations/) 
-          varValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:null
-        ↓colors [ngx.components.UIUseVariable-1702476786037]: 
-          varValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:null
         ↓dataLabels [ngx.components.UIUseVariable-1702476786039]: 
           comment: |
             Data Labels are the actual values which are passed in the series. You can add formatters which will allow you to modify values before displaying.
@@ -94,69 +98,11 @@ scriptContent:
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: 'script:{ curve: ''straight''}'
-        ↓labels [ngx.components.UIUseVariable-1702476786043]: 
-          varValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:null
-        ↓legend [ngx.components.UIUseVariable-1702476786045]: 
-          varValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:null
-        ↓fill [ngx.components.UIUseVariable-1702476786047]: 
-          varValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:null
-        ↓tooltip [ngx.components.UIUseVariable-1702476786049]: 
-          varValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:null
-        ↓plotOptions [ngx.components.UIUseVariable-1702476786051]: 
-          varValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:null
-        ↓responsive [ngx.components.UIUseVariable-1702476786053]: 
-          comment: |
-            You can configure different options for different screen sizes and ApexCharts will override the configuration based on breakpoints defined.
-            For more information please visit [Series documentation](https://apexcharts.com/docs/responsive/) 
-          varValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:null
         ↓yaxis [ngx.components.UIUseVariable-1702476786055]: 
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetBillingSessionsPerDayForApex","marker":""}],"path":"?.options?.yaxis","prefix":"","suffix":"","custom":"","useCustom":false}}
-        ↓grid [ngx.components.UIUseVariable-1702476786057]: 
-          varValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:null
-        ↓states [ngx.components.UIUseVariable-1702476786059]: 
-          varValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:null
-        ↓title [ngx.components.UIUseVariable-1702476786061]: 
-          varValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:null
-        ↓subtitle [ngx.components.UIUseVariable-1702476786063]: 
-          varValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:null
-        ↓theme [ngx.components.UIUseVariable-1702476786065]: 
-          varValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:null
     ↓tag1 [ngx.components.UIControlDirective-1702623740509]: 
       directiveName: If
       directiveSource: 
@@ -219,4 +165,6 @@ scriptContent:
 ↓dateStart [ngx.components.UICompVariable-1702400403645]: 
 ↓dateEnd [ngx.components.UICompVariable-1702400403648]: 
 ↓customerName [ngx.components.UICompVariable-1702400403651]: 
+  autoEmit: true
+↓zoomInfo [ngx.components.UICompVariable-1707757876135]: 
   autoEmit: true

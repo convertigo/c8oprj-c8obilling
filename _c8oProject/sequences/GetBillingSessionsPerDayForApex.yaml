@@ -19,6 +19,7 @@ accessibility: Private
         - ↑mode: PLAIN
         - →→: options
   ↓chart [steps.JsonObjectStep-1702476107281]: 
+    isEnabled: false
     key: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
@@ -51,6 +52,27 @@ accessibility: Private
           - SmartType: 
             - ↑mode: PLAIN
             - →→: 200px
+    ↓events [steps.JsonObjectStep-1707736780277]: 
+      isEnabled: false
+      key: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: events
+      ↓zoomed [steps.JsonFieldStep-1707736588495]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: zoomed
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: JS
+              - →→: handleZoomUsers
   ↓series [steps.JsonArrayStep-1702461736772]: 
     key: 
       - xmlizable: 
