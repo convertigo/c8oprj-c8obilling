@@ -287,9 +287,9 @@ accessibility: Private
   description: customerName
 ↓BookPlanet [core.TestCase]: 
   ↓startDate [variables.TestCaseVariable-1702400872313]: 
-    value: 2023-11-01
+    value: 2023-11-01 08:00:00
   ↓endDate [variables.TestCaseVariable-1702400872316]: 
-    value: 2023-12-01
+    value: 2023-11-01 08:20:00
   ↓customerName [variables.TestCaseVariable-1702400872319]: 
     description: customerName
     value: bookplanet

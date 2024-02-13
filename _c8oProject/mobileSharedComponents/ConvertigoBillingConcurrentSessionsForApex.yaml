@@ -10,14 +10,21 @@ scriptContent:
         	/*End_c8o_CompDeclaration*/
         /*Begin_c8o_CompConstructor*/
         		this.handleZoomUsers = (chartContext, {xaxis}) => {
-        			
-        			let dateEnd1 = new Date(xaxis.max).toISOString();
-        			let dateStart1 = new Date(xaxis.min).toISOString();
-        			
-        			console.log("date start is ${dateStart1} and date end is ${dateEnd1}")
-        			
-        			
-            	}
+            
+        		    // Convert epoch to Date object and then to ISO string
+        		    let zoomStartingISO = new Date(xaxis.min).toISOString();
+        		    let zoomEndingISO = new Date(xaxis.max).toISOString();
+        		
+        		    // Convert ISO string to "YYYY-MM-DD HH:MM:SS.SSS" format
+        		    let zoomStarting = zoomStartingISO.replace('T', ' ').slice(0, -1);
+        		    let zoomEnding = zoomEndingISO.replace('T', ' ').slice(0, -1);
+        		    
+        		    
+        		    this.zoomStart = zoomStarting;
+        		    this.zoomEnd = zoomEnding;
+        		    
+        		    
+        		};
         		/*End_c8o_CompConstructor*/
         /*Begin_c8o_CompInitialization*/
         		/*End_c8o_CompInitialization*/
@@ -155,16 +162,30 @@ scriptContent:
         varValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695310419875,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1702400403612,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
       ↓__context [ngx.components.UIControlVariable-1706886048266]: 
         comment: endDate
         varValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
             - MobileSmartSourceType: plain:ConvertigoBillingConcurrentSessionsForApex
+      ↓zoomStart [ngx.components.UIControlVariable-1707841106745]: 
+        comment: new variable
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1702400403612,"regular":true}],"path":"?.zoomStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓zoomEnd [ngx.components.UIControlVariable-1707841106747]: 
+        comment: new variable
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1702400403612,"regular":true}],"path":"?.zoomEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
 ↓dateStart [ngx.components.UICompVariable-1702400403645]: 
 ↓dateEnd [ngx.components.UICompVariable-1702400403648]: 
 ↓customerName [ngx.components.UICompVariable-1702400403651]: 
   autoEmit: true
-↓zoomInfo [ngx.components.UICompVariable-1707757876135]: 
+↓zoomEnd [ngx.components.UICompVariable-1707824457628]: 
+  autoEmit: true
+↓zoomStart [ngx.components.UICompVariable-1707824470253]: 
   autoEmit: true

@@ -41,6 +41,11 @@ title: Customer Insights
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
             - MobileSmartSourceType: plain:Convertigo Insight Dashboard
+      ↓some_text [ngx.components.UIText-1707837953070]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.zoomEnd","prefix":"","suffix":"","custom":"local.zoomStart","useCustom":true}}
     ↓ButtonSet2 [ngx.components.UIDynamicElement-1588170811054]: 
       beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:end"}'
       tagName: ion-buttons
@@ -187,6 +192,18 @@ title: Customer Insights
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
                 - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
+          ↓zoomEnd [ngx.components.UIUseVariable-1707839056743]: 
+            binding: twoWayBinding
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.zoomEnd","prefix":"","suffix":"","custom":"local.zoomEnd","useCustom":true}}
+          ↓zoomStart [ngx.components.UIUseVariable-1707839056745]: 
+            binding: twoWayBinding
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.zoomEnd","prefix":"","suffix":"","custom":"local.zoomEnd","useCustom":true}}
     ↓GridRow1 [ngx.components.UIDynamicElement-1702910679915]: 
       beanData: |
         '{
@@ -225,12 +242,12 @@ title: Customer Insights
             varValue: 
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateStart","prefix":"","suffix":"","custom":"local?.zoomStart ? local?.dateStart","useCustom":false}}
           ↓dateEnd [ngx.components.UIUseVariable-1702297863149]: 
             varValue: 
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateEnd","prefix":"","suffix":"","custom":" local?.zoomEnd ? local?.dateEnd ","useCustom":false}}
           ↓customerName [ngx.components.UIUseVariable-1702297863151]: 
             varValue: 
               - xmlizable: 
@@ -262,3 +279,19 @@ title: Customer Insights
        "Value": "script:this.navParams.get(''startDate'') ?? new Date(new Date().getTime() - 30*24*3600*1000).toISOString().split(''T'')[0]"
       }'
     tagName: SetLocal
+  ↓SetLocal3 [ngx.components.UIDynamicAction-1707837393845]: 
+    beanData: |
+      '{
+       "ionBean": "SetLocalAction",
+       "Property": "plain:zoomStart",
+       "Value": "script:null"
+      }'
+    tagName: SetLocal3
+  ↓SetLocal4 [ngx.components.UIDynamicAction-1707837475357]: 
+    beanData: |
+      '{
+       "ionBean": "SetLocalAction",
+       "Property": "plain:zoomEnd",
+       "Value": "script:null"
+      }'
+    tagName: SetLocal4

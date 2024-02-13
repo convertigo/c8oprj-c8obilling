@@ -16,13 +16,13 @@
         varValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695386269421,"regular":true}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695386269421,"regular":true}],"path":"?.dateStart","prefix":"","suffix":"","custom":"this?.zoomStart ? this?.dateStart","useCustom":false}}
       ↓endDate [ngx.components.UIControlVariable-1702297982170]: 
         comment: new variable
         varValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695386269421,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695386269421,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"this?.zoomEnd ? this?.dateEnd","useCustom":false}}
 ↓dateStart [ngx.components.UICompVariable-1702295805771]: 
 ↓dateEnd [ngx.components.UICompVariable-1702295805774]: 
 ↓customerName [ngx.components.UICompVariable-1702295805777]: 
@@ -194,3 +194,7 @@
       ↓Spinner [ngx.components.UIDynamicElement-1702757594903]: 
         beanData: '{"ionBean":"Spinner"}'
         tagName: ion-spinner
+↓zoomStart [ngx.components.UICompVariable-1707825007004]: 
+  autoEmit: true
+↓zoomEnd [ngx.components.UICompVariable-1707825019067]: 
+  autoEmit: true
