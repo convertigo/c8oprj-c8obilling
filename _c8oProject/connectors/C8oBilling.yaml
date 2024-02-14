@@ -61,7 +61,7 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
     ),
     SessionTime AS (
         SELECT 
-        ROUND(creationDate / 1000, 0) as Epoch, 
+        creationDate as Epoch, 
         FROM_UNIXTIME(creationDate / 1000) as DateTime, 
         sessionID,
         userName,
@@ -91,13 +91,13 @@ jdbcUserPassword: x7630a0dc9f07869c216f1b77e8680937079b191fe4b77b75e73f740aa241a
   ↓Trialnocode [core.TestCase]: 
     ↓customerName [variables.TestCaseVariable-1701019320205]: 
       description: customerName
-      value: harmonie-mutuelle
+      value: trial-nocode
     ↓startDate [variables.TestCaseVariable-1701022685399]: 
       description: startDate
-      value: 2023-01-01
+      value: 2023-11-06 00:00:00
     ↓endDate [variables.TestCaseVariable-1701022685402]: 
       description: endDate
-      value: 2023-11-30
+      value: 2023-11-07 00:10:00
   ↓customerName [variables.RequestableVariable-1701019320208]: 
     comment: a Tenant customer name
     description: customerName

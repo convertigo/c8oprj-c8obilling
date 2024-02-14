@@ -203,7 +203,7 @@ title: Customer Insights
             varValue: 
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.zoomEnd","prefix":"","suffix":"","custom":"local.zoomEnd","useCustom":true}}
+                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.zoomEnd","prefix":"","suffix":"","custom":"local.zoomStart","useCustom":true}}
     ↓GridRow1 [ngx.components.UIDynamicElement-1702910679915]: 
       beanData: |
         '{
@@ -242,12 +242,12 @@ title: Customer Insights
             varValue: 
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateStart","prefix":"","suffix":"","custom":"local?.zoomStart ? local?.dateStart","useCustom":false}}
+                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateStart","prefix":"","suffix":"","custom":"local?.zoomStart ?? local?.dateStart","useCustom":true}}
           ↓dateEnd [ngx.components.UIUseVariable-1702297863149]: 
             varValue: 
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateEnd","prefix":"","suffix":"","custom":" local?.zoomEnd ? local?.dateEnd ","useCustom":false}}
+                - MobileSmartSourceType: source:{"filter":"Local","project":"C8OBilling","input":"","model":{"data":[{"localObject":"local"}],"path":"?.dateEnd","prefix":"","suffix":"","custom":" local?.zoomEnd ?? local?.dateEnd ","useCustom":true}}
           ↓customerName [ngx.components.UIUseVariable-1702297863151]: 
             varValue: 
               - xmlizable: 

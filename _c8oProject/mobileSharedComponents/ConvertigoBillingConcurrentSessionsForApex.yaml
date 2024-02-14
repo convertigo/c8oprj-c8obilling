@@ -19,7 +19,7 @@ scriptContent:
         		    let zoomStarting = zoomStartingISO.replace('T', ' ').slice(0, -1);
         		    let zoomEnding = zoomEndingISO.replace('T', ' ').slice(0, -1);
         		    
-        		    
+        		    //debugger;
         		    this.zoomStart = zoomStarting;
         		    this.zoomEnd = zoomEnding;
         		    

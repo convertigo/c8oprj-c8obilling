@@ -28,8 +28,6 @@ authenticatedContextRequired: true
           - ↑value: ./document/*
 ↓startDate [variables.RequestableVariable-1705419278474]: 
 ↓endDate [variables.RequestableVariable-1705419278476]: 
-↓zoomStart [variables.RequestableVariable-1707841054506]: 
-↓zoomEnd [variables.RequestableVariable-1707841064024]: 
 ↓TestOK [core.TestCase]: 
   ↓startDate [variables.TestCaseVariable-1705420856344]: 
   ↓endDate [variables.TestCaseVariable-1705420856346]: 
