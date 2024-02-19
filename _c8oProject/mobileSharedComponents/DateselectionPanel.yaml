@@ -97,6 +97,14 @@ scriptContent:
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
                 - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.GetBillingCustomers","marker":""}],"path":"?.customerName","prefix":"","suffix":"?.[0]","custom":"","useCustom":false}}
+    ↓Style [ngx.components.UIStyle-1708352130114]: 
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              	
+              
   ↓CardContent [ngx.components.UIDynamicElement-1701369309115]: 
     beanData: '{"ionBean":"CardContent"}'
     tagName: ion-card-content

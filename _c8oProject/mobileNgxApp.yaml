@@ -91,6 +91,7 @@ tplProjectName: mobilebuilder_tpl_8_1_0_ngx
             --padding-end: 8px;
             --padding-top: 20px;
             --padding-bottom: 20px;
+            
           }
           
           ion-menu.md ion-list {
@@ -112,7 +113,7 @@ tplProjectName: mobilebuilder_tpl_8_1_0_ngx
           
           ion-menu.md ion-list#inbox-list ion-list-header {
             font-size: 22px;
-            font-weight: 600;
+            font-weight: 900;
           
             min-height: 20px;
           }
@@ -146,7 +147,7 @@ tplProjectName: mobilebuilder_tpl_8_1_0_ngx
           }
           
           ion-menu.md ion-item ion-label {
-            font-weight: 500;
+            font-weight: 800;
           }
           
           ion-menu.ios ion-content {
@@ -201,6 +202,12 @@ tplProjectName: mobilebuilder_tpl_8_1_0_ngx
           ion-item.selected {
             --color: var(--ion-color-primary);
           }
+          
+          ion-card-header{
+          	background-color: #00CFFF;
+          	color: black;
+          	
+          } 
           '
 ↓LightTheme [ngx.components.UIStyle-1662391887095]: 
   comment: This will define the light theme for the application. This will be selected if the device is in light mode.
@@ -501,3 +508,20 @@ tplProjectName: mobilebuilder_tpl_8_1_0_ngx
               '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
               		resolve(true);
               '
+↓Font [ngx.components.UIFont-1708350418328]: 
+  fontSource: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FontSource
+      - com.twinsoft.convertigo.beans.common.FontSource: 
+        →: '{"fontId":"barlow","fontFamily":"Barlow","fontWeight":"600","fontStyle":"normal","fontSubset":"latin"}'
+  isDefault: true
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          'font-family: "Barlow";
+          font-weight: 600;
+          font-style: "normal";
+          font-variant: "latin";
+          '
