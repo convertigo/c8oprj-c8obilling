@@ -12,15 +12,6 @@
   ↓CardContent [ngx.components.UIDynamicElement-1702477891973]: 
     beanData: '{"ionBean":"CardContent"}'
     tagName: ion-card-content
-    ↓tag1 [ngx.components.UIControlDirective-1702624223772]: 
-      directiveName: If
-      directiveSource: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetBillingUsersPerDayForApex","marker":""}],"path":"?.options","prefix":"! ","suffix":"","custom":"","useCustom":false}}
-      ↓Spinner [ngx.components.UIDynamicElement-1702624223775]: 
-        beanData: '{"ionBean":"Spinner"}'
-        tagName: ion-spinner
     ↓tag2 [ngx.components.UIControlDirective-1702624318556]: 
       directiveName: If
       directiveSource: 
@@ -136,25 +127,15 @@
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: script:null
-  ↓Style [ngx.components.UIStyle-1702477891979]: 
-    styleContent: 
-      - xmlizable: 
-        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-        - com.twinsoft.convertigo.beans.common.FormatedContent: 
-          →: |
-            '/**
-             * Custom properties (sometimes referred to as CSS variables or cascading variables)
-             * are entities defined by CSS authors that contain specific values to be reused throughout a document.
-             * They are set using custom property notation, e.g.: --main-color: black;
-             * and are accessed using the var() function, e.g.: color: var(--main-color);
-             * You can find below your component''s properties you can customize within the page.
-             * If you''d like to make some customizations for whole app, please see your app Style & Theme components.
-             * For more informations see https://ionicframework.com/docs/theming.
-            **/
-            //--background	//Background of the card
-            //--color	//Color of the card
-            //	width: 430px;
-            '
+    ↓tag1 [ngx.components.UIControlDirective-1702624223772]: 
+      directiveName: If
+      directiveSource: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetBillingUsersPerDayForApex","marker":""}],"path":"?.options","prefix":"! ","suffix":"","custom":"","useCustom":false}}
+      ↓Spinner [ngx.components.UIDynamicElement-1702624223775]: 
+        beanData: '{"ionBean":"Spinner"}'
+        tagName: ion-spinner
 ↓SharedComponent_Event [ngx.components.UISharedComponentEvent-1702477891982]: 
   componentEvent: onChanges
   ↓ClearDataSource [ngx.components.UIDynamicAction-1702757921481]: 

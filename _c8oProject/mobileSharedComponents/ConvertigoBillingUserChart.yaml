@@ -11,7 +11,7 @@
          "datasets": "source:{\"filter\":\"Sequence\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"sequence\":\"C8OBilling.GetBillingUsersPerDay\",\"marker\":\"\"}],\"path\":\"?.data?.dataset\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
          "labels": "source:{\"filter\":\"Sequence\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"sequence\":\"C8OBilling.GetBillingUsersPerDay\",\"marker\":\"\"}],\"path\":\"?.data?.labels\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
          "Height": "plain:400px",
-         "Options": "script:{\n        plugins: {\n            title: {\n                display: true,\n                text: ''Active Users per day''\n            }\n        },\n        responsive: true,\n        maintainAspectRatio: false,\n        scales: {\n            ByDay: {\n                axis: ''y'',\n                id: ''ByDay'',\n                type: ''linear'',\n                position: ''left'',\n                beginAtZero: true\n            }\n           \n        }\n}\n",
+         "Options": "script:{\r\n        plugins: {\r\n            title: {\r\n                display: true,\r\n                text: ''Active Users per day''\r\n            }\r\n        },\r\n        responsive: true,\r\n        maintainAspectRatio: false,\r\n        scales: {\r\n            ByDay: {\r\n                axis: ''y'',\r\n                id: ''ByDay'',\r\n                type: ''linear'',\r\n                position: ''left'',\r\n                beginAtZero: true\r\n            }\r\n           \r\n        }\r\n}\r\n",
          "ChartType": "plain:line"
         }'
       tagName: canvas

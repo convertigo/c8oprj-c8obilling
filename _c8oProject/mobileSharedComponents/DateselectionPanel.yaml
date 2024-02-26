@@ -660,3 +660,5 @@ scriptContent:
       }'
     tagName: CallSequence
 ↓customerName [ngx.components.UICompVariable-1701427856934]: 
+↓zoomEnd [ngx.components.UICompVariable-1708956719409]: 
+  value: '''null'''
