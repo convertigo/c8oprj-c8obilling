@@ -3,11 +3,11 @@ scriptContent:
     - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
     - com.twinsoft.convertigo.beans.common.FormatedContent: 
       →: |
-        /*Begin_c8o_CompImport*/
+        '/*Begin_c8o_CompImport*/
         /*End_c8o_CompImport*/
         /*Begin_c8o_CompDeclaration*/
         	public handleZoomUsers;
-        	
+        	public handleResetZoom;
         	/*End_c8o_CompDeclaration*/
         /*Begin_c8o_CompConstructor*/
         		this.handleZoomUsers = (chartContext, {xaxis}) => {
@@ -17,8 +17,8 @@ scriptContent:
         		    let zoomEndingISO = new Date(xaxis.max).toISOString();
         		
         		    // Convert ISO string to "YYYY-MM-DD HH:MM:SS.SSS" format
-        		    let zoomStarting = zoomStartingISO.replace('T', ' ').slice(0, -1);
-        		    let zoomEnding = zoomEndingISO.replace('T', ' ').slice(0, -1);
+        		    let zoomStarting = zoomStartingISO.replace(''T'', '' '').slice(0, -1);
+        		    let zoomEnding = zoomEndingISO.replace(''T'', '' '').slice(0, -1);
         		    
         		    //debugger;
         		    this.zoomStart = zoomStarting;
@@ -27,6 +27,17 @@ scriptContent:
         		    
         				    
         		};
+        		
+        		this.handleResetZoom = (chartContext, opts ) => {
+        			return {
+              			xaxis: {
+               				min: this.dateStart,
+                			max: this.dateEnd
+              			}
+         	
+            		}
+            		this.ref.detectChanges();
+        		}
         		/*End_c8o_CompConstructor*/
         /*Begin_c8o_CompInitialization*/
         		/*End_c8o_CompInitialization*/
@@ -34,7 +45,7 @@ scriptContent:
         		/*End_c8o_CompFinalization*/
         /*Begin_c8o_CompChanges*/
         		if (changes.dateStart || changes.dateEnd) {
-                    // If either has changed, we reset zoomStart and zoomEnd to null
+                    //If either has changed, we reset zoomStart and zoomEnd to null
                     this.zoomStart = null;
                     this.zoomEnd = null;
                     this.ref.detectChanges(); // Make sure to detect changes so the UI can update
@@ -57,7 +68,7 @@ scriptContent:
         	}
         	
         	/*End_c8o_CompFunction*/
-        
+        '
 ↓CardContainer [ngx.components.UIDynamicElement-1702400403615]: 
   beanData: '{"ionBean":"Card"}'
   tagName: ion-card
@@ -89,7 +100,9 @@ scriptContent:
                   	type:''area'',
                   	height:''200px'',
                   	events:{
-                  		zoomed: handleZoomUsers
+                  		zoomed: handleZoomUsers,
+                  		beforeResetZoom : handleResetZoom
+                  		
                   	}
                   }'
         ↓series [ngx.components.UIUseVariable-1702400514852]: 
@@ -140,54 +153,44 @@ scriptContent:
     ↓If1 [ngx.components.UIDynamicAction-1708947203817]: 
       beanData: '{"ionBean":"IfAction","condition":"script:this.zoomStart == null && this.zoomEnd == null"}'
       tagName: If1
-    ↓CallSequence [ngx.components.UIDynamicAction-1702400403630]: 
-      beanData: |
-        '{
-         "ionBean": "CallSequenceAction",
-         "requestable": "plain:C8OBilling.CustGetBillingSessionsPerDayForApex",
-         "noLoading": "plain:true"
-        }'
-      tagName: CallSequence
-      ↓startDate [ngx.components.UIControlVariable-1702400403633]: 
-        comment: new variable
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695310419875,"regular":true}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
-      ↓endDate [ngx.components.UIControlVariable-1702400403636]: 
-        comment: new variable
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1702400403612,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
-      ↓__context [ngx.components.UIControlVariable-1706886048266]: 
-        comment: endDate
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:ConvertigoBillingConcurrentSessionsForApex
-      ↓zoomStart [ngx.components.UIControlVariable-1707841106745]: 
-        comment: new variable
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1702400403612,"regular":true}],"path":"?.zoomStart","prefix":"","suffix":"","custom":"","useCustom":false}}
-      ↓zoomEnd [ngx.components.UIControlVariable-1707841106747]: 
-        comment: new variable
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1702400403612,"regular":true}],"path":"?.zoomEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
-      ↓lDateStart [ngx.components.UIControlVariable-1708946033591]: 
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1702400403612,"regular":true}],"path":"?.lDateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
-      ↓lDateEnd [ngx.components.UIControlVariable-1708946070314]: 
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1702400403612,"regular":true}],"path":"?.lDateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓CallSequence [ngx.components.UIDynamicAction-1702400403630]: 
+        beanData: |
+          '{
+           "ionBean": "CallSequenceAction",
+           "requestable": "plain:C8OBilling.CustGetBillingSessionsPerDayForApex",
+           "noLoading": "plain:true"
+          }'
+        tagName: CallSequence
+        ↓startDate [ngx.components.UIControlVariable-1702400403633]: 
+          comment: new variable
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695310419875,"regular":true}],"path":"?.dateStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+        ↓endDate [ngx.components.UIControlVariable-1702400403636]: 
+          comment: new variable
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1702400403612,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+        ↓__context [ngx.components.UIControlVariable-1706886048266]: 
+          comment: endDate
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:ConvertigoBillingConcurrentSessionsForApex
+        ↓zoomStart [ngx.components.UIControlVariable-1707841106745]: 
+          comment: new variable
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1702400403612,"regular":true}],"path":"?.zoomStart","prefix":"","suffix":"","custom":"","useCustom":false}}
+        ↓zoomEnd [ngx.components.UIControlVariable-1707841106747]: 
+          comment: new variable
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1702400403612,"regular":true}],"path":"?.zoomEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
 ↓dateStart [ngx.components.UICompVariable-1702400403645]: 
 ↓dateEnd [ngx.components.UICompVariable-1702400403648]: 
 ↓customerName [ngx.components.UICompVariable-1702400403651]: 
@@ -196,7 +199,3 @@ scriptContent:
   autoEmit: true
 ↓zoomStart [ngx.components.UICompVariable-1707824470253]: 
   autoEmit: true
-↓lDateStart [ngx.components.UICompVariable-1708344394328]: 
-  value: '''none'''
-↓lDateEnd [ngx.components.UICompVariable-1708344407399]: 
-  value: '''none'''

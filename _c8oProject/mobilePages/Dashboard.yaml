@@ -36,6 +36,18 @@ title: Customer Insights
     ↓BarTitle [ngx.components.UIDynamicElement-1491634265317]: 
       beanData: '{"ionBean":"BarTitle"}'
       tagName: ion-title
+      ↓Image [ngx.components.UIDynamicElement-1709050297445]: 
+        beanData: |
+          '{
+           "ionBean": "Image",
+           "url": "source:{\"filter\":\"Asset\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"asset\":\"''assets\\\/62d55bc018a5be624c91fd4d_LogoSmall.png''\"}],\"path\":\"\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+           "width": "plain:30"
+          }'
+        selfClose: true
+        tagName: img
+      ↓Icon [ngx.components.UIDynamicElement-1709050427574]: 
+        beanData: '{"ionBean":"Icon","IconName":"source:{\"filter\":\"Asset\",\"project\":\"C8OBilling\",\"input\":\"\",\"model\":{\"data\":[{\"asset\":\"''assets\\\/icon\\\/favicon.png''\"}],\"path\":\"\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}"}'
+        tagName: ion-icon
       ↓Text [ngx.components.UIText-1491634275121]: 
         textValue: 
           - xmlizable: 
@@ -84,16 +96,13 @@ title: Customer Insights
               //--padding-start	//Left padding if direction is left-to-right, and right padding if direction is right-to-left of the toolbar
               //--padding-top	//Top padding of the toolbar
               '
-  ↓Style [ngx.components.UIStyle-1708351911322]: 
-    styleContent: 
-      - xmlizable: 
-        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-        - com.twinsoft.convertigo.beans.common.FormatedContent: 
-          →: |
-            '	background-color: #00CFFF;
-            '
 ↓Content [ngx.components.UIDynamicElement-1489674805352]: 
-  beanData: '{"ionBean":"Content","Padding":"plain:ion-no-padding"}'
+  beanData: |
+    '{
+     "ionBean": "Content",
+     "IonColor": "plain:medium",
+     "Padding": "plain:ion-no-padding"
+    }'
   comment: Page content
   tagName: ion-content
   ↓tag [ngx.components.UIUseShared-1701369309219]: 

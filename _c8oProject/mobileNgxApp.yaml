@@ -205,9 +205,9 @@ tplProjectName: mobilebuilder_tpl_8_1_0_ngx
           
           ion-card-header{
           	background-color: #00CFFF;
-          	color: black;
-          	
+          	color: black;	
           } 
+          
           '
 ↓LightTheme [ngx.components.UIStyle-1662391887095]: 
   comment: This will define the light theme for the application. This will be selected if the device is in light mode.
@@ -274,12 +274,12 @@ tplProjectName: mobilebuilder_tpl_8_1_0_ngx
             --ion-color-dark-tint: #383a3e;
           
             /** medium **/
-            --ion-color-medium: #92949c;
+            --ion-color-medium: #E5E5E5;
             --ion-color-medium-rgb: 146, 148, 156;
             --ion-color-medium-contrast: #ffffff;
             --ion-color-medium-contrast-rgb: 255, 255, 255;
-            --ion-color-medium-shade: #808289;
-            --ion-color-medium-tint: #9d9fa6;
+            --ion-color-medium-shade: #E5E5E5;
+            --ion-color-medium-tint: #E5E5E5;
           
             /** light **/
             --ion-color-light: #f4f5f8;
@@ -354,7 +354,7 @@ tplProjectName: mobilebuilder_tpl_8_1_0_ngx
               --ion-color-dark-shade: #d7d8da;
               --ion-color-dark-tint: #f5f6f9;
           
-              --ion-color-medium: #989aa2;
+              --ion-color-medium: #D8D8D8;
               --ion-color-medium-rgb: 152,154,162;
               --ion-color-medium-contrast: #000000;
               --ion-color-medium-contrast-rgb: 0,0,0;
@@ -513,15 +513,18 @@ tplProjectName: mobilebuilder_tpl_8_1_0_ngx
     - xmlizable: 
       - ↑classname: com.twinsoft.convertigo.beans.common.FontSource
       - com.twinsoft.convertigo.beans.common.FontSource: 
-        →: '{"fontId":"barlow","fontFamily":"Barlow","fontWeight":"600","fontStyle":"normal","fontSubset":"latin"}'
+        →: '{"fontId":"roboto-condensed","fontFamily":"Roboto Condensed","fontWeight":"300","fontStyle":"normal","fontSubset":"latin"}'
   isDefault: true
   styleContent: 
     - xmlizable: 
       - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
       - com.twinsoft.convertigo.beans.common.FormatedContent: 
         →: |
-          'font-family: "Barlow";
-          font-weight: 600;
+          'font-family: "Roboto Condensed";
+          font-weight: 300;
           font-style: "normal";
           font-variant: "latin";
           '
+↓FontStyle [ngx.components.UIFontStyle-1709053855117]: 
+  fontFamily: Roboto Condensed
+  fontStyle: normal
