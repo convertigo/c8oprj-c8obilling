@@ -57,6 +57,10 @@ scriptContent:
         /*Begin_c8o_CompAfterViewChecked*/
         		/*End_c8o_CompAfterViewChecked*/
         /*Begin_c8o_CompFunction*/	
+        	isDarkMode() {
+          		return window.matchMedia && window.matchMedia(''(prefers-color-scheme: dark)'').matches ? ''dark'' : ''light'';
+          		this.pageOwner.ref.detectChanges();	
+        	}
         	/*End_c8o_CompFunction*/
         '
 ↓CardContainer [ngx.components.UIDynamicElement-1702817604905]: 
@@ -65,11 +69,14 @@ scriptContent:
   ↓CardHeader [ngx.components.UIDynamicElement-1705050626221]: 
     beanData: '{"ionBean":"CardHeader"}'
     tagName: ion-card-header
-    ↓some_text [ngx.components.UIText-1705050671450]: 
-      textValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: plain:Customer activity by number of Sequences & Transaction executed (click to a customerName or on the bar to get details)
+    ↓CardTitle [ngx.components.UIDynamicElement-1709135502485]: 
+      beanData: '{"ionBean":"CardTitle"}'
+      tagName: ion-card-title
+      ↓some_text [ngx.components.UIText-1705050671450]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Customer activity by number of Sequences & Transaction executed (click to a customerName or on the bar to get details)
   ↓CardContent [ngx.components.UIDynamicElement-1702817604908]: 
     beanData: '{"ionBean":"CardContent"}'
     tagName: ion-card-content
@@ -112,6 +119,14 @@ scriptContent:
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetCustomerActivityForApex","marker":""}],"path":"?.options?.plotOptions","prefix":"","suffix":"","custom":"","useCustom":false}}
+        ↓theme [ngx.components.UIUseVariable-1709125932428]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: |
+                  'script:{
+                  mode : this.isDarkMode()
+                  }'
     ↓tag1 [ngx.components.UIControlDirective-1702817604911]: 
       directiveName: If
       directiveSource: 
@@ -127,7 +142,7 @@ scriptContent:
           - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
           - com.twinsoft.convertigo.beans.common.FormatedContent: 
             →: |
-              '	height: 300px;
+              '	height: 200px;
               	overflow-y: scroll;
               '
 ↓SharedComponent_Event [ngx.components.UISharedComponentEvent-1702817604983]: 

@@ -1,14 +1,51 @@
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        '/*Begin_c8o_CompImport*/
+        /*End_c8o_CompImport*/
+        /*Begin_c8o_CompDeclaration*/
+        	/*End_c8o_CompDeclaration*/
+        /*Begin_c8o_CompConstructor*/
+        		/*End_c8o_CompConstructor*/
+        /*Begin_c8o_CompInitialization*/
+        		/*End_c8o_CompInitialization*/
+        /*Begin_c8o_CompFinalization*/
+        		/*End_c8o_CompFinalization*/
+        /*Begin_c8o_CompChanges*/
+        		/*End_c8o_CompChanges*/
+        /*Begin_c8o_CompDoCheck*/
+        		/*End_c8o_CompDoCheck*/
+        /*Begin_c8o_CompAfterContentInit*/
+        		/*End_c8o_CompAfterContentInit*/
+        /*Begin_c8o_CompAfterContentChecked*/
+        		/*End_c8o_CompAfterContentChecked*/
+        /*Begin_c8o_CompAfterViewInit*/
+        		/*End_c8o_CompAfterViewInit*/
+        /*Begin_c8o_CompAfterViewChecked*/
+        		/*End_c8o_CompAfterViewChecked*/
+        /*Begin_c8o_CompFunction*/
+        	isDarkMode() {
+          		return window.matchMedia && window.matchMedia(''(prefers-color-scheme: dark)'').matches ? ''dark'' : ''light'';
+          		this.pageOwner.ref.detectChanges();	
+        	}
+        	/*End_c8o_CompFunction*/
+        '
 ↓CardContainer [ngx.components.UIDynamicElement-1702477891970]: 
   beanData: '{"ionBean":"Card"}'
   tagName: ion-card
   ↓CardHeader [ngx.components.UIDynamicElement-1705058270582]: 
     beanData: '{"ionBean":"CardHeader"}'
     tagName: ion-card-header
-    ↓some_text [ngx.components.UIText-1705058270585]: 
-      textValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: plain:Cumulated users and new users for this customer
+    ↓CardTitle [ngx.components.UIDynamicElement-1709135399579]: 
+      beanData: '{"ionBean":"CardTitle"}'
+      tagName: ion-card-title
+      ↓some_text [ngx.components.UIText-1705058270585]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Cumulated users and new users for this customer
   ↓CardContent [ngx.components.UIDynamicElement-1702477891973]: 
     beanData: '{"ionBean":"CardContent"}'
     tagName: ion-card-content
@@ -114,11 +151,6 @@
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: script:null
-        ↓theme [ngx.components.UIUseVariable-1702484612725]: 
-          varValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:null
         ↓responsive [ngx.components.UIUseVariable-1702487339210]: 
           comment: |
             You can configure different options for different screen sizes and ApexCharts will override the configuration based on breakpoints defined.
@@ -127,6 +159,14 @@
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: script:null
+        ↓theme [ngx.components.UIUseVariable-1709127299622]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: |
+                  'script:{
+                  mode : this.isDarkMode()
+                  }'
     ↓tag1 [ngx.components.UIControlDirective-1702624223772]: 
       directiveName: If
       directiveSource: 

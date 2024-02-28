@@ -23,9 +23,7 @@ scriptContent:
         		    //debugger;
         		    this.zoomStart = zoomStarting;
         		    this.zoomEnd= zoomEnding;
-        		    this.ref.detectChanges();
-        		    
-        				    
+        		    this.ref.detectChanges();		    
         		};
         		
         		this.handleResetZoom = (chartContext, opts ) => {
@@ -34,7 +32,6 @@ scriptContent:
                				min: this.dateStart,
                 			max: this.dateEnd
               			}
-         	
             		}
             		this.ref.detectChanges();
         		}
@@ -48,7 +45,9 @@ scriptContent:
                     //If either has changed, we reset zoomStart and zoomEnd to null
                     this.zoomStart = null;
                     this.zoomEnd = null;
-                    this.ref.detectChanges(); // Make sure to detect changes so the UI can update
+                    this.isDarkMode();
+                    this.pageOwner.ref.detectChanges();
+                    
                 }
         		/*End_c8o_CompChanges*/
         /*Begin_c8o_CompDoCheck*/
@@ -62,9 +61,11 @@ scriptContent:
         /*Begin_c8o_CompAfterViewChecked*/
         		/*End_c8o_CompAfterViewChecked*/
         /*Begin_c8o_CompFunction*/
-        	checkDate() {
-        		(this.local?.lDateStart != this.dateStart) || (this.local?.lDateEnd != this.dateEnd);
-        		return true;
+        	isDarkMode() {
+        			
+          		let mode = window.matchMedia && window.matchMedia(''(prefers-color-scheme: dark)'').matches ? ''dark'' : ''light'';
+          		
+          		return mode;
         	}
         	
         	/*End_c8o_CompFunction*/
@@ -75,11 +76,14 @@ scriptContent:
   ↓CardHeader [ngx.components.UIDynamicElement-1705058193244]: 
     beanData: '{"ionBean":"CardHeader"}'
     tagName: ion-card-header
-    ↓some_text [ngx.components.UIText-1705058193247]: 
-      textValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: plain:Number of concurrent sessions for this customer
+    ↓CardTitle [ngx.components.UIDynamicElement-1709135389083]: 
+      beanData: '{"ionBean":"CardTitle"}'
+      tagName: ion-card-title
+      ↓some_text [ngx.components.UIText-1705058193247]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Number of concurrent sessions for this customer
   ↓CardContent [ngx.components.UIDynamicElement-1702623740512]: 
     beanData: '{"ionBean":"CardContent"}'
     tagName: ion-card-content
@@ -136,12 +140,20 @@ scriptContent:
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetBillingSessionsPerDayForApex","marker":""}],"path":"?.options?.yaxis","prefix":"","suffix":"","custom":"","useCustom":false}}
+        ↓theme [ngx.components.UIUseVariable-1709127312566]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: |
+                  'script:{
+                  mode: this.isDarkMode()
+                  }'
     ↓tag1 [ngx.components.UIControlDirective-1702623740509]: 
       directiveName: If
       directiveSource: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetBillingSessionsPerDayForApex","marker":""}],"path":"?.options","prefix":"! ","suffix":"","custom":"","useCustom":false}}
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetBillingSessionsPerDayForApex","marker":""}],"path":"?.options","prefix":"! ","suffix":"","custom":"!listen(['C8OBilling.CustGetBillingSessionsPerDayForApex'])?.options","useCustom":true}}
       ↓Spinner [ngx.components.UIDynamicElement-1702623820707]: 
         beanData: '{"ionBean":"Spinner"}'
         tagName: ion-spinner

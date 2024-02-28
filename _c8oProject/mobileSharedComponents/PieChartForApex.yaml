@@ -1,3 +1,37 @@
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        '/*Begin_c8o_CompImport*/
+        /*End_c8o_CompImport*/
+        /*Begin_c8o_CompDeclaration*/
+        	/*End_c8o_CompDeclaration*/
+        /*Begin_c8o_CompConstructor*/
+        		/*End_c8o_CompConstructor*/
+        /*Begin_c8o_CompInitialization*/
+        		/*End_c8o_CompInitialization*/
+        /*Begin_c8o_CompFinalization*/
+        		/*End_c8o_CompFinalization*/
+        /*Begin_c8o_CompChanges*/
+        		/*End_c8o_CompChanges*/
+        /*Begin_c8o_CompDoCheck*/
+        		/*End_c8o_CompDoCheck*/
+        /*Begin_c8o_CompAfterContentInit*/
+        		/*End_c8o_CompAfterContentInit*/
+        /*Begin_c8o_CompAfterContentChecked*/
+        		/*End_c8o_CompAfterContentChecked*/
+        /*Begin_c8o_CompAfterViewInit*/
+        		/*End_c8o_CompAfterViewInit*/
+        /*Begin_c8o_CompAfterViewChecked*/
+        		/*End_c8o_CompAfterViewChecked*/
+        /*Begin_c8o_CompFunction*/
+        	isDarkMode() {
+          		return window.matchMedia && window.matchMedia(''(prefers-color-scheme: dark)'').matches ? ''dark'' : ''light'';
+          		this.pageOwner.ref.detectChanges();	
+        	}
+        	/*End_c8o_CompFunction*/
+        '
 ↓compChanges [ngx.components.UISharedComponentEvent-1702908904767]: 
   componentEvent: onChanges
   ↓ClearDataSource [ngx.components.UIDynamicAction-1705675892904]: 
@@ -37,11 +71,14 @@
   ↓CardHeader [ngx.components.UIDynamicElement-1705058334885]: 
     beanData: '{"ionBean":"CardHeader"}'
     tagName: ion-card-header
-    ↓some_text [ngx.components.UIText-1705058334888]: 
-      textValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-          - MobileSmartSourceType: plain:Device usage breakdown for this customer
+    ↓CardTitle [ngx.components.UIDynamicElement-1709135494753]: 
+      beanData: '{"ionBean":"CardTitle"}'
+      tagName: ion-card-title
+      ↓some_text [ngx.components.UIText-1705058334888]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Device usage breakdown for this customer
   ↓CardContent [ngx.components.UIDynamicElement-1702909206026]: 
     beanData: '{"ionBean":"CardContent"}'
     tagName: ion-card-content
@@ -93,6 +130,14 @@
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: source:{"filter":"Sequence","project":"C8OBilling","input":"","model":{"data":[{"sequence":"C8OBilling.CustGetPercentageUserForApex","marker":""}],"path":"?.options?.responsive","prefix":"","suffix":"","custom":"","useCustom":false}}
+        ↓theme [ngx.components.UIUseVariable-1709127287718]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: |
+                  'script:{
+                  mode : this.isDarkMode()
+                  }'
     ↓tag1 [ngx.components.UIControlDirective-1702918300048]: 
       directiveName: If
       directiveSource: 
