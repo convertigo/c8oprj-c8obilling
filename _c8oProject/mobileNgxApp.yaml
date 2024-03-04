@@ -67,12 +67,12 @@ tplProjectName: mobilebuilder_tpl_8_1_0_ngx
 ↓AccountCreationChart [ngx.components.UISharedRegularComponent-1694779619306]: 🗏 mobileSharedComponents/AccountCreationChart.yaml
 ↓ConvertigoUsersChart [ngx.components.UISharedRegularComponent-1695310419875]: 🗏 mobileSharedComponents/ConvertigoUsersChart.yaml
 ↓ConvertigoBillingUserChart [ngx.components.UISharedRegularComponent-1701370684640]: 🗏 mobileSharedComponents/ConvertigoBillingUserChart.yaml
-↓UserTable [ngx.components.UISharedRegularComponent-1695386269421]: 🗏 mobileSharedComponents/UserTable.yaml
 ↓DateselectionPanel [ngx.components.UISharedRegularComponent-1701369309078]: 🗏 mobileSharedComponents/DateselectionPanel.yaml
-↓ConvertigoBillingConcurrentSessionsForApex [ngx.components.UISharedRegularComponent-1702400403612]: 🗏 mobileSharedComponents/ConvertigoBillingConcurrentSessionsForApex.yaml
-↓ConvertigoBillingUserChartForApex [ngx.components.UISharedRegularComponent-1702477891967]: 🗏 mobileSharedComponents/ConvertigoBillingUserChartForApex.yaml
-↓PieChartForApex [ngx.components.UISharedRegularComponent-1702908904764]: 🗏 mobileSharedComponents/PieChartForApex.yaml
 ↓CustomerActivityForApex [ngx.components.UISharedRegularComponent-1702817604902]: 🗏 mobileSharedComponents/CustomerActivityForApex.yaml
+↓ConvertigoBillingUserChartForApex [ngx.components.UISharedRegularComponent-1702477891967]: 🗏 mobileSharedComponents/ConvertigoBillingUserChartForApex.yaml
+↓ConvertigoBillingConcurrentSessionsForApex [ngx.components.UISharedRegularComponent-1702400403612]: 🗏 mobileSharedComponents/ConvertigoBillingConcurrentSessionsForApex.yaml
+↓PieChartForApex [ngx.components.UISharedRegularComponent-1702908904764]: 🗏 mobileSharedComponents/PieChartForApex.yaml
+↓UserTable [ngx.components.UISharedRegularComponent-1695386269421]: 🗏 mobileSharedComponents/UserTable.yaml
 ↓Dashboard [ngx.components.PageComponent-1500538678074]: 🗏 mobilePages/Dashboard.yaml
 ↓Loading [ngx.components.PageComponent-1705673424619]: 🗏 mobilePages/Loading.yaml
 ↓Style [ngx.components.UIStyle-1491635462437]: 

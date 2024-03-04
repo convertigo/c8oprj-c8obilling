@@ -23,6 +23,11 @@
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
             - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695386269421,"regular":true}],"path":"?.dateEnd","prefix":"","suffix":"","custom":"this?.zoomEnd ? this?.dateEnd","useCustom":false}}
+      ↓customerName [ngx.components.UIControlVariable-1709563740606]: 
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1695386269421,"regular":true}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
 ↓dateStart [ngx.components.UICompVariable-1702295805771]: 
 ↓dateEnd [ngx.components.UICompVariable-1702295805774]: 
 ↓customerName [ngx.components.UICompVariable-1702295805777]: 

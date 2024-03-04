@@ -207,6 +207,11 @@ scriptContent:
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
             - MobileSmartSourceType: plain:ConvertigoBillingUsersChartForApex
+      ↓customerName [ngx.components.UIControlVariable-1709563684731]: 
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1702477891967,"regular":true}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
 ↓dateStart [ngx.components.UICompVariable-1702477891997]: 
 ↓dateEnd [ngx.components.UICompVariable-1702477892000]: 
 ↓customerName [ngx.components.UICompVariable-1702477892003]: 
