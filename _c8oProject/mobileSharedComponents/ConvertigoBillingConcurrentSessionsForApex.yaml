@@ -203,6 +203,11 @@ scriptContent:
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1702400403612,"regular":true}],"path":"?.zoomEnd","prefix":"","suffix":"","custom":"","useCustom":false}}
+        ↓customerName [ngx.components.UIControlVariable-1709564759190]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1702400403612,"regular":true}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
 ↓dateStart [ngx.components.UICompVariable-1702400403645]: 
 ↓dateEnd [ngx.components.UICompVariable-1702400403648]: 
 ↓customerName [ngx.components.UICompVariable-1702400403651]: 
@@ -211,3 +216,7 @@ scriptContent:
   autoEmit: true
 ↓zoomStart [ngx.components.UICompVariable-1707824470253]: 
   autoEmit: true
+↓zoomStarted [ngx.components.UICompEvent-1709571454024]: 
+  attrName: zoomStarted
+↓zoomEnded [ngx.components.UICompEvent-1709571467550]: 
+  attrName: zoomEnded

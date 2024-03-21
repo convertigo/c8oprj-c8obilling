@@ -63,6 +63,11 @@ scriptContent:
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
             - MobileSmartSourceType: plain:PieChartForApex
+      ↓customerName [ngx.components.UIControlVariable-1709563726537]: 
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Shared","project":"C8OBilling","input":"","model":{"data":[{"priority":1702908904764,"regular":true}],"path":"?.customerName","prefix":"","suffix":"","custom":"","useCustom":false}}
 ↓dateStart [ngx.components.UICompVariable-1702908904797]: 
 ↓dateEnd [ngx.components.UICompVariable-1702908904800]: 
 ↓CardContainer [ngx.components.UIDynamicElement-1702909206023]: 
