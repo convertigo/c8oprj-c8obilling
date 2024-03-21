@@ -1,8 +1,8 @@
-↑convertigo: 8.2.0.m006
+↑convertigo: 8.3.0.m006
 ↓C8OBilling [core.Project]: 
   comment: Convertigo NGX builder Project
   corsOrigin: =Origin
-  version: 1.6
+  version: 1.7
   ↓C8oBilling [connectors.SqlConnector]: 🗏 connectors/C8oBilling.yaml
   ↓CustGetBillingSessionsPerDayForApex [sequences.GenericSequence]: 🗏 sequences/CustGetBillingSessionsPerDayForApex.yaml
   ↓CustGetBillingUsersPerDayForApex [sequences.GenericSequence]: 🗏 sequences/CustGetBillingUsersPerDayForApex.yaml
@@ -21,14 +21,12 @@
   ↓SetCustomer [sequences.GenericSequence]: 🗏 sequences/SetCustomer.yaml
   ↓C8oCloudSignup_reference [references.ProjectSchemaReference]: 
     projectName: C8oCloudSignup=https://github.com/convertigo/c8oprj-c8o-cloud-signup.git:branch=master
-  ↓project [references.ProjectSchemaReference]: 
-    projectName: lib_ExtendedComponents_ui_ngx
-  ↓Project_reference [references.ProjectSchemaReference]: 
-    comment: ngx builder template
-    projectName: mobilebuilder_tpl_8_1_0_ngx=https://github.com/convertigo/c8oprj-mobilebuilder-tpl/archive/mobilebuilder_tpl_8_1_0_ngx.zip
-  ↓Project_reference1 [references.ProjectSchemaReference]: 
-    comment: ngx builder template
-    projectName: libApexCharts=https://github.com/convertigo/c8oprj-lib-apexcharts-ui-ngx.git
+  ↓lib_ExtendedComponents_ui_ngx_reference [references.ProjectSchemaReference]: 
+    projectName: lib_ExtendedComponents_ui_ngx=https://github.com/convertigo/c8oprj-lib-extended-components-ui-ngx.git:branch=8.3.0.0
+  ↓libApexCharts_reference [references.ProjectSchemaReference]: 
+    projectName: libApexCharts=https://github.com/convertigo/c8oprj-lib-apexcharts-ui-ngx.git:branch=8.3.0
+  ↓project1 [references.ProjectSchemaReference]: 
+    projectName: mobilebuilder_tpl_8_3_0_ngx=https://github.com/convertigo/c8oprj-mobilebuilder-tpl/archive/mobilebuilder_tpl_8_3_0_ngx.zip
   ↓Application [core.MobileApplication]: 
     comment: Describes the mobile application global properties
     splashRemoveMode: beforeUpdate

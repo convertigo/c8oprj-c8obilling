@@ -98,6 +98,12 @@ My First Page as root page
 <tr>
 <td>dateStart</td><td></td>
 </tr>
+<tr>
+<td>zoomEnd</td><td></td>
+</tr>
+<tr>
+<td>zoomStart</td><td></td>
+</tr>
 </table>
 
 #### ConvertigoBillingUserChart
@@ -190,6 +196,9 @@ My First Page as root page
 <tr>
 <td>dateStart</td><td></td>
 </tr>
+<tr>
+<td>zoomEnd</td><td></td>
+</tr>
 </table>
 
 #### PieChartForApex
@@ -227,6 +236,12 @@ My First Page as root page
 </tr>
 <tr>
 <td>dateStart</td><td></td>
+</tr>
+<tr>
+<td>zoomEnd</td><td></td>
+</tr>
+<tr>
+<td>zoomStart</td><td></td>
 </tr>
 </table>
 

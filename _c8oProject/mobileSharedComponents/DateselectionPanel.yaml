@@ -122,7 +122,7 @@ scriptContent:
     beanData: '{"ionBean":"CardContent"}'
     tagName: ion-card-content
     ↓Grid [ngx.components.UIDynamicElement-1701369309118]: 
-      beanData: '{"ionBean":"Grid"}'
+      beanData: '{"ionBean":"Grid","Height":"plain:100%"}'
       tagName: ion-grid
       ↓GridRow [ngx.components.UIDynamicElement-1701369309121]: 
         beanData: '{"ionBean":"GridRow"}'
@@ -134,7 +134,7 @@ scriptContent:
             beanData: '{"ionBean":"InlineModal","Trigger":"plain:start"}'
             tagName: ion-modal
             ↓Grid [ngx.components.UIDynamicElement-1701369309133]: 
-              beanData: '{"ionBean":"Grid"}'
+              beanData: '{"ionBean":"Grid","Height":"plain:100%"}'
               tagName: ion-grid
               ↓GridRow2 [ngx.components.UIDynamicElement-1701369309136]: 
                 beanData: '{"ionBean":"GridRow","Height":"plain:10%"}'
@@ -230,7 +230,7 @@ scriptContent:
             beanData: '{"ionBean":"InlineModal","Trigger":"plain:end"}'
             tagName: ion-modal
             ↓Grid [ngx.components.UIDynamicElement-1701369309181]: 
-              beanData: '{"ionBean":"Grid"}'
+              beanData: '{"ionBean":"Grid","Height":"plain:100%"}'
               tagName: ion-grid
               ↓GridRow2 [ngx.components.UIDynamicElement-1701369309184]: 
                 beanData: '{"ionBean":"GridRow","Height":"plain:10%"}'

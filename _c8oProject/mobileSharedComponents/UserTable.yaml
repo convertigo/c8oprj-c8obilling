@@ -121,7 +121,7 @@
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:'ag-theme-balham-auto-dark'
+              - MobileSmartSourceType: script:'ag-theme-quartz-auto-dark'
         ↓id [ngx.components.UIUseVariable-1695386752141]: 
           comment: An Optional ID
           varValue: 
