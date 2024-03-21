@@ -220,7 +220,9 @@ tplProjectName: mobilebuilder_tpl_8_3_0_ngx
           }
           
           
-          
+          .ag-theme-quartz-auto-dark {
+          	--ag-background-color: #424242
+          }
           
           
           '

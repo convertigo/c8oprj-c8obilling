@@ -106,6 +106,20 @@ My First Page as root page
 </tr>
 </table>
 
+**events**
+
+<table>
+<tr>
+<th>name</th><th>comment</th>
+</tr>
+<tr>
+<td>zoomEnded</td><td></td>
+</tr>
+<tr>
+<td>zoomStarted</td><td></td>
+</tr>
+</table>
+
 #### ConvertigoBillingUserChart
 
 **variables**
